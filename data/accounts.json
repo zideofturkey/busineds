@@ -10,7 +10,7 @@
     "ignoredCustomerIds": [
       "YILDIZ-SPOT"
     ],
-    "lastSyncDate": "2026-10-19T21:26:03.833Z"
+    "lastSyncDate": "2026-10-19T21:36:27.272Z"
   },
   "ignoredAccounts": [
     {
@@ -2110,7 +2110,7 @@
   ],
   "reportsArchive": [
     {
-      "id": "rep-test-2026-10-19-61",
+      "id": "rep-test-2026-10-19-20",
       "title": "[TEST RAPORU] Gemini 2.5 Flash Canlı Denetim Denemesi",
       "date": "19 Ekim 2026",
       "period": "14 Ekim – 19 Ekim 2026",
