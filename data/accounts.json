@@ -10,7 +10,7 @@
     "ignoredCustomerIds": [
       "YILDIZ-SPOT"
     ],
-    "lastSyncDate": "2026-10-19T21:36:27.272Z"
+    "lastSyncDate": "2026-10-19T21:40:39.543Z"
   },
   "ignoredAccounts": [
     {
@@ -2110,7 +2110,7 @@
   ],
   "reportsArchive": [
     {
-      "id": "rep-test-2026-10-19-20",
+      "id": "rep-test-2026-10-19-94",
       "title": "[TEST RAPORU] Gemini 2.5 Flash Canlı Denetim Denemesi",
       "date": "19 Ekim 2026",
       "period": "14 Ekim – 19 Ekim 2026",
@@ -2120,7 +2120,7 @@
       "suggestionCount": 5,
       "totalSpendTl": 79343,
       "totalConversions": 3930,
-      "summary": "[TEST KOŞUSU — Gerçek 5 günlük zamanlayıcı bozulmadı] 10 onaylı hesap Gemini (gemini-2.5-flash) ile canlı MCC verileri üzerinden denetlendi. 2 kritik müdahale, 4 uyarı ve 5 büyüme önerisi oluşturuldu."
+      "summary": "[TEST KOŞUSU] 10 onaylı hesap canlı MCC verileriyle denetlendi (AI: 0/10 hesap güncellendi - Hata: HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/ge). 2 kritik müdahale, 4 uyarı ve 5 büyüme önerisi oluşturuldu."
     },
     {
       "id": "rep-2026-10-19-v2",
