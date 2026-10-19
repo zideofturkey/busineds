@@ -1,0 +1,36 @@
+name: "Busined's — cron-job.org Triggered Audit"
+
+on:
+  # GitHub'ın kendi gecikmeli cron'u yerine cron-job.org üzerinden dakikası dakikasına tetiklenir:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [cronjob_audit]
+
+permissions:
+  contents: write
+
+jobs:
+  audit-and-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu Çek
+        uses: actions/checkout@v4
+
+      - name: Node.js Kurulumu
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Canlı MCC Verisini Birleştir ve Yapay Zeka Denetimini Çalıştır
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+        run: node scripts/run-audit.js
+
+      - name: Güncel Raporu ve Verileri Kaydet
+        run: |
+          git config --local user.email "bot@busineds.local"
+          git config --local user.name "Busined's Audit"
+          git add data/accounts.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated audit report via cron-job.org" && git push)

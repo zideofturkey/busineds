@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busined's</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Üst Başlık -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <div class="masthead-meta right">
+        <span id="lastAuditLabel">SON DENETİM: —</span>
+        <span class="divider">|</span>
+        <span id="aiModelBadge" class="mono-tag">GEMINI-2.5-FLASH</span>
+      </div>
+    </div>
+
+    <div class="masthead-main">
+      <div class="brand-block">
+        <h1 class="brand-title">Busined<span class="brand-apostrophe">’</span>s</h1>
+      </div>
+
+      <div class="masthead-actions">
+        <button class="btn btn-outline" id="btnOpenSettings">
+          Ayarlar &amp; Script
+        </button>
+        <button class="btn btn-outline" id="btnOpenClaudeImport">
+          Claude İle Hızlı Ekle
+        </button>
+        <button class="btn btn-outline" id="btnNewAccount">
+          + Hesap Ekle
+        </button>
+        <button class="btn btn-crimson" id="btnRunAudit">
+          Denetimi Çalıştır
+        </button>
+      </div>
+    </div>
+
+    <!-- Özet Metrik Şeridi -->
+    <div class="kpi-strip" id="kpiStrip">
+      <div class="kpi-cell">
+        <span class="kpi-label">AKTİF HESAP</span>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiApprovedCount">10</span>
+          <span class="kpi-sub" id="kpiPendingNote">/ 11 Bağlı</span>
+        </div>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">KRİTİK SORUN</span>
+        <div class="kpi-value-row">
+          <span class="kpi-value crimson-text" id="kpiCriticalCount">2</span>
+          <span class="kpi-sub">Acil müdahale</span>
+        </div>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">UYARI &amp; ÖNERİ</span>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiWarningCount">8</span>
+          <span class="kpi-sub">İyileştirme noktası</span>
+        </div>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">5 GÜNLÜK HARCAMA</span>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiTotalSpend">₺106.395</span>
+          <span class="kpi-sub" id="kpiTotalConv">424 Dönüşüm</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ana İçerik Izgarası -->
+  <main class="workspace-grid">
+    <section class="main-column">
+      <!-- Bölüm 1: Bulgular ve Filtreler -->
+      <div class="section-block">
+        <div class="section-header">
+          <h2 class="section-title">Denetim Bulguları</h2>
+
+          <div class="filters-bar">
+            <select id="filterAccountSelect" class="filter-select" title="Hesaba Göre Filtrele">
+              <option value="all">Tüm Hesaplar</option>
+            </select>
+
+            <select id="filterCategorySelect" class="filter-select" title="Konuya Göre Filtrele">
+              <option value="all">Tüm Konular</option>
+            </select>
+
+            <div class="filter-tabs" id="findingFilters">
+              <button class="tab-btn active" data-filter="all">Tümü</button>
+              <button class="tab-btn" data-filter="critical">Kritik</button>
+              <button class="tab-btn" data-filter="warning">Uyarı</button>
+              <button class="tab-btn" data-filter="suggestion">Öneri</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="findings-ledger" id="findingsLedger"></div>
+      </div>
+
+      <!-- Bölüm 2: Hesaplar -->
+      <div class="section-block">
+        <div class="section-header">
+          <h2 class="section-title">Reklam Hesapları</h2>
+          <div class="filter-tabs" id="accountFilters">
+            <button class="tab-btn active" data-acc-filter="all">Tümü (11)</button>
+            <button class="tab-btn" data-acc-filter="approved">Aktif (10)</button>
+            <button class="tab-btn" data-acc-filter="pending">Pasif (1)</button>
+          </div>
+        </div>
+
+        <div class="accounts-grid" id="accountsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Sağ Sütun: PDF Rapor Arşivi & Yoksayılanlar -->
+    <aside class="sidebar-column">
+      <div class="sidebar-box">
+        <div class="sidebar-box-header">
+          <h3 class="sidebar-title">5 Günlük Rapor Arşivi</h3>
+        </div>
+        <div class="archive-list" id="archiveList"></div>
+      </div>
+
+      <div class="sidebar-box muted-box">
+        <div class="sidebar-box-header">
+          <h3 class="sidebar-title">Yoksayılan Hesaplar</h3>
+        </div>
+        <div id="ignoredList" class="ignored-list"></div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal: Hesap Detay & Tarih Aralıklı Metrik Görünümü -->
+  <div class="modal-backdrop hidden" id="accountDetailModal">
+    <div class="modal-card modal-xl">
+      <div class="modal-header">
+        <div>
+          <span class="acc-cid" id="detCid">ID: —</span>
+          <h3 class="modal-title" id="detName">Hesap Detayı</h3>
+          <span class="acc-kulvar" id="detSector">—</span>
+        </div>
+        <div class="detail-header-right">
+          <div class="filter-tabs" id="detailRangeTabs">
+            <button class="tab-btn" data-range="today">Bugün</button>
+            <button class="tab-btn active" data-range="5d">Son 5 Gün</button>
+            <button class="tab-btn" data-range="7d">Son 7 Gün</button>
+            <button class="tab-btn" data-range="14d">Son 14 Gün</button>
+            <button class="tab-btn" data-range="30d">Son 30 Gün</button>
+          </div>
+          <button class="modal-close" id="closeDetailModal">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body-scroll">
+        <!-- Sık Kullanılan Metrikler -->
+        <div class="detail-metrics-grid" id="detailMetricsGrid"></div>
+
+        <!-- Kampanya Kırılım Tablosu -->
+        <div class="detail-section">
+          <h4 class="detail-subtitle">Kampanya Performansı</h4>
+          <div class="table-wrap">
+            <table class="editorial-table" id="detailCampaignsTable">
+              <thead>
+                <tr>
+                  <th>Kampanya Adı</th>
+                  <th>Durum</th>
+                  <th>Harcama</th>
+                  <th>Gösterim</th>
+                  <th>Tıklama</th>
+                  <th>TO (CTR)</th>
+                  <th>Ort. TBM</th>
+                  <th>Dönüşüm</th>
+                  <th>EBM (CPA)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- En Çok Harcayan Arama Terimleri Tablosu -->
+        <div class="detail-section">
+          <h4 class="detail-subtitle">En Çok Harcayan Arama Terimleri (Gerçek MCC Verisi)</h4>
+          <div class="table-wrap">
+            <table class="editorial-table" id="detailSearchTermsTable">
+              <thead>
+                <tr>
+                  <th>Arama Terimi</th>
+                  <th>Tıklama</th>
+                  <th>Harcama</th>
+                  <th>Dönüşüm</th>
+                  <th>Gerçekleşen EBM</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Bu Hesaba Ait Bulgular ve Rapor Notları -->
+        <div class="detail-section">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.65rem;">
+            <h4 class="detail-subtitle" style="margin:0;">Hesap Denetim Raporu &amp; Kurallar</h4>
+            <button class="btn btn-outline btn-sm" id="btnEditFromDetail">Hesap Bilgilerini Düzenle</button>
+          </div>
+          <div class="detail-rules-banner" id="detRulesBanner"></div>
+          <div class="findings-ledger" id="detailFindingsList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Claude İle Otomatik Hesap Tarama & JSON İçe Aktarma -->
+  <div class="modal-backdrop hidden" id="claudeModal">
+    <div class="modal-card modal-wide">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Claude İle Hesap Tarama &amp; Hızlı Ekleme</h3>
+        </div>
+        <button class="modal-close" id="closeClaudeModal">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <div class="claude-step">
+          <div class="step-head">
+            <strong>1. Adım: Bu Şablonu Kopyalayıp Claude'a Yapıştır</strong>
+            <button class="btn btn-crimson btn-sm" id="btnCopyClaudePrompt">Promptu Kopyala</button>
+          </div>
+          <p class="step-desc">Claude Google Ads uzantısıyla hesabı inceler, emin olamadığı noktalarda sana soru sorar ve sonunda sana hazır bir JSON çıktısı verir.</p>
+          <textarea id="claudePromptText" class="code-textarea" rows="8" readonly></textarea>
+        </div>
+
+        <hr class="editorial-hr" />
+
+        <div class="claude-step">
+          <div class="step-head">
+            <strong>2. Adım: Claude'un Verdiği JSON Çıktısını Buraya Yapıştır</strong>
+          </div>
+          <textarea id="claudeJsonInput" class="code-textarea" rows="6" placeholder='{"name": "Örnek Firma", "customerId": "123-456-7890", ...}'></textarea>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-crimson" id="btnImportClaudeJson">Hesabı Sisteme Ekle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Hesap Ekle / Düzenle -->
+  <div class="modal-backdrop hidden" id="accountModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="accountModalTitle">Hesap Bilgileri</h3>
+        <button class="modal-close" id="closeAccountModal">&times;</button>
+      </div>
+      <form id="accountForm" class="modal-form">
+        <input type="hidden" id="accId" />
+        <div class="form-row">
+          <div class="form-group">
+            <label>Firma / Hesap Adı</label>
+            <input type="text" id="accName" required placeholder="Örn: Kadıköy Dent Klinik" />
+          </div>
+          <div class="form-group">
+            <label>Müşteri ID</label>
+            <input type="text" id="accCustomerId" required placeholder="Örn: 412-890-1120" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Sektör</label>
+            <input type="text" id="accSector" required placeholder="Örn: Diş Kliniği & İmplant" />
+          </div>
+          <div class="form-group">
+            <label>Lokasyon</label>
+            <input type="text" id="accLocation" required placeholder="Örn: Kadıköy / İstanbul" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ana Dönüşüm Hedefi</label>
+            <input type="text" id="accGoal" required placeholder="Örn: Telefon Araması & WhatsApp" />
+          </div>
+          <div class="form-group">
+            <label>Aktif Kampanya Sayısı</label>
+            <input type="number" id="accCampaigns" min="1" max="20" value="3" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Hedef EBM / CPA Sınırı (TL)</label>
+            <input type="number" id="accTargetCpa" required placeholder="Örn: 240" />
+          </div>
+          <div class="form-group">
+            <label>Mevcut 5 Günlük EBM (TL)</label>
+            <input type="number" id="accCurrentCpa" placeholder="Örn: 215" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Hesaba Özel Kurallar ve Notlar</label>
+          <textarea id="accRules" rows="3" placeholder="Örn: Pazar günleri kapalı. Ücretsiz, devlet hastanesi kelimeleri negatiflenmeli."></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="btnCancelAccount">Vazgeç</button>
+          <button type="submit" class="btn btn-crimson">Kaydet</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Ayarlar & MCC Script -->
+  <div class="modal-backdrop hidden" id="settingsModal">
+    <div class="modal-card modal-wide">
+      <div class="modal-header">
+        <h3 class="modal-title">Ayarlar &amp; MCC Script</h3>
+        <button class="modal-close" id="closeSettingsModal">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <form id="settingsForm" class="modal-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Yapay Zeka Modeli</label>
+              <select id="setAiModel">
+                <option value="gemini-2.5-flash">gemini-2.5-flash (Ücretsiz Katman)</option>
+                <option value="gemini-2.5-pro">gemini-2.5-pro</option>
+                <option value="gemini-2.0-flash">gemini-2.0-flash</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Bildirim E-Postası</label>
+              <input type="email" id="setEmail" placeholder="ediz@..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Yoksayılan Müşteri ID Listesi (Virgülle Ayır)</label>
+            <input type="text" id="setIgnoredIds" placeholder="999-888-7710" />
+          </div>
+          <div class="modal-footer" style="padding-top:0.5rem;">
+            <button type="submit" class="btn btn-crimson">Kaydet</button>
+          </div>
+        </form>
+
+        <hr class="editorial-hr" />
+
+        <div class="script-guide">
+          <h4>Google Ads MCC Script Kodu</h4>
+          <p>Yönetici hesabında <strong>Araçlar &rarr; Toplu İşlemler &rarr; Komut Dosyaları</strong> menüsüne yapıştırabilirsin.</p>
+          <pre class="code-box"><code id="mccScriptPreview">Yükleniyor...</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="printableReportContainer" class="printable-report"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

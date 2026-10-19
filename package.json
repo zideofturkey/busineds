@@ -1,0 +1,13 @@
+{
+  "name": "busineds",
+  "version": "1.0.0",
+  "description": "Busined's — Google Ads Account Intelligence & 5-Day Audit Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "audit": "node scripts/run-audit.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,955 @@
+:root {
+  --bg-primary: #1D232C;
+  --bg-elevated: #232A35;
+  --bg-card: #262E3A;
+  --bg-inset: #171C24;
+
+  --crimson: #FF3147;
+  --crimson-hover: #FF4D5E;
+  --crimson-soft: rgba(255, 49, 71, 0.14);
+  --crimson-border: rgba(255, 49, 71, 0.45);
+
+  --amber: #F5A623;
+  --amber-soft: rgba(245, 166, 35, 0.14);
+  --emerald: #2ECC71;
+  --emerald-soft: rgba(46, 204, 113, 0.14);
+
+  --text-main: #F3EFEA;
+  --text-secondary: #C5C9D1;
+  --text-muted: #8B93A2;
+  --border-hairline: rgba(243, 239, 234, 0.13);
+  --border-strong: rgba(243, 239, 234, 0.26);
+
+  --font-serif-display: 'Instrument Serif', Georgia, serif;
+  --font-serif-body: 'Newsreader', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 4rem;
+}
+
+/* Üst Başlık */
+.masthead {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0.9rem 2rem 0;
+  border-bottom: 2px solid var(--text-main);
+}
+
+.masthead-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--border-hairline);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.masthead-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mono-tag {
+  color: var(--crimson);
+  border: 1px solid var(--crimson-border);
+  background: var(--crimson-soft);
+  padding: 0.12rem 0.45rem;
+}
+
+.masthead-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--border-strong);
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.brand-title {
+  font-family: var(--font-serif-display);
+  font-size: 3.7rem;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+}
+
+.brand-apostrophe {
+  color: var(--crimson);
+  font-style: italic;
+}
+
+.masthead-actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Butonlar */
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.65rem 1.05rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  background: var(--bg-elevated);
+  color: var(--text-main);
+  border-color: var(--border-strong);
+}
+
+.btn-outline:hover {
+  border-color: var(--crimson);
+  color: var(--crimson);
+}
+
+.btn-crimson {
+  background: var(--crimson);
+  color: #FFFFFF;
+  border-color: var(--crimson);
+  font-weight: 600;
+}
+
+.btn-crimson:hover {
+  background: var(--crimson-hover);
+  box-shadow: 0 4px 16px rgba(255, 49, 71, 0.32);
+}
+
+.btn-sm {
+  padding: 0.38rem 0.7rem;
+  font-size: 0.68rem;
+}
+
+/* KPI Şeridi */
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.kpi-cell {
+  padding: 0.95rem 1.25rem;
+  border-right: 1px solid var(--border-hairline);
+}
+
+.kpi-cell:first-child {
+  padding-left: 0;
+}
+
+.kpi-cell:last-child {
+  border-right: none;
+}
+
+.kpi-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.kpi-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.kpi-value {
+  font-family: var(--font-serif-body);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.crimson-text {
+  color: var(--crimson) !important;
+}
+
+.kpi-sub {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* Ana Izgara */
+.workspace-grid {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 1.75rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.section-block {
+  margin-bottom: 2.75rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--border-strong);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  font-family: var(--font-serif-body);
+  font-size: 1.65rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  background: var(--bg-inset);
+  color: var(--text-main);
+  border: 1px solid var(--border-strong);
+  padding: 0.42rem 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--crimson);
+}
+
+.filter-tabs {
+  display: flex;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-inset);
+}
+
+.tab-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  border-right: 1px solid var(--border-hairline);
+  padding: 0.45rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.tab-btn:last-child {
+  border-right: none;
+}
+
+.tab-btn.active {
+  background: var(--crimson);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Bulgular Listesi */
+.findings-ledger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.finding-row {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-hairline);
+  border-left: 4px solid var(--text-muted);
+  padding: 1rem 1.25rem;
+  display: grid;
+  grid-template-columns: 210px 1fr 280px;
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.finding-row.sev-critical {
+  border-left-color: var(--crimson);
+  background: linear-gradient(90deg, rgba(255, 49, 71, 0.08) 0%, var(--bg-elevated) 35%);
+}
+
+.finding-row.sev-warning {
+  border-left-color: var(--amber);
+}
+
+.finding-row.sev-suggestion {
+  border-left-color: var(--emerald);
+}
+
+.finding-meta-col {
+  border-right: 1px solid var(--border-hairline);
+  padding-right: 0.9rem;
+}
+
+.sev-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.45rem;
+  margin-bottom: 0.4rem;
+}
+
+.sev-badge.critical {
+  background: var(--crimson);
+  color: #fff;
+}
+
+.sev-badge.warning {
+  background: var(--amber-soft);
+  color: var(--amber);
+  border: 1px solid rgba(245, 166, 35, 0.4);
+}
+
+.sev-badge.suggestion {
+  background: var(--emerald-soft);
+  color: var(--emerald);
+  border: 1px solid rgba(46, 204, 113, 0.4);
+}
+
+.finding-acc-name {
+  font-family: var(--font-serif-body);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--text-main);
+  display: block;
+  cursor: pointer;
+}
+
+.finding-acc-name:hover {
+  color: var(--crimson);
+  text-decoration: underline;
+}
+
+.finding-acc-sector {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.finding-cat {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--crimson);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.finding-title {
+  font-family: var(--font-serif-body);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0.15rem 0 0.3rem;
+  color: var(--text-main);
+}
+
+.finding-detail {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+}
+
+.finding-action-col {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-hairline);
+  padding: 0.75rem 0.9rem;
+}
+
+.action-label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--crimson);
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.action-text {
+  font-size: 0.82rem;
+  color: var(--text-main);
+}
+
+/* Hesap Kartları */
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 1.15rem;
+}
+
+.account-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.18s;
+}
+
+.account-card:hover {
+  border-color: var(--crimson);
+}
+
+.account-card.unapproved {
+  opacity: 0.7;
+  border-style: dashed;
+}
+
+.acc-card-clickable {
+  cursor: pointer;
+}
+
+.acc-card-top {
+  padding: 1.1rem 1.25rem 0.9rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.acc-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.acc-cid {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.acc-title {
+  font-family: var(--font-serif-body);
+  font-size: 1.32rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0.1rem 0;
+}
+
+.acc-kulvar {
+  font-size: 0.8rem;
+  color: var(--crimson);
+  font-weight: 500;
+}
+
+.health-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-inset);
+  white-space: nowrap;
+}
+
+.acc-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--border-hairline);
+  background: var(--bg-inset);
+}
+
+.acc-metric {
+  padding: 0.6rem 0.8rem;
+  border-right: 1px solid var(--border-hairline);
+}
+
+.acc-metric:last-child {
+  border-right: none;
+}
+
+.acc-metric-lbl {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.acc-metric-val {
+  font-family: var(--font-serif-body);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.acc-metric-val.over-cpa {
+  color: var(--crimson);
+}
+
+.acc-rules-box {
+  padding: 0.8rem 1.25rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.acc-card-footer {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-elevated);
+}
+
+.approval-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border-hairline);
+  background: var(--bg-inset);
+}
+
+.approval-toggle:hover {
+  border-color: var(--crimson);
+}
+
+.toggle-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.toggle-dot.on {
+  background: var(--emerald);
+  box-shadow: 0 0 6px var(--emerald);
+}
+
+/* Sağ Sütun */
+.sidebar-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.sidebar-box {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-top: 3px solid var(--crimson);
+  padding: 1.2rem;
+}
+
+.sidebar-box.muted-box {
+  border-top-color: var(--text-muted);
+}
+
+.sidebar-title {
+  font-family: var(--font-serif-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.archive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.archive-item {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-hairline);
+  padding: 0.85rem;
+  transition: border-color 0.15s;
+}
+
+.archive-item:hover {
+  border-color: var(--crimson);
+}
+
+.archive-date {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--crimson);
+  display: flex;
+  justify-content: space-between;
+}
+
+.archive-name {
+  font-family: var(--font-serif-body);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0.3rem;
+}
+
+.archive-summary {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.65rem;
+}
+
+.archive-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ignored-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ignored-item {
+  background: var(--bg-inset);
+  border: 1px dashed var(--border-hairline);
+  padding: 0.65rem 0.8rem;
+  font-size: 0.78rem;
+}
+
+.ignored-item strong {
+  display: block;
+  color: var(--text-secondary);
+}
+
+.ignored-item span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+/* Modallar & Hesap Detay Görünümü */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 15, 20, 0.84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1.25rem;
+}
+
+.modal-backdrop.hidden {
+  display: none;
+}
+
+.modal-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-top: 4px solid var(--crimson);
+  width: 100%;
+  max-width: 640px;
+  padding: 1.5rem;
+}
+
+.modal-card.modal-wide {
+  max-width: 820px;
+}
+
+.modal-card.modal-xl {
+  max-width: 1120px;
+}
+
+.modal-body-scroll {
+  max-height: 78vh;
+  overflow-y: auto;
+  padding-right: 0.35rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border-hairline);
+  margin-bottom: 1.1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.detail-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-title {
+  font-family: var(--font-serif-body);
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Hesap Detay Metrikleri ve Tablosu */
+.detail-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-inset);
+  margin-bottom: 1.5rem;
+}
+
+.detail-metric-box {
+  padding: 0.9rem 1.1rem;
+  border-right: 1px solid var(--border-hairline);
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.detail-metric-box:nth-child(4n) {
+  border-right: none;
+}
+
+.detail-metric-lbl {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.detail-metric-val {
+  font-family: var(--font-serif-body);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.detail-metric-sub {
+  font-size: 0.73rem;
+  color: var(--text-secondary);
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.detail-section {
+  margin-bottom: 1.6rem;
+}
+
+.detail-subtitle {
+  font-family: var(--font-serif-body);
+  font-size: 1.2rem;
+  margin-bottom: 0.65rem;
+  color: var(--text-main);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border-strong);
+}
+
+.editorial-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+  background: var(--bg-inset);
+}
+
+.editorial-table th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+}
+
+.editorial-table td {
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--border-hairline);
+  color: var(--text-main);
+}
+
+.editorial-table tr:last-child td {
+  border-bottom: none;
+}
+
+.detail-rules-banner {
+  background: var(--bg-inset);
+  border-left: 3px solid var(--crimson);
+  padding: 0.75rem 1rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.9rem;
+}
+
+/* Claude Şablon Modalı */
+.claude-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.step-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+}
+
+.code-textarea {
+  width: 100%;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-strong);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding: 0.8rem;
+  resize: vertical;
+}
+
+/* Formlar */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-group label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-strong);
+  color: var(--text-main);
+  padding: 0.6rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--crimson);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  margin-top: 0.4rem;
+}
+
+.editorial-hr {
+  border: none;
+  border-top: 1px solid var(--border-strong);
+  margin: 1.25rem 0;
+}
+
+.script-guide h4 {
+  font-family: var(--font-serif-body);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.script-guide p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.65rem;
+}
+
+.code-box {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-hairline);
+  padding: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+  overflow-x: auto;
+  max-height: 200px;
+}
+
+.printable-report {
+  display: none;
+}
+
+@media print {
+  body > *:not(#printableReportContainer) {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #1D232C !important;
+    padding: 0 !important;
+  }
+  #printableReportContainer {
+    display: block !important;
+    padding: 2rem;
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+@media (max-width: 1120px) {
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+  .finding-row {
+    grid-template-columns: 1fr;
+  }
+  .kpi-strip,
+  .detail-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
