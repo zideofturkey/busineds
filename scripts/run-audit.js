@@ -235,8 +235,8 @@ async function runAuditCycle(options = {}) {
   const lastReportTime = db.settings.lastAuditDate ? new Date(db.settings.lastAuditDate).getTime() : 0;
   const daysSinceLastReport = (now.getTime() - lastReportTime) / (1000 * 60 * 60 * 24);
 
-  // 5 gün (4.8 gün toleranslı) doldu mu yoksa panelden manuel "Şimdi Çalıştır" mı denildi?
-  const isFiveDayDue = options.forceFullReport === true || daysSinceLastReport >= 4.8;
+  const isTestRun = options.isTestRun === true;
+  const isFiveDayDue = isTestRun || options.forceFullReport === true || daysSinceLastReport >= 4.8;
 
   if (!isFiveDayDue) {
     // KATMAN 1: SADECE GÜNLÜK HAYATİ KONTROL (HEALTH CHECK)
@@ -257,7 +257,7 @@ async function runAuditCycle(options = {}) {
   }
 
   // KATMAN 2: 5 GÜNDE BİR KAPSAMLI YAPAY ZEKA DENETİMİ & PDF RAPOR BÜLTENİ
-  console.log(`[Busined's] 5 Günlük Kapsamlı Denetim & Raporlama Başladı (${approvedAccounts.length} Onaylı Hesap)...`);
+  console.log(`[Busined's] ${isTestRun ? '[TEST KOŞUSU] ' : ''}Kapsamlı Denetim & Raporlama Başladı (${approvedAccounts.length} Onaylı Hesap)...`);
 
   const apiKey = process.env.GEMINI_API_KEY || '';
   const modelName = db.settings.aiModel || 'gemini-2.5-flash';
@@ -281,9 +281,12 @@ async function runAuditCycle(options = {}) {
     }
   }
 
-  const next = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);
-  db.settings.lastAuditDate = now.toISOString();
-  db.settings.nextAuditDate = next.toISOString();
+  // Eğer bu bir TEST koşusu değilse normal 5 günlük sayacı sıfırla; TEST koşusuysa gerçek 5 günlük takvimi bozma!
+  if (!isTestRun) {
+    const next = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);
+    db.settings.lastAuditDate = now.toISOString();
+    db.settings.nextAuditDate = next.toISOString();
+  }
 
   const reportNumber = (db.reportsArchive?.length || 1) + 1;
   const dateStr = now.toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' });
@@ -291,8 +294,10 @@ async function runAuditCycle(options = {}) {
     .toLocaleDateString('tr-TR', { day: '2-digit', month: 'long' });
 
   const newReport = {
-    id: `rep-${now.toISOString().slice(0, 10)}-${Math.floor(Math.random() * 90 + 10)}`,
-    title: `5 Günlük Genel Denetim Raporu — #${reportNumber}`,
+    id: `rep-${isTestRun ? 'test-' : ''}${now.toISOString().slice(0, 10)}-${Math.floor(Math.random() * 90 + 10)}`,
+    title: isTestRun
+      ? `[TEST RAPORU] Gemini 2.5 Flash Canlı Denetim Denemesi`
+      : `5 Günlük Genel Denetim Raporu — #${reportNumber}`,
     date: dateStr,
     period: `${fiveDaysAgo} – ${dateStr}`,
     accountsAudited: approvedAccounts.length,
@@ -301,9 +306,13 @@ async function runAuditCycle(options = {}) {
     suggestionCount,
     totalSpendTl: Math.round(totalSpendTl),
     totalConversions: Math.round(totalConversions),
-    summary: `${approvedAccounts.length} onaylı hesap incelendi. ${criticalCount} kritik müdahale, ${warningCount} uyarı ve ${suggestionCount} büyüme önerisi oluşturuldu.`
+    summary: `${isTestRun ? '[TEST KOŞUSU — Gerçek 5 günlük zamanlayıcı bozulmadı] ' : ''}${approvedAccounts.length} onaylı hesap Gemini (${modelName}) ile canlı MCC verileri üzerinden denetlendi. ${criticalCount} kritik müdahale, ${warningCount} uyarı ve ${suggestionCount} büyüme önerisi oluşturuldu.`
   };
 
+  // Varsa önceki test raporunu temizle ki arşiv kirlenmesin, en üste ekle
+  if (isTestRun) {
+    db.reportsArchive = (db.reportsArchive || []).filter(r => !String(r.id).startsWith('rep-test-'));
+  }
   db.reportsArchive.unshift(newReport);
   fs.writeFileSync(DATA_FILE, JSON.stringify(db, null, 2), 'utf-8');
 
@@ -315,13 +324,14 @@ async function runAuditCycle(options = {}) {
   `;
   await sendEmailNotification(`📊 ${newReport.title} Hazır (${criticalCount} Kritik, ${warningCount} Uyarı)`, reportHtml, db);
 
-  console.log(`[Busined's] 5 Günlük Rapor tamamlandı ve arşive eklendi: ${newReport.title}`);
-  return { mode: 'five_day_full_report', report: newReport, db };
+  console.log(`[Busined's] Rapor tamamlandı ve arşive eklendi: ${newReport.title}`);
+  return { mode: isTestRun ? 'test_report' : 'five_day_full_report', report: newReport, db };
 }
 
 if (require.main === module) {
+  const isTest = process.argv.includes('--test-run') || process.env.TEST_RUN === 'true';
   const forceFull = process.argv.includes('--force-full') || process.env.FORCE_FULL_REPORT === 'true';
-  runAuditCycle({ forceFullReport: forceFull }).catch(err => {
+  runAuditCycle({ forceFullReport: forceFull, isTestRun: isTest }).catch(err => {
     console.error(err);
     process.exit(1);
   });

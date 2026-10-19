@@ -8,9 +8,23 @@ const fs = require('fs');
 const path = require('path');
 const { runAuditCycle } = require('./scripts/run-audit');
 
+const { exec } = require('child_process');
+
 const PORT = process.env.PORT || 3400;
 const DATA_PATH = path.join(__dirname, 'data', 'accounts.json');
 const PUBLIC_DIR = path.join(__dirname, 'public');
+
+// Buluttaki (GitHub) yeni verileri yerel bilgisayara otomatik çeken fonksiyon
+let lastGitPull = 0;
+function autoSyncFromCloud() {
+  const now = Date.now();
+  if (now - lastGitPull < 30000) return Promise.resolve(); // 30 saniyede bir kontrol et
+  lastGitPull = now;
+  return new Promise(resolve => {
+    exec('git pull --rebase --autostash origin main', { cwd: __dirname }, () => resolve());
+  });
+}
+setInterval(autoSyncFromCloud, 5 * 60 * 1000); // Arka planda her 5 dakikada bir otomatik çek
 
 function readDb() {
   return JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
@@ -51,8 +65,9 @@ const MIME_TYPES = {
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
 
-  // API: Tüm Verileri Getir
+  // API: Tüm Verileri Getir (Önce buluttaki son veriyi otomatik senkronize et)
   if (req.method === 'GET' && url.pathname === '/api/data') {
+    await autoSyncFromCloud();
     return sendJson(res, 200, readDb());
   }
 

@@ -10,6 +10,9 @@ on:
         default: 'true'
   repository_dispatch:
     types: [cronjob_audit]
+  push:
+    paths:
+      - 'scripts/run-audit.js'
 
 permissions:
   contents: write
@@ -31,6 +34,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          TEST_RUN: ${{ github.event_name == 'push' && 'true' || 'false' }}
           FORCE_FULL_REPORT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.force_full || github.event.client_payload.force_full || 'false' }}
         run: node scripts/run-audit.js
 
