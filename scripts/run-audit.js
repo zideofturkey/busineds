@@ -174,23 +174,39 @@ Lütfen JSON dizisi formatında en kritik ve aksiyon odaklı 1-3 bulguyu döndü
 `;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
-  try {
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: 'application/json' }
-      })
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
-    const text = json.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (text) {
-      return JSON.parse(text);
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { responseMimeType: 'application/json' }
+        })
+      });
+      if (res.status === 429 && attempt === 1) {
+        console.log(`[Busined's AI] Rate limit (429) beklendi (12 sn)...`);
+        await new Promise(r => setTimeout(r, 12000));
+        continue;
+      }
+      if (!res.ok) {
+        const errTxt = await res.text();
+        throw new Error(`HTTP ${res.status}: ${errTxt.slice(0, 160)}`);
+      }
+      const json = await res.json();
+      let text = json.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (text) {
+        text = text.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
+        const parsed = JSON.parse(text);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          console.log(`[Busined's AI] ${account.name} için ${parsed.length} yeni bulgu üretildi.`);
+          return parsed;
+        }
+      }
+    } catch (err) {
+      console.warn(`[Busined's AI] ${account.name} için API çağrısı atlandı, mevcut bulgular korundu:`, err.message);
+      break;
     }
-  } catch (err) {
-    console.warn(`[Busined's AI] ${account.name} için API çağrısı atlandı, mevcut bulgular korundu:`, err.message);
   }
   return account.findings || [];
 }
@@ -271,6 +287,7 @@ async function runAuditCycle(options = {}) {
   for (const acc of approvedAccounts) {
     const findings = await analyzeAccountWithGemini(acc, apiKey, modelName);
     acc.findings = findings;
+    if (apiKey) await new Promise(r => setTimeout(r, 4000));
     totalSpendTl += Number(acc.spend5dTl || 0);
     totalConversions += Number(acc.conversions5d || 0);
 

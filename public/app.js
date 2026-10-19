@@ -127,11 +127,15 @@ function renderHeaderAndKpis() {
   const approved = accounts.filter(a => a.approved);
   const pending = accounts.filter(a => !a.approved);
 
-  const lastDate = settings.lastAuditDate
+  const syncStamp = settings.lastSyncDate || settings.lastAuditDate;
+  const syncStr = syncStamp
+    ? new Date(syncStamp).toLocaleString('tr-TR', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
+    : '—';
+  const auditStr = settings.lastAuditDate
     ? new Date(settings.lastAuditDate).toLocaleString('tr-TR', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
     : '—';
 
-  document.getElementById('lastAuditLabel').textContent = `SON DENETİM: ${lastDate.toUpperCase()}`;
+  document.getElementById('lastAuditLabel').textContent = `SON VERİ: ${syncStr.toUpperCase()} · SON 5G RAPOR: ${auditStr.toUpperCase()}`;
   document.getElementById('aiModelBadge').textContent = (settings.aiModel || 'gemini-2.5-flash').toUpperCase();
 
   let criticals = 0;
