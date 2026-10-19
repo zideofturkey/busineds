@@ -194,16 +194,18 @@ Lütfen JSON dizisi formatında en kritik ve aksiyon odaklı 1-3 bulguyu döndü
         throw new Error(`HTTP ${res.status}: ${errTxt.slice(0, 160)}`);
       }
       const json = await res.json();
-      let text = json.candidates?.[0]?.content?.parts?.[0]?.text;
+      const text = json.candidates?.[0]?.content?.parts?.[0]?.text;
       if (text) {
-        text = text.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
-        const parsed = JSON.parse(text);
+        const clean = text.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
+        const parsed = JSON.parse(clean);
         if (Array.isArray(parsed) && parsed.length > 0) {
           console.log(`[Busined's AI] ${account.name} için ${parsed.length} yeni bulgu üretildi.`);
+          account._aiUpdated = true;
           return parsed;
         }
       }
     } catch (err) {
+      account._aiError = err.message;
       console.warn(`[Busined's AI] ${account.name} için API çağrısı atlandı, mevcut bulgular korundu:`, err.message);
       break;
     }
@@ -310,6 +312,18 @@ async function runAuditCycle(options = {}) {
   const fiveDaysAgo = new Date(now.getTime() - 5 * 24 * 60 * 60 * 1000)
     .toLocaleDateString('tr-TR', { day: '2-digit', month: 'long' });
 
+  let aiSuccessCount = 0;
+  let lastAiError = '';
+  for (const acc of approvedAccounts) {
+    if (acc._aiUpdated) aiSuccessCount++;
+    if (acc._aiError) lastAiError = acc._aiError;
+    delete acc._aiUpdated;
+    delete acc._aiError;
+  }
+  const aiDiag = !apiKey
+    ? '(Not: GEMINI_API_KEY secret boş görünüyor, kural motoru kullanıldı)'
+    : `(AI: ${aiSuccessCount}/${approvedAccounts.length} hesap güncellendi${lastAiError ? ' - Hata: ' + lastAiError : ''})`;
+
   const newReport = {
     id: `rep-${isTestRun ? 'test-' : ''}${now.toISOString().slice(0, 10)}-${Math.floor(Math.random() * 90 + 10)}`,
     title: isTestRun
@@ -323,7 +337,7 @@ async function runAuditCycle(options = {}) {
     suggestionCount,
     totalSpendTl: Math.round(totalSpendTl),
     totalConversions: Math.round(totalConversions),
-    summary: `${isTestRun ? '[TEST KOŞUSU — Gerçek 5 günlük zamanlayıcı bozulmadı] ' : ''}${approvedAccounts.length} onaylı hesap Gemini (${modelName}) ile canlı MCC verileri üzerinden denetlendi. ${criticalCount} kritik müdahale, ${warningCount} uyarı ve ${suggestionCount} büyüme önerisi oluşturuldu.`
+    summary: `${isTestRun ? '[TEST KOŞUSU] ' : ''}${approvedAccounts.length} onaylı hesap canlı MCC verileriyle denetlendi ${aiDiag}. ${criticalCount} kritik müdahale, ${warningCount} uyarı ve ${suggestionCount} büyüme önerisi oluşturuldu.`
   };
 
   // Varsa önceki test raporunu temizle ki arşiv kirlenmesin, en üste ekle
