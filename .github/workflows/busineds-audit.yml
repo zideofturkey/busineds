@@ -3,6 +3,11 @@ name: "Busined's — cron-job.org Triggered Audit"
 on:
   # GitHub'ın kendi gecikmeli cron'u yerine cron-job.org üzerinden dakikası dakikasına tetiklenir:
   workflow_dispatch:
+    inputs:
+      force_full:
+        description: '5 günü beklemeden tam AI denetimi çalıştır (true/false)'
+        required: false
+        default: 'true'
   repository_dispatch:
     types: [cronjob_audit]
 
@@ -26,6 +31,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          FORCE_FULL_REPORT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.force_full || github.event.client_payload.force_full || 'false' }}
         run: node scripts/run-audit.js
 
       - name: Güncel Raporu ve Verileri Kaydet
