@@ -10,7 +10,7 @@
     "ignoredCustomerIds": [
       "YILDIZ-SPOT"
     ],
-    "lastSyncDate": "2026-10-19T20:56:49.253Z"
+    "lastSyncDate": "2026-10-19T21:26:03.833Z"
   },
   "ignoredAccounts": [
     {
@@ -2109,6 +2109,19 @@
     }
   ],
   "reportsArchive": [
+    {
+      "id": "rep-test-2026-10-19-61",
+      "title": "[TEST RAPORU] Gemini 2.5 Flash Canlı Denetim Denemesi",
+      "date": "19 Ekim 2026",
+      "period": "14 Ekim – 19 Ekim 2026",
+      "accountsAudited": 10,
+      "criticalCount": 2,
+      "warningCount": 4,
+      "suggestionCount": 5,
+      "totalSpendTl": 79343,
+      "totalConversions": 3930,
+      "summary": "[TEST KOŞUSU — Gerçek 5 günlük zamanlayıcı bozulmadı] 10 onaylı hesap Gemini (gemini-2.5-flash) ile canlı MCC verileri üzerinden denetlendi. 2 kritik müdahale, 4 uyarı ve 5 büyüme önerisi oluşturuldu."
+    },
     {
       "id": "rep-2026-10-19-v2",
       "title": "5 Günlük Genel Denetim Raporu — #1 (Tam PMax & Arama Verisi)",
