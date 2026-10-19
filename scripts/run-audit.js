@@ -173,8 +173,15 @@ Lütfen JSON dizisi formatında en kritik ve aksiyon odaklı 1-3 bulguyu döndü
 [{"severity": "critical" | "warning" | "suggestion", "category": "...", "title": "...", "detail": "...", "action": "..."}]
 `;
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
-  for (let attempt = 1; attempt <= 2; attempt++) {
+  // Yeni kullanıcılar için aktif ücretsiz Gemini modelleri (otomatik yedekli)
+  const candidateModels = [
+    modelName && !modelName.includes('2.5') ? modelName : 'gemini-3-flash-preview',
+    'gemini-3.7-flash',
+    'gemini-2.5-flash-lite'
+  ];
+
+  for (const currentModel of candidateModels) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${currentModel}:generateContent?key=${apiKey}`;
     try {
       const res = await fetch(url, {
         method: 'POST',
@@ -184,14 +191,16 @@ Lütfen JSON dizisi formatında en kritik ve aksiyon odaklı 1-3 bulguyu döndü
           generationConfig: { responseMimeType: 'application/json' }
         })
       });
-      if (res.status === 429 && attempt === 1) {
-        console.log(`[Busined's AI] Rate limit (429) beklendi (12 sn)...`);
-        await new Promise(r => setTimeout(r, 12000));
+      if (res.status === 404) {
+        continue; // Bir sonraki güncel modeli dene
+      }
+      if (res.status === 429) {
+        await new Promise(r => setTimeout(r, 8000));
         continue;
       }
       if (!res.ok) {
         const errTxt = await res.text();
-        throw new Error(`HTTP ${res.status}: ${errTxt.slice(0, 160)}`);
+        throw new Error(`HTTP ${res.status}: ${errTxt.slice(0, 220)}`);
       }
       const json = await res.json();
       const text = json.candidates?.[0]?.content?.parts?.[0]?.text;
@@ -199,15 +208,15 @@ Lütfen JSON dizisi formatında en kritik ve aksiyon odaklı 1-3 bulguyu döndü
         const clean = text.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
         const parsed = JSON.parse(clean);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          console.log(`[Busined's AI] ${account.name} için ${parsed.length} yeni bulgu üretildi.`);
+          console.log(`[Busined's AI] ${account.name} için ${currentModel} ile ${parsed.length} yeni bulgu üretildi.`);
           account._aiUpdated = true;
+          account._aiModelUsed = currentModel;
           return parsed;
         }
       }
     } catch (err) {
       account._aiError = err.message;
-      console.warn(`[Busined's AI] ${account.name} için API çağrısı atlandı, mevcut bulgular korundu:`, err.message);
-      break;
+      console.warn(`[Busined's AI] ${account.name} (${currentModel}) uyarısı:`, err.message);
     }
   }
   return account.findings || [];

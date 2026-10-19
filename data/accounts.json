@@ -5,7 +5,7 @@
     "reportIntervalDays": 5,
     "lastAuditDate": "2026-10-19T03:03:00+03:00",
     "nextAuditDate": "2026-10-24T09:00:00+03:00",
-    "aiModel": "gemini-2.5-flash",
+    "aiModel": "gemini-3-flash-preview",
     "emailRecipient": "",
     "ignoredCustomerIds": [
       "YILDIZ-SPOT"
