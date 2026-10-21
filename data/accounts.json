@@ -10,7 +10,7 @@
     "ignoredCustomerIds": [
       "YILDIZ-SPOT"
     ],
-    "lastSyncDate": "2026-10-21T05:15:37.951Z"
+    "lastSyncDate": "2026-10-21T20:30:54.277Z"
   },
   "ignoredAccounts": [
     {
@@ -30,70 +30,70 @@
       "activeCampaigns": 4,
       "primaryGoal": "Kişisel Bilgiler Ekranı (815) · Randevu (91) · Tel (22) · WP (13)",
       "targetCpaTl": 30,
-      "currentCpaTl": 27,
-      "spend5dTl": 27402,
-      "conversions5d": 1001.8,
-      "clicks5d": 4193,
-      "impressions5d": 426499,
+      "currentCpaTl": 28,
+      "spend5dTl": 26692,
+      "conversions5d": 943.9,
+      "clicks5d": 4142,
+      "impressions5d": 423608,
       "ctrPercent": 0.98,
-      "spend30dTl": 131040,
-      "conversions30d": 5823.5,
+      "spend30dTl": 132463,
+      "conversions30d": 5836.9,
       "impressionSharePercent": 10,
-      "budgetLostSharePercent": 11,
+      "budgetLostSharePercent": 9,
       "customRules": "3 PMax (Elektrikli Değerleme, Ankara&İzmir, Classic) + 1 Arama kampanyası aktif. Dönüşümlerin %86'sı 'Kişisel Bilgiler Ekranı Yeni' adımından geliyor.",
       "status": "critical",
       "healthScore": 72,
       "ranges": {
         "today": {
-          "spend": 4104,
-          "conversions": 105.7,
-          "clicks": 589,
-          "impressions": 59044,
-          "ctr": 1,
-          "cpa": 39,
-          "cpc": 7,
+          "spend": 4257,
+          "conversions": 100.5,
+          "clicks": 673,
+          "impressions": 59654,
+          "ctr": 1.13,
+          "cpa": 42,
+          "cpc": 6.3,
           "impShare": 10,
-          "budgetLostShare": 3
+          "budgetLostShare": 2
         },
         "5d": {
-          "spend": 27402,
-          "conversions": 1001.8,
-          "clicks": 4193,
-          "impressions": 426499,
+          "spend": 26692,
+          "conversions": 943.9,
+          "clicks": 4142,
+          "impressions": 423608,
           "ctr": 0.98,
+          "cpa": 28,
+          "cpc": 6.4,
+          "impShare": 10,
+          "budgetLostShare": 9
+        },
+        "7d": {
+          "spend": 37705,
+          "conversions": 1398.6,
+          "clicks": 5771,
+          "impressions": 565499,
+          "ctr": 1.02,
           "cpa": 27,
           "cpc": 6.5,
           "impShare": 10,
           "budgetLostShare": 11
         },
-        "7d": {
-          "spend": 38499,
-          "conversions": 1459,
-          "clicks": 5935,
-          "impressions": 599968,
-          "ctr": 0.99,
-          "cpa": 26,
-          "cpc": 6.5,
-          "impShare": 10,
-          "budgetLostShare": 12
-        },
         "14d": {
-          "spend": 73528,
-          "conversions": 2973.8,
-          "clicks": 11598,
-          "impressions": 1212643,
+          "spend": 73122,
+          "conversions": 2893.1,
+          "clicks": 11528,
+          "impressions": 1199656,
           "ctr": 0.96,
           "cpa": 25,
           "cpc": 6.3,
           "impShare": 10,
-          "budgetLostShare": 13
+          "budgetLostShare": 12
         },
         "30d": {
-          "spend": 131040,
-          "conversions": 5823.5,
-          "clicks": 20692,
-          "impressions": 2332728,
-          "ctr": 0.89,
+          "spend": 132463,
+          "conversions": 5836.9,
+          "clicks": 20962,
+          "impressions": 2309060,
+          "ctr": 0.91,
           "cpa": 23,
           "cpc": 6.3,
           "impShare": 10,
@@ -105,23 +105,23 @@
           "name": "Elektrikli Değerleme PMax - ediz",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 9315,
-          "conversions5d": 216.6,
-          "clicks5d": 1167,
-          "impressions5d": 65038,
-          "ctr5d": 1.79,
+          "spend5d": 9359,
+          "conversions5d": 201.6,
+          "clicks5d": 1188,
+          "impressions5d": 65450,
+          "ctr5d": 1.82,
           "impShare": 10,
-          "budgetLostShare": 9
+          "budgetLostShare": 10
         },
         {
           "name": "OtoTıkla Arama Camp. - ediz",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 6891,
-          "conversions5d": 375.7,
-          "clicks5d": 1027,
-          "impressions5d": 10324,
-          "ctr5d": 9.95,
+          "spend5d": 6643,
+          "conversions5d": 349.2,
+          "clicks5d": 979,
+          "impressions5d": 8481,
+          "ctr5d": 11.54,
           "impShare": 10,
           "budgetLostShare": null
         },
@@ -129,23 +129,23 @@
           "name": "Ankara&İzmir Max.Performans - ediz",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 6568,
-          "conversions5d": 160.2,
-          "clicks5d": 1162,
-          "impressions5d": 249688,
-          "ctr5d": 0.47,
+          "spend5d": 6533,
+          "conversions5d": 160.7,
+          "clicks5d": 1200,
+          "impressions5d": 248583,
+          "ctr5d": 0.48,
           "impShare": 10,
-          "budgetLostShare": 49
+          "budgetLostShare": 39
         },
         {
           "name": "Classic PMax - edi",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 4628,
-          "conversions5d": 249.4,
-          "clicks5d": 837,
-          "impressions5d": 101449,
-          "ctr5d": 0.83,
+          "spend5d": 4157,
+          "conversions5d": 232.5,
+          "clicks5d": 775,
+          "impressions5d": 101094,
+          "ctr5d": 0.77,
           "impShare": 10,
           "budgetLostShare": null
         }
@@ -153,92 +153,92 @@
       "conversionActions": [
         {
           "action": "Kişisel Bilgiler Ekranı Yeni",
-          "count5d": 859.7
+          "count5d": 806.3
         },
         {
           "action": "Randevu Al Butonu Yeni",
-          "count5d": 100.7
+          "count5d": 99.4
         },
         {
           "action": "Telefon Dönüşümü Yeni",
-          "count5d": 28
+          "count5d": 26.3
         },
         {
           "action": "WhatsApp Yeni",
-          "count5d": 13.5
+          "count5d": 12
         }
       ],
       "topSearchTerms": [
         {
           "term": "arabam com",
-          "clicks": 338,
-          "costTl": 1979,
-          "conv": 94.9
+          "clicks": 288,
+          "costTl": 1682,
+          "conv": 70
         },
         {
           "term": "trink sat",
-          "clicks": 100,
-          "costTl": 858,
-          "conv": 50.5
+          "clicks": 93,
+          "costTl": 806,
+          "conv": 44
         },
         {
           "term": "otobid",
-          "clicks": 49,
-          "costTl": 302,
-          "conv": 18
-        },
-        {
-          "term": "vavacars teklif",
-          "clicks": 24,
-          "costTl": 228,
-          "conv": 7
-        },
-        {
-          "term": "vavacars teklif al",
-          "clicks": 24,
-          "costTl": 170,
-          "conv": 13.5
-        },
-        {
-          "term": "vavacars fiyat al",
-          "clicks": 19,
-          "costTl": 163,
-          "conv": 8
+          "clicks": 41,
+          "costTl": 267,
+          "conv": 10
         },
         {
           "term": "oto tıkla",
-          "clicks": 17,
-          "costTl": 149,
-          "conv": 13.2
+          "clicks": 23,
+          "costTl": 221,
+          "conv": 20.6
         },
         {
-          "term": "otoshops",
-          "clicks": 11,
-          "costTl": 130,
-          "conv": 11
+          "term": "vavacars fiyat al",
+          "clicks": 22,
+          "costTl": 198,
+          "conv": 9
         },
         {
-          "term": "carvak",
-          "clicks": 16,
-          "costTl": 128,
-          "conv": 2
+          "term": "vavacars teklif al",
+          "clicks": 25,
+          "costTl": 182,
+          "conv": 14
+        },
+        {
+          "term": "vavacars teklif",
+          "clicks": 19,
+          "costTl": 175,
+          "conv": 6
         },
         {
           "term": "2plan",
-          "clicks": 20,
-          "costTl": 118,
-          "conv": 5
-        },
-        {
-          "term": "2 plan",
           "clicks": 23,
-          "costTl": 114,
-          "conv": 5
+          "costTl": 140,
+          "conv": 4
         },
         {
           "term": "carvak araç sat",
-          "clicks": 10,
+          "clicks": 13,
+          "costTl": 127,
+          "conv": 6
+        },
+        {
+          "term": "oto tıkla com",
+          "clicks": 12,
+          "costTl": 114,
+          "conv": 1
+        },
+        {
+          "term": "otoshops",
+          "clicks": 9,
           "costTl": 103,
+          "conv": 7
+        },
+        {
+          "term": "otobid araç sat",
+          "clicks": 13,
+          "costTl": 100,
           "conv": 5
         }
       ],
@@ -277,70 +277,70 @@
       "activeCampaigns": 5,
       "primaryGoal": "Yeni Fiyat Ekranı (592) · WhatsApp (2)",
       "targetCpaTl": 22,
-      "currentCpaTl": 18,
-      "spend5dTl": 13139,
-      "conversions5d": 733.9,
-      "clicks5d": 2574,
-      "impressions5d": 86786,
-      "ctrPercent": 2.97,
-      "spend30dTl": 79228,
-      "conversions30d": 4488.2,
+      "currentCpaTl": 17,
+      "spend5dTl": 13536,
+      "conversions5d": 810.8,
+      "clicks5d": 2700,
+      "impressions5d": 87995,
+      "ctrPercent": 3.07,
+      "spend30dTl": 79811,
+      "conversions30d": 4550.2,
       "impressionSharePercent": 10,
-      "budgetLostSharePercent": 37,
+      "budgetLostSharePercent": 34,
       "customRules": "1 PMax ('Max - Oto Hemen Nakit') + 4 Arama kampanyası aktif.",
       "status": "warning",
       "healthScore": 76,
       "ranges": {
         "today": {
-          "spend": 2073,
-          "conversions": 82.5,
-          "clicks": 421,
-          "impressions": 16109,
-          "ctr": 2.61,
-          "cpa": 25,
-          "cpc": 4.9,
+          "spend": 2394,
+          "conversions": 124.5,
+          "clicks": 518,
+          "impressions": 14968,
+          "ctr": 3.46,
+          "cpa": 19,
+          "cpc": 4.6,
           "impShare": 10,
-          "budgetLostShare": 25
+          "budgetLostShare": 33
         },
         "5d": {
-          "spend": 13139,
-          "conversions": 733.9,
-          "clicks": 2574,
-          "impressions": 86786,
-          "ctr": 2.97,
-          "cpa": 18,
-          "cpc": 5.1,
+          "spend": 13536,
+          "conversions": 810.8,
+          "clicks": 2700,
+          "impressions": 87995,
+          "ctr": 3.07,
+          "cpa": 17,
+          "cpc": 5,
           "impShare": 10,
-          "budgetLostShare": 37
+          "budgetLostShare": 34
         },
         "7d": {
-          "spend": 18117,
-          "conversions": 993.7,
-          "clicks": 3539,
-          "impressions": 120281,
-          "ctr": 2.94,
+          "spend": 18226,
+          "conversions": 1030.7,
+          "clicks": 3590,
+          "impressions": 117116,
+          "ctr": 3.07,
           "cpa": 18,
           "cpc": 5.1,
           "impShare": 10,
-          "budgetLostShare": 41
+          "budgetLostShare": 39
         },
         "14d": {
-          "spend": 36195,
-          "conversions": 1986.3,
-          "clicks": 7357,
-          "impressions": 286788,
-          "ctr": 2.57,
+          "spend": 36121,
+          "conversions": 2013.4,
+          "clicks": 7339,
+          "impressions": 272738,
+          "ctr": 2.69,
           "cpa": 18,
           "cpc": 4.9,
           "impShare": 10,
-          "budgetLostShare": 44
+          "budgetLostShare": 43
         },
         "30d": {
-          "spend": 79228,
-          "conversions": 4488.2,
-          "clicks": 15638,
-          "impressions": 577421,
-          "ctr": 2.71,
+          "spend": 79811,
+          "conversions": 4550.2,
+          "clicks": 15783,
+          "impressions": 579858,
+          "ctr": 2.72,
           "cpa": 18,
           "cpc": 5.1,
           "impShare": 10,
@@ -349,50 +349,50 @@
       },
       "campaigns": [
         {
-          "name": "Max - Oto Hemen Nakit",
-          "status": "ENABLED",
-          "type": "PERFORMANCE_MAX",
-          "spend5d": 5270,
-          "conversions5d": 358.9,
-          "clicks5d": 1549,
-          "impressions5d": 74555,
-          "ctr5d": 2.08,
-          "impShare": 10,
-          "budgetLostShare": 52
-        },
-        {
           "name": "Oto Hemen Nakit - Arama Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 5088,
-          "conversions5d": 230,
-          "clicks5d": 582,
-          "impressions5d": 6560,
-          "ctr5d": 8.87,
+          "spend5d": 5469,
+          "conversions5d": 264,
+          "clicks5d": 626,
+          "impressions5d": 6366,
+          "ctr5d": 9.83,
           "impShare": 10,
-          "budgetLostShare": 11
+          "budgetLostShare": 5
+        },
+        {
+          "name": "Max - Oto Hemen Nakit",
+          "status": "ENABLED",
+          "type": "PERFORMANCE_MAX",
+          "spend5d": 5301,
+          "conversions5d": 402.8,
+          "clicks5d": 1643,
+          "impressions5d": 76384,
+          "ctr5d": 2.15,
+          "impShare": 10,
+          "budgetLostShare": 48
         },
         {
           "name": "OtoHemenNakit - Vavacars Arama Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1896,
-          "conversions5d": 77,
-          "clicks5d": 150,
-          "impressions5d": 2800,
-          "ctr5d": 5.36,
+          "spend5d": 1872,
+          "conversions5d": 80,
+          "clicks5d": 146,
+          "impressions5d": 2617,
+          "ctr5d": 5.58,
           "impShare": 10,
-          "budgetLostShare": 27
+          "budgetLostShare": 23
         },
         {
           "name": "Kayıp Firmalar - Dönüşümler",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 588,
-          "conversions5d": 13,
-          "clicks5d": 38,
-          "impressions5d": 1268,
-          "ctr5d": 3,
+          "spend5d": 597,
+          "conversions5d": 14,
+          "clicks5d": 41,
+          "impressions5d": 1088,
+          "ctr5d": 3.77,
           "impShare": 10,
           "budgetLostShare": 90
         },
@@ -400,96 +400,96 @@
           "name": "Tıklama Havuzu - Arama",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 296,
-          "conversions5d": 55,
-          "clicks5d": 255,
-          "impressions5d": 1603,
-          "ctr5d": 15.91,
+          "spend5d": 297,
+          "conversions5d": 50,
+          "clicks5d": 244,
+          "impressions5d": 1540,
+          "ctr5d": 15.84,
           "impShare": 10,
-          "budgetLostShare": 22
+          "budgetLostShare": 18
         }
       ],
       "conversionActions": [
         {
           "action": "WhatsApp",
-          "count5d": 10
+          "count5d": 15
         },
         {
           "action": "Yeni Fiyat Ekranı",
-          "count5d": 723.9
+          "count5d": 795.8
         }
       ],
       "topSearchTerms": [
         {
           "term": "vavacars",
-          "clicks": 121,
-          "costTl": 1427,
-          "conv": 57
+          "clicks": 118,
+          "costTl": 1450,
+          "conv": 61
         },
         {
           "term": "otokoç",
-          "clicks": 75,
-          "costTl": 688,
-          "conv": 34
+          "clicks": 85,
+          "costTl": 774,
+          "conv": 38
         },
         {
           "term": "carvak",
-          "clicks": 75,
-          "costTl": 655,
-          "conv": 25
-        },
-        {
-          "term": "otobid",
-          "clicks": 80,
-          "costTl": 524,
-          "conv": 21
+          "clicks": 86,
+          "costTl": 734,
+          "conv": 31
         },
         {
           "term": "trink sat",
-          "clicks": 51,
-          "costTl": 447,
+          "clicks": 59,
+          "costTl": 568,
           "conv": 27
         },
         {
+          "term": "otobid",
+          "clicks": 79,
+          "costTl": 526,
+          "conv": 30
+        },
+        {
           "term": "vavacars teklif",
-          "clicks": 14,
-          "costTl": 210,
+          "clicks": 13,
+          "costTl": 196,
           "conv": 9
         },
         {
-          "term": "otoplus",
-          "clicks": 11,
-          "costTl": 105,
-          "conv": 2
-        },
-        {
-          "term": "araç sat",
-          "clicks": 6,
-          "costTl": 100,
+          "term": "trinkoto",
+          "clicks": 14,
+          "costTl": 120,
           "conv": 4
         },
         {
-          "term": "trinkoto",
-          "clicks": 10,
-          "costTl": 87,
-          "conv": 3
-        },
-        {
-          "term": "vavacars araba sat",
-          "clicks": 5,
-          "costTl": 81,
-          "conv": 3
-        },
-        {
           "term": "autocom",
-          "clicks": 9,
-          "costTl": 73,
-          "conv": 6
+          "clicks": 13,
+          "costTl": 101,
+          "conv": 7
         },
         {
-          "term": "dod",
-          "clicks": 8,
-          "costTl": 62,
+          "term": "otoplus",
+          "clicks": 10,
+          "costTl": 94,
+          "conv": 3
+        },
+        {
+          "term": "araç sat",
+          "clicks": 5,
+          "costTl": 83,
+          "conv": 3
+        },
+        {
+          "term": "aracımın değerini öğrenmek istiyorum",
+          "clicks": 63,
+          "costTl": 67,
+          "conv": 12
+        },
+        {
+          "term": "araç satış",
+          "clicks": 4,
+          "costTl": 66,
           "conv": 3
         }
       ],
@@ -529,73 +529,73 @@
       "primaryGoal": "WhatsApp (388.6) · Telefon (96)",
       "targetCpaTl": 16,
       "currentCpaTl": 15,
-      "spend5dTl": 9925,
-      "conversions5d": 641.9,
-      "clicks5d": 4649,
-      "impressions5d": 123049,
-      "ctrPercent": 3.78,
-      "spend30dTl": 26801,
-      "conversions30d": 1762.9,
-      "impressionSharePercent": 15,
-      "budgetLostSharePercent": 5,
+      "spend5dTl": 9991,
+      "conversions5d": 662.9,
+      "clicks5d": 4709,
+      "impressions5d": 125639,
+      "ctrPercent": 3.75,
+      "spend30dTl": 27070,
+      "conversions30d": 1802.9,
+      "impressionSharePercent": 16,
+      "budgetLostSharePercent": 4,
       "customRules": "1 Arama ('Tıklatma') + 1 PMax ('Dönüşümler - İkinci El Bahçelievler') aktif.",
       "status": "healthy",
       "healthScore": 88,
       "ranges": {
         "today": {
-          "spend": 1613,
-          "conversions": 75.7,
-          "clicks": 723,
-          "impressions": 22506,
-          "ctr": 3.21,
-          "cpa": 21,
-          "cpc": 2.2,
-          "impShare": 12,
-          "budgetLostShare": null
+          "spend": 703,
+          "conversions": 35,
+          "clicks": 216,
+          "impressions": 4648,
+          "ctr": 4.65,
+          "cpa": 20,
+          "cpc": 3.3,
+          "impShare": 10,
+          "budgetLostShare": 7
         },
         "5d": {
-          "spend": 9925,
-          "conversions": 641.9,
-          "clicks": 4649,
-          "impressions": 123049,
-          "ctr": 3.78,
+          "spend": 9991,
+          "conversions": 662.9,
+          "clicks": 4709,
+          "impressions": 125639,
+          "ctr": 3.75,
           "cpa": 15,
           "cpc": 2.1,
-          "impShare": 15,
-          "budgetLostShare": 5
+          "impShare": 16,
+          "budgetLostShare": 4
         },
         "7d": {
-          "spend": 11749,
-          "conversions": 770.1,
-          "clicks": 5378,
-          "impressions": 139222,
-          "ctr": 3.86,
+          "spend": 11558,
+          "conversions": 776.6,
+          "clicks": 5184,
+          "impressions": 135074,
+          "ctr": 3.84,
           "cpa": 15,
           "cpc": 2.2,
           "impShare": 14,
-          "budgetLostShare": 12
+          "budgetLostShare": 7
         },
         "14d": {
-          "spend": 18649,
-          "conversions": 1224.9,
-          "clicks": 10882,
-          "impressions": 275791,
-          "ctr": 3.95,
+          "spend": 18949,
+          "conversions": 1254.9,
+          "clicks": 10758,
+          "impressions": 271837,
+          "ctr": 3.96,
           "cpa": 15,
-          "cpc": 1.7,
-          "impShare": 10,
-          "budgetLostShare": 37
+          "cpc": 1.8,
+          "impShare": 11,
+          "budgetLostShare": 32
         },
         "30d": {
-          "spend": 26801,
-          "conversions": 1762.9,
-          "clicks": 17267,
-          "impressions": 423121,
+          "spend": 27070,
+          "conversions": 1802.9,
+          "clicks": 17095,
+          "impressions": 418632,
           "ctr": 4.08,
           "cpa": 15,
           "cpc": 1.6,
           "impShare": 10,
-          "budgetLostShare": 60
+          "budgetLostShare": 57
         }
       },
       "campaigns": [
@@ -603,55 +603,55 @@
           "name": "Dönüşümler  - İkinci El Bahçelievler",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 5621,
-          "conversions5d": 336.4,
-          "clicks5d": 3824,
-          "impressions5d": 114317,
-          "ctr5d": 3.35,
-          "impShare": 15,
-          "budgetLostShare": 25
+          "spend5d": 5672,
+          "conversions5d": 350.4,
+          "clicks5d": 3886,
+          "impressions5d": 116814,
+          "ctr5d": 3.33,
+          "impShare": 17,
+          "budgetLostShare": 20
         },
         {
           "name": "Tıklatma",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 4304,
-          "conversions5d": 305.5,
-          "clicks5d": 825,
-          "impressions5d": 8732,
-          "ctr5d": 9.45,
-          "impShare": 15,
+          "spend5d": 4319,
+          "conversions5d": 312.5,
+          "clicks5d": 823,
+          "impressions5d": 8825,
+          "ctr5d": 9.33,
+          "impShare": 16,
           "budgetLostShare": 2
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon",
-          "count5d": 167
+          "count5d": 172
         },
         {
           "action": "WhatsApp",
-          "count5d": 475
+          "count5d": 491
         }
       ],
       "topSearchTerms": [
         {
           "term": "spotçu",
-          "clicks": 25,
-          "costTl": 144,
-          "conv": 11.5
+          "clicks": 20,
+          "costTl": 116,
+          "conv": 10.5
         },
         {
           "term": "ikinci el eşya alanlar",
-          "clicks": 14,
-          "costTl": 77,
+          "clicks": 13,
+          "costTl": 69,
           "conv": 3
         },
         {
-          "term": "ikinci el eşya satma",
-          "clicks": 8,
-          "costTl": 56,
-          "conv": 5
+          "term": "2 el mobilya alan yerler istanbul",
+          "clicks": 9,
+          "costTl": 61,
+          "conv": 3
         },
         {
           "term": "2 el eşya alan yerler istanbul avrupa yakası",
@@ -660,52 +660,52 @@
           "conv": 5.8
         },
         {
-          "term": "ikinci el eşya alan yerler",
-          "clicks": 8,
-          "costTl": 49,
-          "conv": 5
-        },
-        {
-          "term": "bahçelievler spotçu",
+          "term": "ikinci el eşya satma",
           "clicks": 7,
-          "costTl": 46,
-          "conv": 2
+          "costTl": 47,
+          "conv": 4
         },
         {
           "term": "2 el eşya alan yerler",
-          "clicks": 6,
-          "costTl": 32,
-          "conv": 3.5
+          "clicks": 8,
+          "costTl": 42,
+          "conv": 4
         },
         {
-          "term": "ikinci el mobilya alan yerler",
-          "clicks": 4,
-          "costTl": 27,
+          "term": "bahçelievler spotçu",
+          "clicks": 6,
+          "costTl": 42,
           "conv": 2
         },
         {
-          "term": "2 el mobilya alan yerler istanbul",
+          "term": "ikinci el eşya alan yerler",
+          "clicks": 6,
+          "costTl": 40,
+          "conv": 4
+        },
+        {
+          "term": "ikinci el mobilya alan yerler",
           "clicks": 5,
-          "costTl": 27,
+          "costTl": 33,
+          "conv": 2
+        },
+        {
+          "term": "ikinci el eşya",
+          "clicks": 6,
+          "costTl": 32,
           "conv": 1
+        },
+        {
+          "term": "2 el eşya satmak istiyorum",
+          "clicks": 6,
+          "costTl": 30,
+          "conv": 5
         },
         {
           "term": "eski koltuk alan yerler",
           "clicks": 4,
           "costTl": 26,
           "conv": 2
-        },
-        {
-          "term": "ikinci el mobilya",
-          "clicks": 5,
-          "costTl": 25,
-          "conv": 0
-        },
-        {
-          "term": "2 el eşya satmak istiyorum",
-          "clicks": 5,
-          "costTl": 21,
-          "conv": 4
         }
       ],
       "findings": [
@@ -743,72 +743,72 @@
       "activeCampaigns": 3,
       "primaryGoal": "WhatsApp (244) · Telefon (89) · Yol Tarifi (24)",
       "targetCpaTl": 20,
-      "currentCpaTl": 19,
-      "spend5dTl": 8882,
-      "conversions5d": 476,
-      "clicks5d": 1146,
-      "impressions5d": 7998,
-      "ctrPercent": 14.33,
-      "spend30dTl": 26015,
-      "conversions30d": 1453,
-      "impressionSharePercent": 17,
-      "budgetLostSharePercent": 15,
+      "currentCpaTl": 18,
+      "spend5dTl": 9488,
+      "conversions5d": 517,
+      "clicks5d": 1238,
+      "impressions5d": 8532,
+      "ctrPercent": 14.51,
+      "spend30dTl": 27144,
+      "conversions30d": 1520,
+      "impressionSharePercent": 18,
+      "budgetLostSharePercent": 14,
       "customRules": "2 Arama Kampanyası + 1 PMax ('Lokal Spot - Haritalar') aktif.",
       "status": "healthy",
       "healthScore": 91,
       "ranges": {
         "today": {
-          "spend": 1769,
-          "conversions": 60,
-          "clicks": 214,
-          "impressions": 1408,
-          "ctr": 15.2,
-          "cpa": 29,
-          "cpc": 8.3,
-          "impShare": 16,
-          "budgetLostShare": 16
-        },
-        "5d": {
-          "spend": 8882,
-          "conversions": 476,
-          "clicks": 1146,
-          "impressions": 7998,
-          "ctr": 14.33,
-          "cpa": 19,
-          "cpc": 7.8,
+          "spend": 1716,
+          "conversions": 76,
+          "clicks": 201,
+          "impressions": 1371,
+          "ctr": 14.66,
+          "cpa": 23,
+          "cpc": 8.5,
           "impShare": 17,
           "budgetLostShare": 15
         },
-        "7d": {
-          "spend": 11091,
-          "conversions": 613,
-          "clicks": 1404,
-          "impressions": 9891,
-          "ctr": 14.19,
+        "5d": {
+          "spend": 9488,
+          "conversions": 517,
+          "clicks": 1238,
+          "impressions": 8532,
+          "ctr": 14.51,
           "cpa": 18,
-          "cpc": 7.9,
-          "impShare": 16,
-          "budgetLostShare": 19
+          "cpc": 7.7,
+          "impShare": 18,
+          "budgetLostShare": 14
+        },
+        "7d": {
+          "spend": 11576,
+          "conversions": 652,
+          "clicks": 1478,
+          "impressions": 10379,
+          "ctr": 14.24,
+          "cpa": 18,
+          "cpc": 7.8,
+          "impShare": 17,
+          "budgetLostShare": 18
         },
         "14d": {
-          "spend": 15066,
-          "conversions": 845,
-          "clicks": 2125,
-          "impressions": 17142,
-          "ctr": 12.4,
-          "cpa": 18,
-          "cpc": 7.1,
+          "spend": 15958,
+          "conversions": 919.3,
+          "clicks": 2127,
+          "impressions": 16408,
+          "ctr": 12.96,
+          "cpa": 17,
+          "cpc": 7.5,
           "impShare": 14,
           "budgetLostShare": 14
         },
         "30d": {
-          "spend": 26015,
-          "conversions": 1453,
-          "clicks": 5117,
-          "impressions": 57159,
-          "ctr": 8.95,
+          "spend": 27144,
+          "conversions": 1520,
+          "clicks": 5137,
+          "impressions": 56679,
+          "ctr": 9.06,
           "cpa": 18,
-          "cpc": 5.1,
+          "cpc": 5.3,
           "impShare": 13,
           "budgetLostShare": 12
         }
@@ -818,75 +818,75 @@
           "name": "Doğru Spot Conversation Goals #2",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 4967,
-          "conversions5d": 283,
-          "clicks5d": 631,
-          "impressions5d": 3807,
-          "ctr5d": 16.57,
-          "impShare": 16,
-          "budgetLostShare": 21
+          "spend5d": 4925,
+          "conversions5d": 288,
+          "clicks5d": 635,
+          "impressions5d": 3830,
+          "ctr5d": 16.58,
+          "impShare": 17,
+          "budgetLostShare": 19
         },
         {
           "name": "Doğru Spot Conversation Goals",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 3240,
-          "conversions5d": 133,
-          "clicks5d": 390,
-          "impressions5d": 2689,
-          "ctr5d": 14.5,
-          "impShare": 19,
-          "budgetLostShare": 4
+          "spend5d": 4001,
+          "conversions5d": 164,
+          "clicks5d": 465,
+          "impressions5d": 3137,
+          "ctr5d": 14.82,
+          "impShare": 20,
+          "budgetLostShare": 6
         },
         {
           "name": "Lokal Spot - Haritalar",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 674,
-          "conversions5d": 60,
-          "clicks5d": 125,
-          "impressions5d": 1502,
-          "ctr5d": 8.32,
+          "spend5d": 561,
+          "conversions5d": 65,
+          "clicks5d": 138,
+          "impressions5d": 1565,
+          "ctr5d": 8.82,
           "impShare": 10,
-          "budgetLostShare": 4
+          "budgetLostShare": 3
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon Çağrısı",
-          "count5d": 101
+          "count5d": 104
         },
         {
           "action": "Tıkla ve ara işlemleri",
-          "count5d": 15
+          "count5d": 17
         },
         {
           "action": "WhatsApp Mesajı",
-          "count5d": 315
+          "count5d": 349
         },
         {
           "action": "Yerel işlemler - Yol tarifi",
-          "count5d": 45
+          "count5d": 47
         }
       ],
       "topSearchTerms": [
         {
-          "term": "ikinci el eşya alanlar",
-          "clicks": 20,
-          "costTl": 222,
-          "conv": 10
-        },
-        {
           "term": "spotçu",
-          "clicks": 23,
-          "costTl": 182,
-          "conv": 6
+          "clicks": 26,
+          "costTl": 218,
+          "conv": 8
         },
         {
           "term": "ikinci el eşya alanlar",
-          "clicks": 11,
-          "costTl": 112,
-          "conv": 5
+          "clicks": 14,
+          "costTl": 151,
+          "conv": 7
+        },
+        {
+          "term": "ikinci el eşya alanlar",
+          "clicks": 13,
+          "costTl": 134,
+          "conv": 4
         },
         {
           "term": "spotçu",
@@ -907,40 +907,40 @@
           "conv": 1
         },
         {
+          "term": "esenyurt spot",
+          "clicks": 6,
+          "costTl": 58,
+          "conv": 4
+        },
+        {
           "term": "2 el mobilya alan yerler istanbul",
           "clicks": 5,
-          "costTl": 56,
-          "conv": 1
+          "costTl": 58,
+          "conv": 2
+        },
+        {
+          "term": "avcılar spotçu",
+          "clicks": 5,
+          "costTl": 53,
+          "conv": 2
         },
         {
           "term": "esenyurt ikinci el eşya",
           "clicks": 6,
-          "costTl": 51,
-          "conv": 0
+          "costTl": 50,
+          "conv": 2
         },
         {
-          "term": "esenyurt spot",
-          "clicks": 5,
-          "costTl": 49,
-          "conv": 3
-        },
-        {
-          "term": "ikinci el eşya satma",
+          "term": "2 el eşya alan yerler",
           "clicks": 4,
-          "costTl": 47,
+          "costTl": 48,
           "conv": 2
         },
         {
-          "term": "ikinci el mobilya",
-          "clicks": 5,
-          "costTl": 44,
+          "term": "istanbul spotçular",
+          "clicks": 4,
+          "costTl": 42,
           "conv": 2
-        },
-        {
-          "term": "spotcu",
-          "clicks": 5,
-          "costTl": 43,
-          "conv": 3
         }
       ],
       "findings": [
@@ -978,14 +978,14 @@
       "activeCampaigns": 2,
       "primaryGoal": "WhatsApp (133) · Teklif Formu (72.6) · Arama (47)",
       "targetCpaTl": 25,
-      "currentCpaTl": 23,
-      "spend5dTl": 7346,
-      "conversions5d": 314,
-      "clicks5d": 2116,
-      "impressions5d": 36368,
-      "ctrPercent": 5.82,
-      "spend30dTl": 38745,
-      "conversions30d": 1884,
+      "currentCpaTl": 22,
+      "spend5dTl": 7310,
+      "conversions5d": 331.3,
+      "clicks5d": 1976,
+      "impressions5d": 34106,
+      "ctrPercent": 5.79,
+      "spend30dTl": 38295,
+      "conversions30d": 1854.4,
       "impressionSharePercent": 17,
       "budgetLostSharePercent": 15,
       "customRules": "1 PMax ('Maksimum Performans - Aantik') + 1 Arama ('Dönüşüm - Ayhan Antik') aktif.",
@@ -993,55 +993,55 @@
       "healthScore": 66,
       "ranges": {
         "today": {
-          "spend": 1482,
-          "conversions": 45,
-          "clicks": 292,
-          "impressions": 3306,
-          "ctr": 8.83,
-          "cpa": 33,
-          "cpc": 5.1,
-          "impShare": 20,
+          "spend": 1307,
+          "conversions": 41.3,
+          "clicks": 198,
+          "impressions": 2678,
+          "ctr": 7.39,
+          "cpa": 32,
+          "cpc": 6.6,
+          "impShare": 16,
           "budgetLostShare": null
         },
         "5d": {
-          "spend": 7346,
-          "conversions": 314,
-          "clicks": 2116,
-          "impressions": 36368,
-          "ctr": 5.82,
-          "cpa": 23,
-          "cpc": 3.5,
+          "spend": 7310,
+          "conversions": 331.3,
+          "clicks": 1976,
+          "impressions": 34106,
+          "ctr": 5.79,
+          "cpa": 22,
+          "cpc": 3.7,
           "impShare": 17,
           "budgetLostShare": 15
         },
         "7d": {
-          "spend": 9962,
-          "conversions": 439,
-          "clicks": 2776,
-          "impressions": 47548,
-          "ctr": 5.84,
-          "cpa": 23,
-          "cpc": 3.6,
-          "impShare": 18,
-          "budgetLostShare": 12
+          "spend": 9851,
+          "conversions": 442.3,
+          "clicks": 2654,
+          "impressions": 45311,
+          "ctr": 5.86,
+          "cpa": 22,
+          "cpc": 3.7,
+          "impShare": 17,
+          "budgetLostShare": 13
         },
         "14d": {
-          "spend": 18682,
-          "conversions": 836,
-          "clicks": 4657,
-          "impressions": 80688,
-          "ctr": 5.77,
+          "spend": 18688,
+          "conversions": 843.8,
+          "clicks": 4557,
+          "impressions": 78861,
+          "ctr": 5.78,
           "cpa": 22,
-          "cpc": 4,
+          "cpc": 4.1,
           "impShare": 15,
           "budgetLostShare": 23
         },
         "30d": {
-          "spend": 38745,
-          "conversions": 1884,
-          "clicks": 9303,
-          "impressions": 160613,
-          "ctr": 5.79,
+          "spend": 38295,
+          "conversions": 1854.4,
+          "clicks": 9049,
+          "impressions": 156634,
+          "ctr": 5.78,
           "cpa": 21,
           "cpc": 4.2,
           "impShare": 16,
@@ -1053,11 +1053,11 @@
           "name": "Maksimum Performans - Aantik",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 5429,
-          "conversions5d": 273,
-          "clicks5d": 1959,
-          "impressions5d": 34508,
-          "ctr5d": 5.68,
+          "spend5d": 5412,
+          "conversions5d": 285.3,
+          "clicks5d": 1825,
+          "impressions5d": 32282,
+          "ctr5d": 5.65,
           "impShare": 10,
           "budgetLostShare": 90
         },
@@ -1065,11 +1065,11 @@
           "name": "Dönüşüm - Ayhan Antik",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1917,
-          "conversions5d": 41,
-          "clicks5d": 157,
-          "impressions5d": 1860,
-          "ctr5d": 8.44,
+          "spend5d": 1899,
+          "conversions5d": 46,
+          "clicks5d": 151,
+          "impressions5d": 1824,
+          "ctr5d": 8.28,
           "impShare": 19,
           "budgetLostShare": 4
         }
@@ -1077,28 +1077,28 @@
       "conversionActions": [
         {
           "action": "Arama",
-          "count5d": 65
+          "count5d": 75
         },
         {
           "action": "Hızlı Teklif Formu",
-          "count5d": 52
+          "count5d": 54
         },
         {
           "action": "WhatsApp Mesajı",
-          "count5d": 197
+          "count5d": 202.3
         }
       ],
       "topSearchTerms": [
         {
-          "term": "antika pazarı",
-          "clicks": 4,
-          "costTl": 52,
-          "conv": 2
-        },
-        {
           "term": "antika satış",
           "clicks": 1,
           "costTl": 35,
+          "conv": 1
+        },
+        {
+          "term": "antika pazarı",
+          "clicks": 3,
+          "costTl": 32,
           "conv": 1
         },
         {
@@ -1114,16 +1114,22 @@
           "conv": 0.5
         },
         {
+          "term": "antikacılar çarşısı",
+          "clicks": 4,
+          "costTl": 27,
+          "conv": 0
+        },
+        {
+          "term": "istanbul antika",
+          "clicks": 1,
+          "costTl": 26,
+          "conv": 1
+        },
+        {
           "term": "istanbul antikacılar çarşısı",
           "clicks": 1,
           "costTl": 25,
           "conv": 0.5
-        },
-        {
-          "term": "antika",
-          "clicks": 2,
-          "costTl": 23,
-          "conv": 3
         },
         {
           "term": "beylikdüzü antikacı",
@@ -1135,12 +1141,6 @@
           "term": "kadıköy antikacılar çarşısı",
           "clicks": 2,
           "costTl": 21,
-          "conv": 0
-        },
-        {
-          "term": "antikacılar çarşısı",
-          "clicks": 3,
-          "costTl": 17,
           "conv": 0
         },
         {
@@ -1197,14 +1197,14 @@
       "activeCampaigns": 1,
       "primaryGoal": "WhatsApp (115) · Telefon (74) · Teklif (12)",
       "targetCpaTl": 18,
-      "currentCpaTl": 14,
-      "spend5dTl": 3476,
-      "conversions5d": 240.5,
-      "clicks5d": 635,
-      "impressions5d": 12999,
-      "ctrPercent": 4.88,
-      "spend30dTl": 19917,
-      "conversions30d": 1415.9,
+      "currentCpaTl": 13,
+      "spend5dTl": 3362,
+      "conversions5d": 252,
+      "clicks5d": 615,
+      "impressions5d": 12645,
+      "ctrPercent": 4.86,
+      "spend30dTl": 19994,
+      "conversions30d": 1429.9,
       "impressionSharePercent": 18,
       "budgetLostSharePercent": 0,
       "customRules": "Anadolu yakası ikinci el eşya alımı.",
@@ -1212,59 +1212,59 @@
       "healthScore": 90,
       "ranges": {
         "today": {
-          "spend": 454,
-          "conversions": 29.5,
-          "clicks": 80,
-          "impressions": 1582,
-          "ctr": 5.06,
-          "cpa": 15,
-          "cpc": 5.7,
-          "impShare": 12,
+          "spend": 421,
+          "conversions": 37,
+          "clicks": 79,
+          "impressions": 1517,
+          "ctr": 5.21,
+          "cpa": 11,
+          "cpc": 5.3,
+          "impShare": 11,
           "budgetLostShare": null
         },
         "5d": {
-          "spend": 3476,
-          "conversions": 240.5,
-          "clicks": 635,
-          "impressions": 12999,
-          "ctr": 4.88,
-          "cpa": 14,
+          "spend": 3362,
+          "conversions": 252,
+          "clicks": 615,
+          "impressions": 12645,
+          "ctr": 4.86,
+          "cpa": 13,
           "cpc": 5.5,
           "impShare": 18,
           "budgetLostShare": null
         },
         "7d": {
-          "spend": 4641,
-          "conversions": 305.5,
-          "clicks": 847,
-          "impressions": 16903,
-          "ctr": 5.01,
-          "cpa": 15,
+          "spend": 4460,
+          "conversions": 316,
+          "clicks": 813,
+          "impressions": 16585,
+          "ctr": 4.9,
+          "cpa": 14,
           "cpc": 5.5,
-          "impShare": 18,
+          "impShare": 17,
           "budgetLostShare": null
         },
         "14d": {
-          "spend": 9602,
-          "conversions": 659.9,
-          "clicks": 1667,
-          "impressions": 29483,
-          "ctr": 5.65,
+          "spend": 9323,
+          "conversions": 642.4,
+          "clicks": 1624,
+          "impressions": 29261,
+          "ctr": 5.55,
           "cpa": 15,
-          "cpc": 5.8,
+          "cpc": 5.7,
           "impShare": 19,
           "budgetLostShare": 0
         },
         "30d": {
-          "spend": 19917,
-          "conversions": 1415.9,
-          "clicks": 3337,
-          "impressions": 56886,
-          "ctr": 5.87,
+          "spend": 19994,
+          "conversions": 1429.9,
+          "clicks": 3369,
+          "impressions": 57917,
+          "ctr": 5.82,
           "cpa": 14,
-          "cpc": 6,
+          "cpc": 5.9,
           "impShare": 20,
-          "budgetLostShare": 6
+          "budgetLostShare": 5
         }
       },
       "campaigns": [
@@ -1272,11 +1272,11 @@
           "name": "Bir Spot Dönüşümler",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 3154,
-          "conversions5d": 231.5,
-          "clicks5d": 584,
-          "impressions5d": 10973,
-          "ctr5d": 5.32,
+          "spend5d": 3074,
+          "conversions5d": 245,
+          "clicks5d": 570,
+          "impressions5d": 10308,
+          "ctr5d": 5.53,
           "impShare": 18,
           "budgetLostShare": null
         }
@@ -1284,33 +1284,23 @@
       "conversionActions": [
         {
           "action": "Fiyat teklifi isteyin",
-          "count5d": 14
-        },
-        {
-          "action": "Local actions - Directions",
-          "count5d": 2
+          "count5d": 15
         },
         {
           "action": "Telefon Araması",
-          "count5d": 99
+          "count5d": 102
         },
         {
           "action": "WhatsApp Mesajı",
-          "count5d": 125.5
+          "count5d": 135
         }
       ],
       "topSearchTerms": [
         {
           "term": "spotçu",
-          "clicks": 8,
-          "costTl": 77,
-          "conv": 7.5
-        },
-        {
-          "term": "ikinci el eşya satma",
-          "clicks": 3,
-          "costTl": 35,
-          "conv": 1
+          "clicks": 5,
+          "costTl": 42,
+          "conv": 3
         },
         {
           "term": "2nci el eşya alanlar",
@@ -1325,6 +1315,12 @@
           "conv": 2.5
         },
         {
+          "term": "üsküdar spot",
+          "clicks": 3,
+          "costTl": 25,
+          "conv": 2
+        },
+        {
           "term": "ikinci el eşya alanlar",
           "clicks": 2,
           "costTl": 24,
@@ -1337,21 +1333,9 @@
           "conv": 2
         },
         {
-          "term": "üsküdar spotçular",
+          "term": "ikinci el eşya satma",
           "clicks": 2,
           "costTl": 22,
-          "conv": 1
-        },
-        {
-          "term": "ataşehir spotçu",
-          "clicks": 2,
-          "costTl": 21,
-          "conv": 2
-        },
-        {
-          "term": "ikinci el mobilya alan yerler",
-          "clicks": 2,
-          "costTl": 21,
           "conv": 1
         },
         {
@@ -1367,10 +1351,22 @@
           "conv": 0
         },
         {
-          "term": "2 el eşya satmak istiyorum",
+          "term": "göztepe spotçu",
           "clicks": 2,
           "costTl": 18,
           "conv": 1
+        },
+        {
+          "term": "maltepe spot ikinci el eşya",
+          "clicks": 2,
+          "costTl": 17,
+          "conv": 1
+        },
+        {
+          "term": "kadıköy ikinci el eşya alanlar",
+          "clicks": 2,
+          "costTl": 17,
+          "conv": 0
         }
       ],
       "findings": [
@@ -1409,13 +1405,13 @@
       "primaryGoal": "WhatsApp (106) · Telefon (29)",
       "targetCpaTl": 22,
       "currentCpaTl": 23,
-      "spend5dTl": 3468,
-      "conversions5d": 153,
-      "clicks5d": 405,
-      "impressions5d": 3894,
-      "ctrPercent": 10.4,
-      "spend30dTl": 11916,
-      "conversions30d": 621.5,
+      "spend5dTl": 3382,
+      "conversions5d": 148,
+      "clicks5d": 395,
+      "impressions5d": 3800,
+      "ctrPercent": 10.39,
+      "spend30dTl": 12100,
+      "conversions30d": 620,
       "impressionSharePercent": 10,
       "budgetLostSharePercent": 34,
       "customRules": "Anadolu yakası odaklı. Avrupa yakası sızıntıları engellenmeli.",
@@ -1423,56 +1419,56 @@
       "healthScore": 75,
       "ranges": {
         "today": {
-          "spend": 542,
-          "conversions": 17,
-          "clicks": 56,
-          "impressions": 537,
-          "ctr": 10.43,
-          "cpa": 32,
-          "cpc": 9.7,
+          "spend": 493,
+          "conversions": 18,
+          "clicks": 55,
+          "impressions": 487,
+          "ctr": 11.29,
+          "cpa": 27,
+          "cpc": 9,
           "impShare": 10,
-          "budgetLostShare": 32
+          "budgetLostShare": 28
         },
         "5d": {
-          "spend": 3468,
-          "conversions": 153,
-          "clicks": 405,
-          "impressions": 3894,
-          "ctr": 10.4,
+          "spend": 3382,
+          "conversions": 148,
+          "clicks": 395,
+          "impressions": 3800,
+          "ctr": 10.39,
           "cpa": 23,
           "cpc": 8.6,
           "impShare": 10,
           "budgetLostShare": 34
         },
         "7d": {
-          "spend": 4592,
-          "conversions": 199.5,
-          "clicks": 541,
-          "impressions": 4938,
-          "ctr": 10.96,
+          "spend": 4507,
+          "conversions": 195,
+          "clicks": 527,
+          "impressions": 4985,
+          "ctr": 10.57,
           "cpa": 23,
-          "cpc": 8.5,
+          "cpc": 8.6,
           "impShare": 10,
-          "budgetLostShare": 34
+          "budgetLostShare": 32
         },
         "14d": {
-          "spend": 7106,
-          "conversions": 351,
-          "clicks": 904,
-          "impressions": 8859,
-          "ctr": 10.2,
-          "cpa": 20,
-          "cpc": 7.9,
+          "spend": 7283,
+          "conversions": 348,
+          "clicks": 912,
+          "impressions": 8797,
+          "ctr": 10.37,
+          "cpa": 21,
+          "cpc": 8,
           "impShare": 10,
           "budgetLostShare": 34
         },
         "30d": {
-          "spend": 11916,
-          "conversions": 621.5,
-          "clicks": 1614,
-          "impressions": 16703,
-          "ctr": 9.66,
-          "cpa": 19,
+          "spend": 12100,
+          "conversions": 620,
+          "clicks": 1626,
+          "impressions": 16730,
+          "ctr": 9.72,
+          "cpa": 20,
           "cpc": 7.4,
           "impShare": 10,
           "budgetLostShare": 33
@@ -1483,23 +1479,23 @@
           "name": "İkinci El Eşya Alım - Anadolu Yakası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 3170,
-          "conversions5d": 143,
-          "clicks5d": 328,
-          "impressions5d": 2191,
-          "ctr5d": 14.97,
+          "spend5d": 3102,
+          "conversions5d": 138,
+          "clicks5d": 322,
+          "impressions5d": 2183,
+          "ctr5d": 14.75,
           "impShare": 13,
-          "budgetLostShare": 49
+          "budgetLostShare": 51
         },
         {
           "name": "Tıklayalım",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 298,
+          "spend5d": 280,
           "conversions5d": 10,
-          "clicks5d": 77,
-          "impressions5d": 1703,
-          "ctr5d": 4.52,
+          "clicks5d": 73,
+          "impressions5d": 1618,
+          "ctr5d": 4.51,
           "impShare": 10,
           "budgetLostShare": 21
         }
@@ -1511,27 +1507,27 @@
         },
         {
           "action": "WhatsApp",
-          "count5d": 125
+          "count5d": 120
         }
       ],
       "topSearchTerms": [
         {
           "term": "ikinci el eşya alanlar",
-          "clicks": 11,
-          "costTl": 135,
-          "conv": 5
+          "clicks": 7,
+          "costTl": 82,
+          "conv": 3
         },
         {
           "term": "spotçu",
-          "clicks": 6,
-          "costTl": 69,
+          "clicks": 5,
+          "costTl": 58,
           "conv": 2
         },
         {
           "term": "2 el eşya alan yerler",
           "clicks": 5,
           "costTl": 56,
-          "conv": 3.3
+          "conv": 2.3
         },
         {
           "term": "ümraniye spotçular",
@@ -1546,34 +1542,16 @@
           "conv": 0
         },
         {
-          "term": "ikinci el mobilya",
-          "clicks": 5,
-          "costTl": 34,
-          "conv": 0
-        },
-        {
-          "term": "ikinci el eşya satma",
-          "clicks": 3,
-          "costTl": 32,
-          "conv": 0
+          "term": "ikinci el alan yerler",
+          "clicks": 2,
+          "costTl": 31,
+          "conv": 1
         },
         {
           "term": "kartal 2 el esya alanlar",
           "clicks": 3,
           "costTl": 30,
           "conv": 4
-        },
-        {
-          "term": "ikinci el eşya alan yerler",
-          "clicks": 3,
-          "costTl": 30,
-          "conv": 1
-        },
-        {
-          "term": "spotçu kurtköy",
-          "clicks": 2,
-          "costTl": 28,
-          "conv": 1
         },
         {
           "term": "ikinci el koltuk alan yerler",
@@ -1585,6 +1563,24 @@
           "term": "dudullu spot mobilya",
           "clicks": 4,
           "costTl": 27,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el eşya satma",
+          "clicks": 3,
+          "costTl": 27,
+          "conv": 0
+        },
+        {
+          "term": "ikinci el eşya alanlar istanbul spot",
+          "clicks": 2,
+          "costTl": 25,
+          "conv": 2
+        },
+        {
+          "term": "anadolu yakası ikinci el eşya alanlar",
+          "clicks": 2,
+          "costTl": 25,
           "conv": 1
         }
       ],
@@ -1623,70 +1619,70 @@
       "activeCampaigns": 3,
       "primaryGoal": "WhatsApp (66.4) · Yol Tarifi (55) · Telefon (15)",
       "targetCpaTl": 20,
-      "currentCpaTl": 14,
-      "spend5dTl": 2330,
-      "conversions5d": 167.9,
-      "clicks5d": 468,
-      "impressions5d": 3772,
-      "ctrPercent": 12.41,
-      "spend30dTl": 13187,
-      "conversions30d": 1026.9,
-      "impressionSharePercent": 17,
-      "budgetLostSharePercent": 7,
+      "currentCpaTl": 11,
+      "spend5dTl": 1946,
+      "conversions5d": 176,
+      "clicks5d": 428,
+      "impressions5d": 3593,
+      "ctrPercent": 11.91,
+      "spend30dTl": 13038,
+      "conversions30d": 1025.9,
+      "impressionSharePercent": 16,
+      "budgetLostSharePercent": 2,
       "customRules": "1 Arama ('Dönüşüm Kampanyası') + 1 PMax ('Mağazaya Gidiş Reklamı') aktif.",
       "status": "warning",
       "healthScore": 78,
       "ranges": {
         "today": {
-          "spend": 249,
-          "conversions": 7,
-          "clicks": 73,
-          "impressions": 540,
-          "ctr": 13.52,
-          "cpa": 36,
-          "cpc": 3.4,
-          "impShare": 10,
-          "budgetLostShare": 0
+          "spend": 257,
+          "conversions": 10,
+          "clicks": 46,
+          "impressions": 399,
+          "ctr": 11.53,
+          "cpa": 26,
+          "cpc": 5.6,
+          "impShare": 12,
+          "budgetLostShare": null
         },
         "5d": {
-          "spend": 2330,
-          "conversions": 167.9,
-          "clicks": 468,
-          "impressions": 3772,
-          "ctr": 12.41,
-          "cpa": 14,
-          "cpc": 5,
-          "impShare": 17,
-          "budgetLostShare": 7
+          "spend": 1946,
+          "conversions": 176,
+          "clicks": 428,
+          "impressions": 3593,
+          "ctr": 11.91,
+          "cpa": 11,
+          "cpc": 4.5,
+          "impShare": 16,
+          "budgetLostShare": 2
         },
         "7d": {
-          "spend": 3648,
-          "conversions": 263.9,
-          "clicks": 669,
-          "impressions": 5248,
-          "ctr": 12.75,
-          "cpa": 14,
-          "cpc": 5.5,
-          "impShare": 18,
+          "spend": 3138,
+          "conversions": 236.4,
+          "clicks": 596,
+          "impressions": 4753,
+          "ctr": 12.54,
+          "cpa": 13,
+          "cpc": 5.3,
+          "impShare": 17,
           "budgetLostShare": 8
         },
         "14d": {
-          "spend": 7774,
-          "conversions": 601,
-          "clicks": 1345,
-          "impressions": 10974,
-          "ctr": 12.26,
+          "spend": 7553,
+          "conversions": 579,
+          "clicks": 1294,
+          "impressions": 10559,
+          "ctr": 12.25,
           "cpa": 13,
           "cpc": 5.8,
           "impShare": 20,
           "budgetLostShare": 15
         },
         "30d": {
-          "spend": 13187,
-          "conversions": 1026.9,
-          "clicks": 2283,
-          "impressions": 20582,
-          "ctr": 11.09,
+          "spend": 13038,
+          "conversions": 1025.9,
+          "clicks": 2248,
+          "impressions": 20135,
+          "ctr": 11.16,
           "cpa": 13,
           "cpc": 5.8,
           "impShare": 19,
@@ -1698,77 +1694,59 @@
           "name": "Dönüşüm Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1791,
-          "conversions5d": 82.9,
-          "clicks5d": 277,
-          "impressions5d": 2286,
-          "ctr5d": 12.12,
-          "impShare": 17,
-          "budgetLostShare": 7
+          "spend5d": 1469,
+          "conversions5d": 81,
+          "clicks5d": 242,
+          "impressions5d": 2119,
+          "ctr5d": 11.42,
+          "impShare": 16,
+          "budgetLostShare": 2
         },
         {
           "name": "Mağazaya Gidiş Reklamı",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 539,
-          "conversions5d": 85,
-          "clicks5d": 191,
-          "impressions5d": 1486,
-          "ctr5d": 12.85,
+          "spend5d": 449,
+          "conversions5d": 95,
+          "clicks5d": 182,
+          "impressions5d": 1450,
+          "ctr5d": 12.55,
           "impShare": 10,
-          "budgetLostShare": 29
+          "budgetLostShare": 41
         },
         {
           "name": "Dönüşüm Kampanyası #2",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 0,
+          "spend5d": 27,
           "conversions5d": 0,
-          "clicks5d": 0,
-          "impressions5d": 0,
-          "ctr5d": 0,
-          "impShare": null,
+          "clicks5d": 4,
+          "impressions5d": 24,
+          "ctr5d": 16.67,
+          "impShare": 33,
           "budgetLostShare": null
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon",
-          "count5d": 13
+          "count5d": 14
         },
         {
           "action": "WhatsApp",
-          "count5d": 69.9
+          "count5d": 67
         },
         {
           "action": "Yerel işlemler - Yol tarifi",
-          "count5d": 85
+          "count5d": 95
         }
       ],
       "topSearchTerms": [
         {
-          "term": "bahar spot",
-          "clicks": 6,
-          "costTl": 39,
-          "conv": 0
-        },
-        {
           "term": "spotçu",
           "clicks": 5,
-          "costTl": 35,
-          "conv": 2
-        },
-        {
-          "term": "ikinci el eşya alanlar",
-          "clicks": 4,
-          "costTl": 34,
-          "conv": 1
-        },
-        {
-          "term": "ikinci el eşya",
-          "clicks": 4,
-          "costTl": 30,
-          "conv": 0
+          "costTl": 38,
+          "conv": 3
         },
         {
           "term": "ümraniye spotçular",
@@ -1777,9 +1755,9 @@
           "conv": 0
         },
         {
-          "term": "üsküdar spotçular",
+          "term": "ikinci el eşya alanlar",
           "clicks": 4,
-          "costTl": 28,
+          "costTl": 25,
           "conv": 1
         },
         {
@@ -1789,34 +1767,52 @@
           "conv": 2
         },
         {
-          "term": "kadıköy spotçu",
-          "clicks": 3,
-          "costTl": 23,
-          "conv": 1
-        },
-        {
           "term": "çağlayan ikinci el eşya",
           "clicks": 2,
           "costTl": 22,
           "conv": 0
         },
         {
-          "term": "ikinci el kadıköy",
-          "clicks": 2,
-          "costTl": 18,
+          "term": "bahar spot",
+          "clicks": 4,
+          "costTl": 20,
+          "conv": 0
+        },
+        {
+          "term": "üsküdar spotçular",
+          "clicks": 3,
+          "costTl": 20,
           "conv": 1
         },
         {
           "term": "ikinci el eşya alanlar kadıköy",
           "clicks": 2,
           "costTl": 18,
-          "conv": 0
+          "conv": 1
         },
         {
           "term": "göztepe ikinci el eşya alanlar",
           "clicks": 2,
           "costTl": 16,
           "conv": 2
+        },
+        {
+          "term": "maltepe ikinci el eşya alanlar",
+          "clicks": 2,
+          "costTl": 16,
+          "conv": 0.5
+        },
+        {
+          "term": "ikinci el eşya",
+          "clicks": 2,
+          "costTl": 15,
+          "conv": 0
+        },
+        {
+          "term": "kadıköy spotçu",
+          "clicks": 2,
+          "costTl": 15,
+          "conv": 0
         }
       ],
       "findings": [
@@ -1854,72 +1850,72 @@
       "activeCampaigns": 1,
       "primaryGoal": "Telefon Çağrısı (53) · WhatsApp (16)",
       "targetCpaTl": 25,
-      "currentCpaTl": 20,
-      "spend5dTl": 1967,
+      "currentCpaTl": 19,
+      "spend5dTl": 1858,
       "conversions5d": 96,
-      "clicks5d": 182,
-      "impressions5d": 1112,
-      "ctrPercent": 16.37,
-      "spend30dTl": 8523,
-      "conversions30d": 449,
-      "impressionSharePercent": 13,
-      "budgetLostSharePercent": 22,
+      "clicks5d": 176,
+      "impressions5d": 1097,
+      "ctrPercent": 16.04,
+      "spend30dTl": 8664,
+      "conversions30d": 451,
+      "impressionSharePercent": 12,
+      "budgetLostSharePercent": 21,
       "customRules": "Anadolu yakası spot eşya alımı.",
       "status": "healthy",
       "healthScore": 93,
       "ranges": {
         "today": {
-          "spend": 328,
-          "conversions": 13,
-          "clicks": 30,
-          "impressions": 255,
-          "ctr": 11.76,
-          "cpa": 25,
-          "cpc": 10.9,
+          "spend": 281,
+          "conversions": 11.5,
+          "clicks": 25,
+          "impressions": 198,
+          "ctr": 12.63,
+          "cpa": 24,
+          "cpc": 11.2,
           "impShare": 13,
-          "budgetLostShare": null
+          "budgetLostShare": 16
         },
         "5d": {
-          "spend": 1967,
+          "spend": 1858,
           "conversions": 96,
-          "clicks": 182,
-          "impressions": 1112,
-          "ctr": 16.37,
-          "cpa": 20,
-          "cpc": 10.8,
-          "impShare": 13,
-          "budgetLostShare": 22
+          "clicks": 176,
+          "impressions": 1097,
+          "ctr": 16.04,
+          "cpa": 19,
+          "cpc": 10.6,
+          "impShare": 12,
+          "budgetLostShare": 21
         },
         "7d": {
-          "spend": 2501,
-          "conversions": 120,
+          "spend": 2502,
+          "conversions": 122,
           "clicks": 231,
-          "impressions": 1470,
-          "ctr": 15.71,
+          "impressions": 1502,
+          "ctr": 15.38,
           "cpa": 21,
           "cpc": 10.8,
-          "impShare": 12,
+          "impShare": 13,
           "budgetLostShare": 19
         },
         "14d": {
-          "spend": 4725,
-          "conversions": 230,
-          "clicks": 438,
-          "impressions": 2877,
-          "ctr": 15.22,
+          "spend": 4721,
+          "conversions": 228,
+          "clicks": 437,
+          "impressions": 2900,
+          "ctr": 15.07,
           "cpa": 21,
           "cpc": 10.8,
           "impShare": 13,
           "budgetLostShare": 20
         },
         "30d": {
-          "spend": 8523,
-          "conversions": 449,
-          "clicks": 832,
-          "impressions": 5759,
-          "ctr": 14.45,
+          "spend": 8664,
+          "conversions": 451,
+          "clicks": 840,
+          "impressions": 5841,
+          "ctr": 14.38,
           "cpa": 19,
-          "cpc": 10.2,
+          "cpc": 10.3,
           "impShare": 13,
           "budgetLostShare": 16
         }
@@ -1929,36 +1925,36 @@
           "name": "Yeni Şirin Campaign",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1967,
+          "spend5d": 1858,
           "conversions5d": 96,
-          "clicks5d": 182,
-          "impressions5d": 1112,
-          "ctr5d": 16.37,
-          "impShare": 13,
-          "budgetLostShare": 22
+          "clicks5d": 176,
+          "impressions5d": 1097,
+          "ctr5d": 16.04,
+          "impShare": 12,
+          "budgetLostShare": 21
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon Çağrısı",
-          "count5d": 76
+          "count5d": 75
         },
         {
           "action": "WhatsApp",
-          "count5d": 20
+          "count5d": 21
         }
       ],
       "topSearchTerms": [
         {
-          "term": "ikinci el eşya alanlar",
-          "clicks": 7,
-          "costTl": 94,
-          "conv": 6
-        },
-        {
           "term": "spotçu",
           "clicks": 7,
-          "costTl": 70,
+          "costTl": 68,
+          "conv": 4
+        },
+        {
+          "term": "ikinci el eşya alanlar",
+          "clicks": 5,
+          "costTl": 64,
           "conv": 4
         },
         {
@@ -1968,22 +1964,10 @@
           "conv": 2
         },
         {
-          "term": "kadıköy spotçu",
+          "term": "2 el eşya alan yerler",
           "clicks": 3,
-          "costTl": 37,
+          "costTl": 30,
           "conv": 1
-        },
-        {
-          "term": "kadıköy ikinci el eşya",
-          "clicks": 2,
-          "costTl": 28,
-          "conv": 2
-        },
-        {
-          "term": "dudullu spot mobilya",
-          "clicks": 2,
-          "costTl": 27,
-          "conv": 0
         },
         {
           "term": "ümraniye 2 el eşya alım satım",
@@ -2020,6 +2004,18 @@
           "clicks": 2,
           "costTl": 23,
           "conv": 2
+        },
+        {
+          "term": "2 el eşya alanlar",
+          "clicks": 2,
+          "costTl": 22,
+          "conv": 0
+        },
+        {
+          "term": "ikinci el koltuk alan yerler",
+          "clicks": 2,
+          "costTl": 20,
+          "conv": 1
         }
       ],
       "findings": [
@@ -2057,70 +2053,70 @@
       "activeCampaigns": 2,
       "primaryGoal": "WhatsApp (40) · Çağrı (19)",
       "targetCpaTl": 22,
-      "currentCpaTl": 20,
-      "spend5dTl": 1353,
-      "conversions5d": 67,
-      "clicks5d": 619,
-      "impressions5d": 9339,
-      "ctrPercent": 6.63,
-      "spend30dTl": 11546,
-      "conversions30d": 708,
+      "currentCpaTl": 19,
+      "spend5dTl": 1321,
+      "conversions5d": 70,
+      "clicks5d": 616,
+      "impressions5d": 9056,
+      "ctrPercent": 6.8,
+      "spend30dTl": 11313,
+      "conversions30d": 686,
       "impressionSharePercent": 10,
-      "budgetLostSharePercent": 54,
+      "budgetLostSharePercent": 57,
       "customRules": "1 Arama ('Arama Ağı Kampanyası') + 1 PMax ('UcuzİkinciElEsya - pMax Ediz') aktif.",
       "status": "healthy",
       "healthScore": 86,
       "ranges": {
         "today": {
-          "spend": 168,
-          "conversions": 4,
-          "clicks": 90,
-          "impressions": 1356,
-          "ctr": 6.64,
-          "cpa": 42,
-          "cpc": 1.9,
+          "spend": 176,
+          "conversions": 7,
+          "clicks": 64,
+          "impressions": 915,
+          "ctr": 6.99,
+          "cpa": 25,
+          "cpc": 2.8,
           "impShare": 10,
-          "budgetLostShare": 33
+          "budgetLostShare": 57
         },
         "5d": {
-          "spend": 1353,
-          "conversions": 67,
-          "clicks": 619,
-          "impressions": 9339,
-          "ctr": 6.63,
-          "cpa": 20,
-          "cpc": 2.2,
-          "impShare": 10,
-          "budgetLostShare": 54
-        },
-        "7d": {
-          "spend": 1789,
-          "conversions": 90,
-          "clicks": 852,
-          "impressions": 13277,
-          "ctr": 6.42,
-          "cpa": 20,
+          "spend": 1321,
+          "conversions": 70,
+          "clicks": 616,
+          "impressions": 9056,
+          "ctr": 6.8,
+          "cpa": 19,
           "cpc": 2.1,
           "impShare": 10,
-          "budgetLostShare": 55
+          "budgetLostShare": 57
+        },
+        "7d": {
+          "spend": 1766,
+          "conversions": 85,
+          "clicks": 784,
+          "impressions": 11786,
+          "ctr": 6.65,
+          "cpa": 21,
+          "cpc": 2.3,
+          "impShare": 10,
+          "budgetLostShare": 56
         },
         "14d": {
-          "spend": 4544,
-          "conversions": 243,
-          "clicks": 2248,
-          "impressions": 44494,
-          "ctr": 5.05,
-          "cpa": 19,
+          "spend": 4310,
+          "conversions": 238,
+          "clicks": 2122,
+          "impressions": 40066,
+          "ctr": 5.3,
+          "cpa": 18,
           "cpc": 2,
           "impShare": 10,
-          "budgetLostShare": 46
+          "budgetLostShare": 47
         },
         "30d": {
-          "spend": 11546,
-          "conversions": 708,
-          "clicks": 5478,
-          "impressions": 115363,
-          "ctr": 4.75,
+          "spend": 11313,
+          "conversions": 686,
+          "clicks": 5326,
+          "impressions": 111849,
+          "ctr": 4.76,
           "cpa": 16,
           "cpc": 2.1,
           "impShare": 10,
@@ -2132,23 +2128,23 @@
           "name": "Arama Ağı Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 694,
-          "conversions5d": 40,
-          "clicks5d": 82,
-          "impressions5d": 729,
-          "ctr5d": 11.25,
+          "spend5d": 675,
+          "conversions5d": 43,
+          "clicks5d": 79,
+          "impressions5d": 714,
+          "ctr5d": 11.06,
           "impShare": 10,
-          "budgetLostShare": 31
+          "budgetLostShare": 28
         },
         {
           "name": "UcuzİkinciElEsya - pMax Ediz",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 659,
+          "spend5d": 645,
           "conversions5d": 27,
           "clicks5d": 537,
-          "impressions5d": 8610,
-          "ctr5d": 6.24,
+          "impressions5d": 8342,
+          "ctr5d": 6.44,
           "impShare": 10,
           "budgetLostShare": 90
         }
@@ -2156,20 +2152,14 @@
       "conversionActions": [
         {
           "action": "WhatsApp",
-          "count5d": 47
+          "count5d": 51
         },
         {
           "action": "Çağrı",
-          "count5d": 20
+          "count5d": 19
         }
       ],
       "topSearchTerms": [
-        {
-          "term": "ataşehir ikinci el eşya alanlar",
-          "clicks": 2,
-          "costTl": 25,
-          "conv": 1
-        },
         {
           "term": "sancaktepe eskici",
           "clicks": 2,
@@ -2177,15 +2167,15 @@
           "conv": 1
         },
         {
-          "term": "ikinci el eşya alanlar kadıköy",
-          "clicks": 2,
-          "costTl": 23,
-          "conv": 1
-        },
-        {
           "term": "maltepe ikinci el eşya alanlar",
           "clicks": 2,
           "costTl": 22,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el eşya alan yerler",
+          "clicks": 2,
+          "costTl": 21,
           "conv": 1
         },
         {
@@ -2213,9 +2203,15 @@
           "conv": 0.5
         },
         {
-          "term": "sancaktepe ikinci el eşya alanlar",
+          "term": "ikinci el ev eşyası satanlar",
           "clicks": 1,
-          "costTl": 12,
+          "costTl": 13,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el alan yerler",
+          "clicks": 1,
+          "costTl": 13,
           "conv": 1
         },
         {
