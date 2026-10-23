@@ -3,14 +3,14 @@
     "agencyName": "Busined's",
     "ownerName": "Ediz",
     "reportIntervalDays": 5,
-    "lastAuditDate": "2026-10-19T03:03:00+03:00",
-    "nextAuditDate": "2026-10-24T09:00:00+03:00",
+    "lastAuditDate": "2026-10-23T20:30:50.248Z",
+    "nextAuditDate": "2026-10-28T20:30:50.248Z",
     "aiModel": "gemini-3-flash-preview",
     "emailRecipient": "",
     "ignoredCustomerIds": [
       "YILDIZ-SPOT"
     ],
-    "lastSyncDate": "2026-10-23T05:15:37.147Z"
+    "lastSyncDate": "2026-10-23T20:30:50.245Z"
   },
   "ignoredAccounts": [
     {
@@ -30,14 +30,14 @@
       "activeCampaigns": 4,
       "primaryGoal": "Kişisel Bilgiler Ekranı (815) · Randevu (91) · Tel (22) · WP (13)",
       "targetCpaTl": 30,
-      "currentCpaTl": 28,
-      "spend5dTl": 26594,
-      "conversions5d": 956.8,
-      "clicks5d": 4109,
-      "impressions5d": 417058,
-      "ctrPercent": 0.99,
-      "spend30dTl": 133319,
-      "conversions30d": 5868.7,
+      "currentCpaTl": 27,
+      "spend5dTl": 26340,
+      "conversions5d": 991.9,
+      "clicks5d": 4059,
+      "impressions5d": 390338,
+      "ctrPercent": 1.04,
+      "spend30dTl": 133656,
+      "conversions30d": 5821.6,
       "impressionSharePercent": 10,
       "budgetLostSharePercent": 8,
       "customRules": "3 PMax (Elektrikli Değerleme, Ankara&İzmir, Classic) + 1 Arama kampanyası aktif. Dönüşümlerin %86'sı 'Kişisel Bilgiler Ekranı Yeni' adımından geliyor.",
@@ -45,59 +45,59 @@
       "healthScore": 72,
       "ranges": {
         "today": {
-          "spend": 4319,
-          "conversions": 132,
-          "clicks": 622,
-          "impressions": 61587,
+          "spend": 3478,
+          "conversions": 109.6,
+          "clicks": 563,
+          "impressions": 55675,
           "ctr": 1.01,
-          "cpa": 33,
-          "cpc": 6.9,
+          "cpa": 32,
+          "cpc": 6.2,
           "impShare": 10,
-          "budgetLostShare": 7
+          "budgetLostShare": 2
         },
         "5d": {
-          "spend": 26594,
-          "conversions": 956.8,
-          "clicks": 4109,
-          "impressions": 417058,
-          "ctr": 0.99,
-          "cpa": 28,
+          "spend": 26340,
+          "conversions": 991.9,
+          "clicks": 4059,
+          "impressions": 390338,
+          "ctr": 1.04,
+          "cpa": 27,
           "cpc": 6.5,
           "impShare": 10,
           "budgetLostShare": 8
         },
         "7d": {
-          "spend": 36903,
-          "conversions": 1365.2,
-          "clicks": 5635,
-          "impressions": 556167,
-          "ctr": 1.01,
+          "spend": 35578,
+          "conversions": 1323.2,
+          "clicks": 5508,
+          "impressions": 549705,
+          "ctr": 1,
           "cpa": 27,
           "cpc": 6.5,
           "impShare": 10,
-          "budgetLostShare": 10
+          "budgetLostShare": 9
         },
         "14d": {
-          "spend": 73129,
-          "conversions": 2859.1,
-          "clicks": 11388,
-          "impressions": 1183101,
-          "ctr": 0.96,
+          "spend": 72301,
+          "conversions": 2812.2,
+          "clicks": 11294,
+          "impressions": 1158401,
+          "ctr": 0.97,
           "cpa": 26,
           "cpc": 6.4,
           "impShare": 10,
           "budgetLostShare": 12
         },
         "30d": {
-          "spend": 133319,
-          "conversions": 5868.7,
-          "clicks": 21123,
-          "impressions": 2308053,
+          "spend": 133656,
+          "conversions": 5821.6,
+          "clicks": 21229,
+          "impressions": 2301784,
           "ctr": 0.92,
           "cpa": 23,
           "cpc": 6.3,
           "impShare": 10,
-          "budgetLostShare": 13
+          "budgetLostShare": 12
         }
       },
       "campaigns": [
@@ -105,47 +105,47 @@
           "name": "Elektrikli Değerleme PMax - ediz",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 9340,
-          "conversions5d": 199.8,
-          "clicks5d": 1122,
-          "impressions5d": 61917,
-          "ctr5d": 1.81,
+          "spend5d": 9003,
+          "conversions5d": 200.8,
+          "clicks5d": 1017,
+          "impressions5d": 58082,
+          "ctr5d": 1.75,
           "impShare": 10,
-          "budgetLostShare": 13
-        },
-        {
-          "name": "Ankara&İzmir Max.Performans - ediz",
-          "status": "ENABLED",
-          "type": "PERFORMANCE_MAX",
-          "spend5d": 6512,
-          "conversions5d": 177.7,
-          "clicks5d": 1287,
-          "impressions5d": 245932,
-          "ctr5d": 0.52,
-          "impShare": 10,
-          "budgetLostShare": 33
+          "budgetLostShare": 14
         },
         {
           "name": "OtoTıkla Arama Camp. - ediz",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 6471,
-          "conversions5d": 349.9,
-          "clicks5d": 936,
-          "impressions5d": 7468,
-          "ctr5d": 12.53,
+          "spend5d": 6637,
+          "conversions5d": 355.9,
+          "clicks5d": 967,
+          "impressions5d": 7382,
+          "ctr5d": 13.1,
           "impShare": 10,
           "budgetLostShare": null
+        },
+        {
+          "name": "Ankara&İzmir Max.Performans - ediz",
+          "status": "ENABLED",
+          "type": "PERFORMANCE_MAX",
+          "spend5d": 6384,
+          "conversions5d": 194.9,
+          "clicks5d": 1296,
+          "impressions5d": 227080,
+          "ctr5d": 0.57,
+          "impShare": 10,
+          "budgetLostShare": 29
         },
         {
           "name": "Classic PMax - edi",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 4271,
-          "conversions5d": 229.5,
-          "clicks5d": 764,
-          "impressions5d": 101741,
-          "ctr5d": 0.75,
+          "spend5d": 4316,
+          "conversions5d": 240.3,
+          "clicks5d": 779,
+          "impressions5d": 97794,
+          "ctr5d": 0.8,
           "impShare": 10,
           "budgetLostShare": null
         }
@@ -153,116 +153,116 @@
       "conversionActions": [
         {
           "action": "Kişisel Bilgiler Ekranı Yeni",
-          "count5d": 804.7
+          "count5d": 814.9
         },
         {
           "action": "Randevu Al Butonu Yeni",
-          "count5d": 108.9
+          "count5d": 130.9
         },
         {
           "action": "Telefon Dönüşümü Yeni",
-          "count5d": 30.2
+          "count5d": 29.2
         },
         {
           "action": "WhatsApp Yeni",
-          "count5d": 13
+          "count5d": 17
         }
       ],
       "topSearchTerms": [
         {
           "term": "arabam com",
-          "clicks": 273,
-          "costTl": 1630,
-          "conv": 75
+          "clicks": 266,
+          "costTl": 1586,
+          "conv": 63.8
         },
         {
           "term": "trink sat",
-          "clicks": 78,
-          "costTl": 679,
-          "conv": 37
+          "clicks": 81,
+          "costTl": 706,
+          "conv": 41.5
         },
         {
           "term": "otobid",
-          "clicks": 45,
-          "costTl": 291,
-          "conv": 7
+          "clicks": 57,
+          "costTl": 354,
+          "conv": 15
         },
         {
           "term": "oto tıkla",
-          "clicks": 27,
-          "costTl": 247,
-          "conv": 21.8
+          "clicks": 28,
+          "costTl": 250,
+          "conv": 20.3
         },
         {
           "term": "vavacars teklif al",
-          "clicks": 28,
-          "costTl": 207,
-          "conv": 15.9
+          "clicks": 29,
+          "costTl": 217,
+          "conv": 16.9
         },
         {
           "term": "vavacars teklif",
-          "clicks": 22,
-          "costTl": 203,
-          "conv": 10
+          "clicks": 23,
+          "costTl": 206,
+          "conv": 13
         },
         {
           "term": "vavacars fiyat al",
-          "clicks": 19,
-          "costTl": 163,
+          "clicks": 20,
+          "costTl": 175,
           "conv": 8
         },
         {
           "term": "2plan",
-          "clicks": 25,
-          "costTl": 140,
+          "clicks": 28,
+          "costTl": 154,
           "conv": 6
         },
         {
-          "term": "oto tıkla com",
-          "clicks": 14,
-          "costTl": 138,
-          "conv": 5
+          "term": "otobid araç sat",
+          "clicks": 15,
+          "costTl": 121,
+          "conv": 7
         },
         {
-          "term": "otobid araç sat",
+          "term": "oto tıkla com",
           "clicks": 13,
-          "costTl": 106,
+          "costTl": 119,
           "conv": 5
         },
         {
           "term": "carvak araç sat",
-          "clicks": 10,
-          "costTl": 99,
-          "conv": 5
+          "clicks": 11,
+          "costTl": 105,
+          "conv": 4
         },
         {
           "term": "otoshops",
-          "clicks": 10,
-          "costTl": 91,
+          "clicks": 12,
+          "costTl": 101,
           "conv": 6
         }
       ],
       "findings": [
         {
           "severity": "critical",
-          "category": "Budget Optimization",
-          "title": "Ankara & İzmir PMax Kampanyasında %57 Bütçe Kısıtı",
-          "detail": "Ankara&İzmir Max.Performans kampanyası %57 oranında bütçe kaynaklı gösterim payı kaybı yaşıyor. Mevcut EBM'si (42.1 TL) hesap genelinden yüksek olsa da, bölge özelindeki talebin yarısından fazlası yetersiz bütçe nedeniyle karşılanamıyor.",
-          "action": "Bu kampanya için günlük bütçeyi kademeli olarak artırın veya performansı daha düşük olan 'Elektrikli Değerleme' kampanyasından (EBM: 44.9 TL) bütçe kaydırarak kaynak verimliliğini optimize edin."
+          "category": "Bütçe & Performans Kaybı",
+          "title": "Ankara & İzmir PMax Kampanyasında Verimlilik ve Görünürlük Krizi",
+          "detail": "Ankara&İzmir Max.Performans kampanyası %29 bütçe kaynaklı gösterim kaybı yaşıyor ve %0.57 gibi çok düşük bir TO (CTR) değerine sahip. Bu durum, bütçenin yüksek oranda dönüşüm ihtimali düşük Display veya Video envanterinde tükendiğini kanıtlıyor.",
+          "action": "Bu kampanyadaki yerleşim raporlarını inceleyerek düşük kaliteli uygulamaları ve web sitelerini hariç tutun. Bütçe kısıtını aşmak için 'Classic PMax' kampanyasından bu kampanyaya bütçe kaydırın veya günlük bütçeyi %30 oranında artırarak algoritmanın daralmasını engelleyin."
         },
         {
           "severity": "warning",
-          "category": "Campaign Efficiency",
-          "title": "PMax Kampanyaları Arasında Belirgin Verimlilik Farkı",
-          "detail": "Hesap hedefi 30 TL EBM iken, 'Classic PMax' 17.9 TL ile mükemmel çalışırken, 'Elektrikli Değerleme' 44.9 TL ve 'Ankara&İzmir' 42.1 TL EBM ile hedefi %40'tan fazla aşmaktadır. 'Classic' kampanya hesabı domine ederek ortalamayı kurtarmaktadır.",
-          "action": "EBM hedefi yüksek olan PMax kampanyalarındaki öğe gruplarını (asset groups) ve hedef kitle sinyallerini inceleyin. Verimsiz olan 'Elektrikli' kampanyasında tCPA (Hedef EBM) teklif stratejisini 35-38 TL bandına çekerek algoritmayı baskılayın."
+          "category": "Arama Terimi Stratejisi",
+          "title": "Rakip Marka Trafiğine Aşırı Bağımlılık ve Marka Kanibalizasyonu",
+          "detail": "En çok harcayan anahtar kelimelerin başında 'arabam com', 'trink sat' ve 'otobid' gibi rakipler geliyor. Bu terimler dönüşüm getirse de, hesap genelinde jenerik (araç değerleme, araba sat vb.) kelime hacmi rakip markaların gerisinde kalmış durumda.",
+          "action": "Rakip marka terimlerini PMax'lerden hariç tutup sadece 'Arama' kampanyasında özel bir 'Competitor' grubu altında toplayın. PMax kampanyalarını daha çok 'jenerik' ve 'kendi marka' sinyallerinizle (Oto Tıkla) besleyerek CPC maliyetlerini dengeleyin."
         },
         {
-          "severity": "warning",
-          "category": "Search Strategy",
-          "title": "Rakip Terimlerine Yüksek Harcama Bağımlılığı",
-          "detail": "Trafiğin ve harcamanın büyük bölümü 'arabam com', 'trink sat', 'otobid' ve 'vavacars' gibi rakip markalardan gelmektedir. Bu durum yüksek dönüşüm getirse de, rakip teklif artışlarında maliyetlerin hızla yükselmesine neden olabilir.",
-          "action": "Dönüşümlerin %86'sının form doldurma (Kişisel Bilgiler) olduğu göz önüne alındığında, bu rakip terimlerinden gelen lead'lerin 'Randevu Al' aşamasına geçme oranını analiz edin. Dönüşüm kalitesi düşükse, negatif anahtar kelime listesiyle rakip eşleşmelerini daraltın."
+          "severity": "suggestion",
+          "category": "Dönüşüm Kalitesi",
+          "title": "Yumuşak Dönüşüm Odaklılığı (Soft-Conversion Bias)",
+          "detail": "Dönüşümlerin %86'sı 'Kişisel Bilgiler Ekranı Yeni' adımından geliyor. Ancak nihai hedef olan 'Randevu Al' dönüşümü toplamın sadece %13'ünü oluşturuyor. Algoritma, randevu alacak kaliteli kullanıcı yerine sadece formun ilk adımını dolduran kullanıcıları bulmaya odaklanıyor olabilir.",
+          "action": "Google Ads dönüşüm ayarlarından 'Randevu Al' işlemini 'Birincil', 'Kişisel Bilgiler Ekranı' işlemini ise 'İkincil' (veya sadece gözlem amaçlı) olarak güncelleyerek algoritmanın doğrudan randevu odaklı optimize olmasını sağlayın."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -278,70 +278,70 @@
       "primaryGoal": "Yeni Fiyat Ekranı (592) · WhatsApp (2)",
       "targetCpaTl": 22,
       "currentCpaTl": 17,
-      "spend5dTl": 13743,
-      "conversions5d": 825.8,
-      "clicks5d": 2845,
-      "impressions5d": 93142,
-      "ctrPercent": 3.05,
-      "spend30dTl": 79531,
-      "conversions30d": 4547.6,
+      "spend5dTl": 13909,
+      "conversions5d": 816.6,
+      "clicks5d": 2906,
+      "impressions5d": 99673,
+      "ctrPercent": 2.92,
+      "spend30dTl": 79238,
+      "conversions30d": 4524.4,
       "impressionSharePercent": 10,
-      "budgetLostSharePercent": 30,
+      "budgetLostSharePercent": 31,
       "customRules": "1 PMax ('Max - Oto Hemen Nakit') + 4 Arama kampanyası aktif.",
       "status": "warning",
       "healthScore": 76,
       "ranges": {
         "today": {
-          "spend": 2140,
-          "conversions": 104,
-          "clicks": 503,
-          "impressions": 17272,
-          "ctr": 2.91,
-          "cpa": 21,
-          "cpc": 4.3,
+          "spend": 2050,
+          "conversions": 92.9,
+          "clicks": 454,
+          "impressions": 20339,
+          "ctr": 2.23,
+          "cpa": 22,
+          "cpc": 4.5,
           "impShare": 10,
-          "budgetLostShare": 31
+          "budgetLostShare": 24
         },
         "5d": {
-          "spend": 13743,
-          "conversions": 825.8,
-          "clicks": 2845,
-          "impressions": 93142,
-          "ctr": 3.05,
+          "spend": 13909,
+          "conversions": 816.6,
+          "clicks": 2906,
+          "impressions": 99673,
+          "ctr": 2.92,
           "cpa": 17,
           "cpc": 4.8,
           "impShare": 10,
-          "budgetLostShare": 30
+          "budgetLostShare": 31
         },
         "7d": {
-          "spend": 18117,
-          "conversions": 1050.8,
-          "clicks": 3667,
-          "impressions": 121381,
-          "ctr": 3.02,
+          "spend": 17934,
+          "conversions": 1070.6,
+          "clicks": 3709,
+          "impressions": 128342,
+          "ctr": 2.89,
           "cpa": 17,
-          "cpc": 4.9,
+          "cpc": 4.8,
           "impShare": 10,
-          "budgetLostShare": 36
+          "budgetLostShare": 34
         },
         "14d": {
-          "spend": 35602,
-          "conversions": 1980.4,
-          "clicks": 7276,
-          "impressions": 263263,
-          "ctr": 2.76,
+          "spend": 35132,
+          "conversions": 1959.3,
+          "clicks": 7215,
+          "impressions": 260548,
+          "ctr": 2.77,
           "cpa": 18,
           "cpc": 4.9,
           "impShare": 10,
-          "budgetLostShare": 42
+          "budgetLostShare": 41
         },
         "30d": {
-          "spend": 79531,
-          "conversions": 4547.6,
-          "clicks": 15843,
-          "impressions": 581571,
-          "ctr": 2.72,
-          "cpa": 17,
+          "spend": 79238,
+          "conversions": 4524.4,
+          "clicks": 15833,
+          "impressions": 586185,
+          "ctr": 2.7,
+          "cpa": 18,
           "cpc": 5,
           "impShare": 10,
           "budgetLostShare": 42
@@ -352,47 +352,47 @@
           "name": "Oto Hemen Nakit - Arama Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 5551,
-          "conversions5d": 263.5,
-          "clicks5d": 639,
-          "impressions5d": 6045,
-          "ctr5d": 10.57,
+          "spend5d": 5569,
+          "conversions5d": 256.5,
+          "clicks5d": 636,
+          "impressions5d": 5858,
+          "ctr5d": 10.86,
           "impShare": 10,
-          "budgetLostShare": 2
+          "budgetLostShare": 4
         },
         {
           "name": "Max - Oto Hemen Nakit",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 5208,
-          "conversions5d": 412.3,
-          "clicks5d": 1745,
-          "impressions5d": 81744,
-          "ctr5d": 2.13,
+          "spend5d": 5154,
+          "conversions5d": 405.2,
+          "clicks5d": 1798,
+          "impressions5d": 88356,
+          "ctr5d": 2.03,
           "impShare": 10,
-          "budgetLostShare": 42
+          "budgetLostShare": 40
         },
         {
           "name": "OtoHemenNakit - Vavacars Arama Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 2023,
-          "conversions5d": 80,
-          "clicks5d": 153,
-          "impressions5d": 2754,
-          "ctr5d": 5.56,
+          "spend5d": 2233,
+          "conversions5d": 85,
+          "clicks5d": 169,
+          "impressions5d": 2994,
+          "ctr5d": 5.64,
           "impShare": 10,
-          "budgetLostShare": 18
+          "budgetLostShare": 20
         },
         {
           "name": "Kayıp Firmalar - Dönüşümler",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 646,
-          "conversions5d": 15,
-          "clicks5d": 43,
-          "impressions5d": 1054,
-          "ctr5d": 4.08,
+          "spend5d": 631,
+          "conversions5d": 17,
+          "clicks5d": 45,
+          "impressions5d": 933,
+          "ctr5d": 4.82,
           "impShare": 10,
           "budgetLostShare": 90
         },
@@ -400,120 +400,120 @@
           "name": "Tıklama Havuzu - Arama",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 314,
-          "conversions5d": 55,
-          "clicks5d": 265,
-          "impressions5d": 1545,
-          "ctr5d": 17.15,
+          "spend5d": 322,
+          "conversions5d": 53,
+          "clicks5d": 258,
+          "impressions5d": 1532,
+          "ctr5d": 16.84,
           "impShare": 10,
-          "budgetLostShare": 16
+          "budgetLostShare": 21
         }
       ],
       "conversionActions": [
         {
           "action": "WhatsApp",
-          "count5d": 17
+          "count5d": 22
         },
         {
           "action": "Yeni Fiyat Ekranı",
-          "count5d": 808.8
+          "count5d": 794.6
         }
       ],
       "topSearchTerms": [
         {
           "term": "vavacars",
-          "clicks": 122,
-          "costTl": 1558,
-          "conv": 61
+          "clicks": 132,
+          "costTl": 1686,
+          "conv": 63
         },
         {
           "term": "otokoç",
-          "clicks": 82,
-          "costTl": 761,
-          "conv": 38
+          "clicks": 81,
+          "costTl": 739,
+          "conv": 32
         },
         {
           "term": "carvak",
-          "clicks": 83,
-          "costTl": 635,
-          "conv": 27
+          "clicks": 92,
+          "costTl": 700,
+          "conv": 32
+        },
+        {
+          "term": "trink sat",
+          "clicks": 67,
+          "costTl": 662,
+          "conv": 26
         },
         {
           "term": "otobid",
           "clicks": 92,
-          "costTl": 625,
-          "conv": 35
-        },
-        {
-          "term": "trink sat",
-          "clicks": 57,
-          "costTl": 554,
-          "conv": 26
+          "costTl": 640,
+          "conv": 36
         },
         {
           "term": "vavacars teklif",
-          "clicks": 15,
-          "costTl": 228,
-          "conv": 9
+          "clicks": 17,
+          "costTl": 263,
+          "conv": 10
         },
         {
           "term": "trinkoto",
-          "clicks": 15,
-          "costTl": 146,
+          "clicks": 14,
+          "costTl": 129,
           "conv": 5
         },
         {
-          "term": "autocom",
-          "clicks": 14,
-          "costTl": 116,
-          "conv": 8
-        },
-        {
           "term": "araç sat",
-          "clicks": 5,
-          "costTl": 83,
-          "conv": 3
+          "clicks": 7,
+          "costTl": 109,
+          "conv": 4
         },
         {
-          "term": "otoplus",
-          "clicks": 8,
-          "costTl": 78,
-          "conv": 3
+          "term": "autocom",
+          "clicks": 13,
+          "costTl": 94,
+          "conv": 6
         },
         {
           "term": "aracımın değerini öğrenmek istiyorum",
-          "clicks": 69,
-          "costTl": 68,
-          "conv": 12
+          "clicks": 64,
+          "costTl": 65,
+          "conv": 11
         },
         {
-          "term": "araç satış",
-          "clicks": 4,
-          "costTl": 66,
-          "conv": 3
+          "term": "vavacars araba sat",
+          "clicks": 5,
+          "costTl": 64,
+          "conv": 2
+        },
+        {
+          "term": "300 bin km üstü araba alan firmalar",
+          "clicks": 2,
+          "costTl": 59,
+          "conv": 1
         }
       ],
       "findings": [
         {
           "severity": "critical",
-          "category": "Budget & Scaling",
-          "title": "Düşük EBM ile Yüksek Bütçe Kaybı Fırsatı",
-          "detail": "Hesap 22 TL hedef EBM'nin altında (18 TL) oldukça verimli çalışıyor; ancak toplamda %42, ana PMax kampanyasında ise %60 oranında bütçe kaynaklı gösterim kaybı yaşıyor. Bu, karlı dönüşüm sağlayabilecek potansiyel trafiğin yarısından fazlasının bütçe yetersizliği nedeniyle kaçırıldığı anlamına geliyor.",
-          "action": "Performansın korunduğu bu senaryoda, özellikle PMax ve 'Oto Hemen Nakit - Arama' kampanyalarının bütçelerini kademeli olarak (%20-30 adımlarla) artırarak ölçekleme yapın."
+          "category": "Bütçe ve Ölçeklendirme",
+          "title": "Düşük EBM Verimliliği ve Ciddi Bütçe Kaybı",
+          "detail": "Hesap 22 TL hedef EBM (CPA) belirlemesine rağmen 17 TL ile hedefinin altında çok verimli çalışıyor. Ancak, 'Max - Oto Hemen Nakit' kampanyasında %40 ve 'Kayıp Firmalar' kampanyasında %90 oranında bütçe kaynaklı gösterim kaybı mevcut. Toplam hesap bazlı kayıp ise %31.",
+          "action": "EBM hedefin altında kaldığı için kısıtlı bütçeli tüm kampanyalarda bütçe artırımına gidilmeli; özellikle PMax ve rakip odaklı arama kampanyalarında günlük bütçe en az %50 oranında kademeli olarak artırılarak potansiyel dönüşüm hacmi yakalanmalıdır."
         },
         {
           "severity": "warning",
-          "category": "Conversion Quality",
-          "title": "Dönüşüm Odak Noktası ve Sinyal Riski",
-          "detail": "Toplam dönüşümlerin %98'inden fazlası (731.7) 'Yeni Fiyat Ekranı' üzerinden gelirken, doğrudan iletişim kanalı olan WhatsApp sadece 9 adet gerçekleşmiş. Algoritma şu an sadece form/fiyat ekranı görüntüleyen kitleye optimize oluyor; bu durum gerçek araç alımıyla sonuçlanmayan 'meraklı' trafiği artırabilir.",
-          "action": "Yeni Fiyat Ekranı dönüşümüne bir değer (Value) atayın ve WhatsApp dönüşümünü birincil hedef olarak tutmaya devam ederek 'Dönüşüm Değerini Artırma' teklif stratejisini test edin. Dönüşüm kalitesini ölçmek için CRM verilerini geri besleme olarak yüklemeyi değerlendirin."
+          "category": "Dönüşüm Kalitesi",
+          "title": "Yumuşak Dönüşüm (Soft Conversion) Baskınlığı",
+          "detail": "Toplam 816.6 dönüşümün %97'si (794.6) 'Yeni Fiyat Ekranı' aksiyonundan geliyor. WhatsApp gibi yüksek niyetli (high-intent) dönüşümler toplamın sadece %2.7'sini oluşturuyor. Algoritma, gerçek araç satma potansiyeli olanlardan ziyade sadece fiyat gören kitleye optimize oluyor olabilir.",
+          "action": "Dönüşüm sayımı stratejisinde 'Yeni Fiyat Ekranı' ikincil (secondary) işleme çekilmeli veya WhatsApp/Form dönüşümlerine daha yüksek değer atanarak teklif stratejisinin gerçek 'lead' odaklı çalışması sağlanmalıdır."
         },
         {
           "severity": "warning",
-          "category": "Campaign Structure",
-          "title": "PMax Verimliliği ve Rakip Terim Dominasyonu",
-          "detail": "PMax kampanyası %2.12 CTR ile düşük tıklama oranı sergiliyor, bu da reklamın Display veya Video ağlarında hedeflenenden daha fazla genişlediğini gösteriyor. Ayrıca en çok harcama yapılan arama terimlerinin tamamı rakiplerden (Vavacars, Otokoç vb.) oluşuyor; bu da tıklama maliyetlerini (CPC) rakiplerin açık artırma baskısına maruz bırakıyor.",
-          "action": "PMax kampanyasında 'Arama Ağı Sinyalleri' kısmına rakip marka isimleri yerine 'nakit araç satışı' gibi jenerik ve niyet belirten anahtar kelimeler ekleyin. PMax'ın görüntüleme ağındaki yerleşimlerini kontrol ederek alakasız uygulama ve web sitelerini hariç tutun."
+          "category": "Strateji / Rekabet",
+          "title": "Rakip Terimlerine Aşırı Bağımlılık",
+          "detail": "En çok harcayan anahtar kelimelerin neredeyse tamamı (vavacars, otokoç, carvak, otobid) rakip markalardan oluşuyor. 'Vavacars' tek başına ciddi bir maliyet odağı. Bu durum, rakip CPC artışlarında hesabın kırılganlığını artırıyor ve kalite puanı düşük olduğu için maliyetleri yukarı çekiyor.",
+          "action": "Genel 'araç sat' veya 'araba nakit sat' gibi jenerik kelimelere odaklanan 'Tıklama Havuzu' kampanyasının bütçesi, rakip kampanyalarından aktarılarak daha sürdürülebilir bir trafik kaynağı oluşturulmalıdır."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -528,74 +528,74 @@
       "activeCampaigns": 2,
       "primaryGoal": "WhatsApp (388.6) · Telefon (96)",
       "targetCpaTl": 16,
-      "currentCpaTl": 15,
-      "spend5dTl": 9299,
-      "conversions5d": 610.4,
-      "clicks5d": 4196,
-      "impressions5d": 113091,
-      "ctrPercent": 3.71,
-      "spend30dTl": 27456,
-      "conversions30d": 1839.9,
-      "impressionSharePercent": 15,
+      "currentCpaTl": 16,
+      "spend5dTl": 8630,
+      "conversions5d": 546.1,
+      "clicks5d": 3657,
+      "impressions5d": 100403,
+      "ctrPercent": 3.64,
+      "spend30dTl": 27787,
+      "conversions30d": 1865.9,
+      "impressionSharePercent": 14,
       "budgetLostSharePercent": 4,
       "customRules": "1 Arama ('Tıklatma') + 1 PMax ('Dönüşümler - İkinci El Bahçelievler') aktif.",
       "status": "healthy",
       "healthScore": 88,
       "ranges": {
         "today": {
-          "spend": 891,
-          "conversions": 48.5,
-          "clicks": 266,
-          "impressions": 5129,
-          "ctr": 5.19,
+          "spend": 748,
+          "conversions": 42,
+          "clicks": 237,
+          "impressions": 3953,
+          "ctr": 6,
           "cpa": 18,
-          "cpc": 3.3,
+          "cpc": 3.2,
           "impShare": 10,
-          "budgetLostShare": 7
+          "budgetLostShare": 4
         },
         "5d": {
-          "spend": 9299,
-          "conversions": 610.4,
-          "clicks": 4196,
-          "impressions": 113091,
-          "ctr": 3.71,
-          "cpa": 15,
-          "cpc": 2.2,
-          "impShare": 15,
+          "spend": 8630,
+          "conversions": 546.1,
+          "clicks": 3657,
+          "impressions": 100403,
+          "ctr": 3.64,
+          "cpa": 16,
+          "cpc": 2.4,
+          "impShare": 14,
           "budgetLostShare": 4
         },
         "7d": {
-          "spend": 11704,
-          "conversions": 782.9,
-          "clicks": 5192,
-          "impressions": 134778,
-          "ctr": 3.85,
+          "spend": 11814,
+          "conversions": 787.9,
+          "clicks": 5238,
+          "impressions": 134975,
+          "ctr": 3.88,
           "cpa": 15,
           "cpc": 2.3,
-          "impShare": 14,
+          "impShare": 15,
           "budgetLostShare": 5
         },
         "14d": {
-          "spend": 19381,
-          "conversions": 1292.9,
-          "clicks": 10678,
-          "impressions": 268386,
-          "ctr": 3.98,
+          "spend": 19742,
+          "conversions": 1306.4,
+          "clicks": 10497,
+          "impressions": 261447,
+          "ctr": 4.01,
           "cpa": 15,
-          "cpc": 1.8,
-          "impShare": 12,
-          "budgetLostShare": 26
+          "cpc": 1.9,
+          "impShare": 13,
+          "budgetLostShare": 21
         },
         "30d": {
-          "spend": 27456,
-          "conversions": 1839.9,
-          "clicks": 17000,
-          "impressions": 416727,
-          "ctr": 4.08,
+          "spend": 27787,
+          "conversions": 1865.9,
+          "clicks": 16805,
+          "impressions": 411343,
+          "ctr": 4.09,
           "cpa": 15,
-          "cpc": 1.6,
+          "cpc": 1.7,
           "impShare": 10,
-          "budgetLostShare": 54
+          "budgetLostShare": 51
         }
       },
       "campaigns": [
@@ -603,61 +603,61 @@
           "name": "Dönüşümler  - İkinci El Bahçelievler",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 5013,
-          "conversions5d": 300.9,
-          "clicks5d": 3391,
-          "impressions5d": 104533,
-          "ctr5d": 3.24,
-          "impShare": 15,
-          "budgetLostShare": 24
+          "spend5d": 4564,
+          "conversions5d": 259.1,
+          "clicks5d": 2900,
+          "impressions5d": 92518,
+          "ctr5d": 3.13,
+          "impShare": 14,
+          "budgetLostShare": 31
         },
         {
           "name": "Tıklatma",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 4286,
-          "conversions5d": 309.5,
-          "clicks5d": 805,
-          "impressions5d": 8558,
-          "ctr5d": 9.41,
-          "impShare": 15,
+          "spend5d": 4066,
+          "conversions5d": 287,
+          "clicks5d": 757,
+          "impressions5d": 7885,
+          "ctr5d": 9.6,
+          "impShare": 14,
           "budgetLostShare": 1
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon",
-          "count5d": 151
+          "count5d": 141.1
         },
         {
           "action": "WhatsApp",
-          "count5d": 458.4
+          "count5d": 404.9
         }
       ],
       "topSearchTerms": [
         {
           "term": "spotçu",
-          "clicks": 21,
-          "costTl": 125,
-          "conv": 13.5
+          "clicks": 18,
+          "costTl": 111,
+          "conv": 13
         },
         {
           "term": "ikinci el eşya alanlar",
-          "clicks": 16,
-          "costTl": 95,
-          "conv": 6
+          "clicks": 14,
+          "costTl": 75,
+          "conv": 5
         },
         {
           "term": "2 el mobilya alan yerler istanbul",
-          "clicks": 8,
-          "costTl": 55,
+          "clicks": 9,
+          "costTl": 62,
           "conv": 3
         },
         {
-          "term": "bahçelievler spotçu",
-          "clicks": 6,
-          "costTl": 42,
-          "conv": 2
+          "term": "2 el eşya satmak istiyorum",
+          "clicks": 8,
+          "costTl": 39,
+          "conv": 5.5
         },
         {
           "term": "ikinci el mobilya alan yerler",
@@ -666,72 +666,72 @@
           "conv": 3
         },
         {
-          "term": "ikinci el eşya satma",
-          "clicks": 5,
-          "costTl": 37,
-          "conv": 4
-        },
-        {
-          "term": "2 el eşya satmak istiyorum",
-          "clicks": 7,
-          "costTl": 36,
-          "conv": 6
+          "term": "2 el eşya alan yerler",
+          "clicks": 6,
+          "costTl": 34,
+          "conv": 1
         },
         {
           "term": "ikinci el eşya alan yerler",
-          "clicks": 5,
-          "costTl": 36,
-          "conv": 3
-        },
-        {
-          "term": "2 el eşya alan yerler",
-          "clicks": 6,
-          "costTl": 33,
+          "clicks": 4,
+          "costTl": 27,
           "conv": 2
         },
         {
           "term": "ikinci el eşya",
-          "clicks": 6,
-          "costTl": 31,
-          "conv": 1
-        },
-        {
-          "term": "avcılar ikinci el eşya alanlar spotçu",
-          "clicks": 3,
-          "costTl": 30,
+          "clicks": 4,
+          "costTl": 27,
           "conv": 0
         },
         {
-          "term": "2 el eşya alan yerler istanbul avrupa yakası",
-          "clicks": 5,
-          "costTl": 28,
-          "conv": 3
+          "term": "bahçelievler spotçu",
+          "clicks": 4,
+          "costTl": 25,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el eşya alan yerler istanbul",
+          "clicks": 3,
+          "costTl": 24,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el eşya satma",
+          "clicks": 3,
+          "costTl": 23,
+          "conv": 2
+        },
+        {
+          "term": "ikinci el mobilya",
+          "clicks": 4,
+          "costTl": 23,
+          "conv": 1
         }
       ],
       "findings": [
         {
-          "severity": "critical",
-          "category": "Bütçe ve Ölçekleme",
-          "title": "PMax Kampanyasında Yüksek Bütçe Kaybı",
-          "detail": "Dönüşümler - İkinci El Bahçelievler PMax kampanyası, %48 oranında bütçe kaynaklı gösterim payı kaybı yaşıyor. Mevcut EBM (16.75 TL) hedefiniz olan 16 TL'ye çok yakınken, bütçe yetersizliği nedeniyle potansiyel dönüşümlerin yarısı kaçırılıyor.",
-          "action": "PMax kampanyasının günlük bütçesini kademeli olarak %40-50 oranında artırarak kaybedilen gösterim payını geri kazanın ve dönüşüm hacmini büyütün."
-        },
-        {
           "severity": "warning",
-          "category": "Kampanya Stratejisi",
-          "title": "Arama Ağı Verimliliği ve Kanibalizasyon Riski",
-          "detail": "Tıklatma (Search) kampanyası %9.54 CTR ile çok yüksek bir etkileşim gösteriyor ve EBM'si (13.45 TL) hedefin altında, yani çok başarılı. Ancak PMax kampanyası aynı bölgede geniş bir bütçe kaybıyla çalışırken Arama Ağı'nın trafiğiyle çakışıyor olabilir.",
-          "action": "PMax kampanyasında kullanılan 'Arama Terimi Analizi'ni kontrol ederek, Arama Ağı kampanyasındaki yüksek performanslı anahtar kelimelerin PMax tarafından domine edilip edilmediğini inceleyin. Arama Ağı bütçesini de %10 oranında artırarak bu verimli kanalı tam kapasite çalıştırın."
+          "category": "Bütçe ve Kampanya Dağılımı",
+          "title": "PMax Kampanyasında %31 Bütçe Kaybı ve Arama Kampanyası Verimliliği",
+          "detail": "PMax kampanyası %31 bütçe kaynaklı gösterim payı kaybı (Budget Lost IS) yaşarken 17.6 TL EBM üretmektedir. Buna karşın 'Tıklatma' adlı Arama kampanyası %9.60 TO ve 14.16 TL EBM ile hedef EBM'nin (16 TL) belirgin şekilde altında, daha yüksek verimle çalışmaktadır.",
+          "action": "Arama kampanyasının teklif ve bütçe sınırlarını genişleterek yüksek niyetli trafiğe öncelik verin; PMax kampanyasındaki bütçe kaybını telafi etmek için bütçe artırımı planlanıyorsa önceliği Arama kampanyasına kaydırarak marjinal dönüşüm maliyetini düşürün."
         },
         {
           "severity": "suggestion",
-          "category": "Dönüşüm Kalitesi",
-          "title": "WhatsApp ve Telefon Araması Dengesi",
-          "detail": "Toplam dönüşümlerin yaklaşık %77'si (469.6) WhatsApp üzerinden geliyor. Spot sektöründe WhatsApp hızlıdır ancak telefon araması (137) genellikle daha yüksek niyetli (hot lead) müşteriyi temsil eder.",
-          "action": "Arama Ağı kampanyasında 'Telefon Uzantıları'nın görünürlüğünü artırın ve WhatsApp dönüşümlerinin gerçek satışa dönüşme oranını (offline conversion tracking) kontrol ederek, bütçeyi gerekirse daha yüksek kaliteli 'Telefon' dönüşümlerine optimize edin."
+          "category": "Arama Terimleri ve Niyet Ayrımı",
+          "title": "Alıcı/Satıcı Niyeti Ayrımı ve Negatif Eşleme Optimizasyonu",
+          "detail": "'spotçu' (8.5 TL EBM) ve 'satmak istiyorum' (7.1 TL EBM) gibi doğrudan eşyasını elden çıkarmak isteyen satıcı niyetli terimler olağanüstü performans gösterirken, genel 'ikinci el eşya' terimi 4 tıklamada 0 dönüşüm üretmiştir. Eşya satın almak isteyen son kullanıcı aramaları gereksiz bütçe tüketme riski taşımaktadır.",
+          "action": "'ikinci el eşya' gibi salt jenerik ve 'fiyatları', 'ucuz', 'sahibinden' gibi alıcı (tüketici) niyetli sorguları negatif listelere ekleyin; 'alan yerler', 'satmak istiyorum', 'spotçu' odaklı niyet kelimelerini Arama kampanyasında öne çıkarın."
+        },
+        {
+          "severity": "suggestion",
+          "category": "Dönüşüm Optimizasyonu",
+          "title": "WhatsApp Ağırlıklı Dönüşüm Yapısı ve Reklam Metni Uyumu",
+          "detail": "5 günlük dönüşümlerin %74.1'i (404.9 adet) WhatsApp, %25.9'u (141.1 adet) Telefon üzerinden gelmektedir. Spot eşya alımında kullanıcıların fotoğraf göndererek anlık fiyat teklifi alma davranışı çok baskındır.",
+          "action": "Reklam başlıklarında ve site bağlantılarında 'Fotoğraf Atın, 5 Dk'da Fiyat Verelim' veya 'WhatsApp'tan Eşya Görseli Gönderin' gibi doğrudan eyleme yönelik CTA'ları öne çıkararak WhatsApp dönüşüm oranını ve form kalitesini maksimize edin."
         }
       ],
-      "_aiModelUsed": "gemini-3-flash-preview"
+      "_aiModelUsed": "gemini-3.7-flash"
     },
     {
       "id": "acc-dogruspot",
@@ -743,156 +743,156 @@
       "activeCampaigns": 3,
       "primaryGoal": "WhatsApp (244) · Telefon (89) · Yol Tarifi (24)",
       "targetCpaTl": 20,
-      "currentCpaTl": 18,
-      "spend5dTl": 10035,
-      "conversions5d": 550,
-      "clicks5d": 1273,
-      "impressions5d": 8548,
-      "ctrPercent": 14.89,
-      "spend30dTl": 28076,
-      "conversions30d": 1560,
+      "currentCpaTl": 19,
+      "spend5dTl": 10308,
+      "conversions5d": 544,
+      "clicks5d": 1267,
+      "impressions5d": 8836,
+      "ctrPercent": 14.34,
+      "spend30dTl": 29497,
+      "conversions30d": 1634,
       "impressionSharePercent": 18,
-      "budgetLostSharePercent": 13,
+      "budgetLostSharePercent": 14,
       "customRules": "2 Arama Kampanyası + 1 PMax ('Lokal Spot - Haritalar') aktif.",
       "status": "healthy",
       "healthScore": 91,
       "ranges": {
         "today": {
-          "spend": 1797,
-          "conversions": 79,
-          "clicks": 200,
-          "impressions": 1236,
-          "ctr": 16.18,
-          "cpa": 23,
-          "cpc": 9,
-          "impShare": 16,
-          "budgetLostShare": 14
+          "spend": 1744,
+          "conversions": 78,
+          "clicks": 196,
+          "impressions": 1621,
+          "ctr": 12.09,
+          "cpa": 22,
+          "cpc": 8.9,
+          "impShare": 21,
+          "budgetLostShare": 1
         },
         "5d": {
-          "spend": 10035,
-          "conversions": 550,
-          "clicks": 1273,
-          "impressions": 8548,
-          "ctr": 14.89,
-          "cpa": 18,
-          "cpc": 7.9,
+          "spend": 10308,
+          "conversions": 544,
+          "clicks": 1267,
+          "impressions": 8836,
+          "ctr": 14.34,
+          "cpa": 19,
+          "cpc": 8.1,
           "impShare": 18,
-          "budgetLostShare": 13
+          "budgetLostShare": 14
         },
         "7d": {
-          "spend": 12412,
-          "conversions": 679,
-          "clicks": 1551,
-          "impressions": 10643,
-          "ctr": 14.57,
+          "spend": 13029,
+          "conversions": 712,
+          "clicks": 1634,
+          "impressions": 11423,
+          "ctr": 14.3,
           "cpa": 18,
           "cpc": 8,
-          "impShare": 17,
-          "budgetLostShare": 14
+          "impShare": 18,
+          "budgetLostShare": 15
         },
         "14d": {
-          "spend": 16781,
-          "conversions": 979,
-          "clicks": 2200,
-          "impressions": 16373,
-          "ctr": 13.44,
+          "spend": 17550,
+          "conversions": 1030,
+          "clicks": 2251,
+          "impressions": 16731,
+          "ctr": 13.45,
           "cpa": 17,
-          "cpc": 7.6,
+          "cpc": 7.8,
           "impShare": 15,
-          "budgetLostShare": 14
+          "budgetLostShare": 16
         },
         "30d": {
-          "spend": 28076,
-          "conversions": 1560,
-          "clicks": 5169,
-          "impressions": 56436,
-          "ctr": 9.16,
+          "spend": 29497,
+          "conversions": 1634,
+          "clicks": 5276,
+          "impressions": 57272,
+          "ctr": 9.21,
           "cpa": 18,
-          "cpc": 5.4,
+          "cpc": 5.6,
           "impShare": 14,
-          "budgetLostShare": 13
+          "budgetLostShare": 14
         }
       },
       "campaigns": [
         {
-          "name": "Doğru Spot Conversation Goals #2",
-          "status": "ENABLED",
-          "type": "SEARCH",
-          "spend5d": 4918,
-          "conversions5d": 286,
-          "clicks5d": 636,
-          "impressions5d": 3743,
-          "ctr5d": 16.99,
-          "impShare": 16,
-          "budgetLostShare": 16
-        },
-        {
           "name": "Doğru Spot Conversation Goals",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 4500,
-          "conversions5d": 187,
-          "clicks5d": 496,
-          "impressions5d": 3230,
-          "ctr5d": 15.36,
+          "spend5d": 4881,
+          "conversions5d": 198,
+          "clicks5d": 515,
+          "impressions5d": 3388,
+          "ctr5d": 15.2,
           "impShare": 21,
-          "budgetLostShare": 9
+          "budgetLostShare": 15
+        },
+        {
+          "name": "Doğru Spot Conversation Goals #2",
+          "status": "ENABLED",
+          "type": "SEARCH",
+          "spend5d": 4844,
+          "conversions5d": 275,
+          "clicks5d": 621,
+          "impressions5d": 3844,
+          "ctr5d": 16.16,
+          "impShare": 16,
+          "budgetLostShare": 13
         },
         {
           "name": "Lokal Spot - Haritalar",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 617,
-          "conversions5d": 77,
-          "clicks5d": 141,
-          "impressions5d": 1575,
-          "ctr5d": 8.95,
+          "spend5d": 583,
+          "conversions5d": 71,
+          "clicks5d": 131,
+          "impressions5d": 1604,
+          "ctr5d": 8.17,
           "impShare": 10,
-          "budgetLostShare": 4
+          "budgetLostShare": null
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon Çağrısı",
-          "count5d": 114
+          "count5d": 112
         },
         {
           "action": "Tıkla ve ara işlemleri",
-          "count5d": 15
+          "count5d": 11
         },
         {
           "action": "WhatsApp Mesajı",
-          "count5d": 364
+          "count5d": 367
         },
         {
           "action": "Yerel işlemler - Yol tarifi",
-          "count5d": 57
+          "count5d": 54
         }
       ],
       "topSearchTerms": [
         {
           "term": "spotçu",
-          "clicks": 27,
-          "costTl": 236,
-          "conv": 9
+          "clicks": 28,
+          "costTl": 273,
+          "conv": 12
         },
         {
-          "term": "ikinci el eşya alanlar",
-          "clicks": 14,
-          "costTl": 151,
-          "conv": 7
+          "term": "spotçu",
+          "clicks": 18,
+          "costTl": 147,
+          "conv": 11
         },
         {
           "term": "ikinci el eşya alanlar",
           "clicks": 13,
-          "costTl": 131,
-          "conv": 4
+          "costTl": 146,
+          "conv": 8
         },
         {
-          "term": "spotçu",
-          "clicks": 15,
-          "costTl": 116,
-          "conv": 9
+          "term": "ikinci el eşya alanlar",
+          "clicks": 11,
+          "costTl": 120,
+          "conv": 3
         },
         {
           "term": "ikinci el eşya satma",
@@ -901,16 +901,16 @@
           "conv": 5
         },
         {
-          "term": "ikinci el mobilya alan yerler",
-          "clicks": 7,
-          "costTl": 72,
-          "conv": 5
-        },
-        {
           "term": "2 el mobilya alan yerler istanbul",
           "clicks": 6,
           "costTl": 71,
           "conv": 3
+        },
+        {
+          "term": "avcılar spotçu",
+          "clicks": 6,
+          "costTl": 66,
+          "conv": 2
         },
         {
           "term": "esenyurt ikinci el eşya",
@@ -925,45 +925,45 @@
           "conv": 4
         },
         {
-          "term": "avcılar spotçu",
+          "term": "esenyurt 2 el eşya alanlar",
           "clicks": 5,
-          "costTl": 53,
-          "conv": 2
+          "costTl": 55,
+          "conv": 3
         },
         {
-          "term": "2 el mobilya alan yerler istanbul",
-          "clicks": 4,
-          "costTl": 47,
-          "conv": 2
+          "term": "ikinci el mobilya alan yerler",
+          "clicks": 5,
+          "costTl": 52,
+          "conv": 4
         },
         {
-          "term": "bayrampaşa spotçu",
+          "term": "ikinci el eşya alan yerler",
           "clicks": 5,
-          "costTl": 42,
+          "costTl": 51,
           "conv": 2
         }
       ],
       "findings": [
         {
           "severity": "critical",
-          "category": "Bütçe Optimizasyonu",
-          "title": "Yüksek Performanslı Kampanyada Bütçe Kısıtı",
-          "detail": "Hesabın en çok dönüşüm getiren ana kampanyası (Conversation Goals #2), 20 TL olan hedef EBM'nin altında (16.68 TL) çok başarılı çalışmasına rağmen %28 oranında bütçe kaynaklı gösterim kaybı yaşıyor. Bu, her gün potansiyel müşterilerin yaklaşık 4'te 1'inin kaçırıldığı anlamına gelir.",
-          "action": "Doğru Spot Conversation Goals #2 kampanyasının günlük bütçesini kademeli olarak en az %35 artırın."
+          "category": "Budget & Performance",
+          "title": "PMax ve Arama Kampanyası Verimlilik Dengesi",
+          "detail": "Lokal Spot - Haritalar PMax kampanyası 8.21 TL CPA ile hesap ortalamasının (19 TL) çok altında bir maliyetle dönüşüm getiriyor. Ancak toplam harcamanın sadece %5.6'sı bu kampanyaya ayrılmış durumda.",
+          "action": "Arama kampanyalarından bütçe kaydırarak veya ek bütçe ile PMax kampanyasının günlük limitini en az 2 katına çıkarın."
         },
         {
           "severity": "warning",
-          "category": "Negatif Anahtar Kelime ve Lokasyon",
-          "title": "Düşük Dönüşümlü Bölgesel Aramalar",
-          "detail": "'esenyurt ikinci el eşya' gibi spesifik konum bazlı aramalar maliyet tüketmesine rağmen 0 dönüşüm üretmiş. Bağcılar merkezli bir işletme için uzak bölgelerden gelen düşük niyetli aramalar bütçe israfına yol açıyor.",
-          "action": "Esenyurt ve benzeri düşük performanslı ilçe isimlerini negatif anahtar kelime listesine ekleyin veya yer hedeflemesini Bağcılar çevresinde daha dar bir yarıçapa odaklayın."
+          "category": "Inventory Management",
+          "title": "Bütçe Kaynaklı Gösterim Payı Kaybı",
+          "detail": "Arama kampanyalarında ortalama %14 oranında bütçe kaynaklı gösterim kaybı mevcut. Bu durum, mevcut hedef EBM (20 TL) dahilinde yaklaşık 70-80 potansiyel dönüşümün kaçırıldığı anlamına geliyor.",
+          "action": "Dönüşüm başı maliyet hedef dahilinde olduğu için 'Doğru Spot Conversation Goals' kampanyalarının günlük bütçelerini %20 oranında artırarak kaçan trafiği yakalayın."
         },
         {
           "severity": "suggestion",
-          "category": "Dönüşüm Kalitesi",
-          "title": "WhatsApp Dönüşüm Dominasyonu",
-          "detail": "Toplam dönüşümlerin %67'si (312 adet) WhatsApp mesajlarından oluşuyor. Bu metrik yüksek olsa da, her tıklamanın gerçek bir satış niyetine (lead) dönüşüp dönüşmediği sorgulanmalıdır.",
-          "action": "WhatsApp dönüşüm işlemi için 'sayfa içi süreyi' veya 'mesaj gönder' butonunu tetikleyen daha derinlikli bir GTM kurulumu yaparak dönüşüm kalitesini teyit edin; 'Tıkla ve ara' işlemlerini artıracak reklam uzantılarına ağırlık verin."
+          "category": "Keyword Optimization",
+          "title": "Lokasyon Bazlı Terim Alakasızlığı",
+          "detail": "İşletme Bağcılar merkezli olmasına rağmen, Avcılar ve Esenyurt odaklı arama terimlerinden (örn. 'esenyurt spot') yoğun trafik ve dönüşüm geliyor. Bu durum lojistik maliyetlerini artırıyor olabilir.",
+          "action": "Eğer bu bölgelere servis verilmiyorsa bu ilçeleri negatif yer olarak ekleyin; eğer veriliyorsa lojistik maliyet analizi yaparak bu terimlerin gerçek ROI (Yatırım Getirisi) değerini kontrol edin."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -978,70 +978,70 @@
       "activeCampaigns": 2,
       "primaryGoal": "WhatsApp (133) · Teklif Formu (72.6) · Arama (47)",
       "targetCpaTl": 25,
-      "currentCpaTl": 21,
-      "spend5dTl": 6979,
-      "conversions5d": 328.5,
-      "clicks5d": 2000,
-      "impressions5d": 34099,
-      "ctrPercent": 5.87,
-      "spend30dTl": 37960,
-      "conversions30d": 1840,
-      "impressionSharePercent": 20,
-      "budgetLostSharePercent": 2,
+      "currentCpaTl": 22,
+      "spend5dTl": 8094,
+      "conversions5d": 368,
+      "clicks5d": 2235,
+      "impressions5d": 37782,
+      "ctrPercent": 5.92,
+      "spend30dTl": 38073,
+      "conversions30d": 1816,
+      "impressionSharePercent": 19,
+      "budgetLostSharePercent": 6,
       "customRules": "1 PMax ('Maksimum Performans - Aantik') + 1 Arama ('Dönüşüm - Ayhan Antik') aktif.",
       "status": "critical",
       "healthScore": 66,
       "ranges": {
         "today": {
-          "spend": 1173,
-          "conversions": 43.5,
-          "clicks": 310,
-          "impressions": 4952,
-          "ctr": 6.26,
-          "cpa": 27,
-          "cpc": 3.8,
-          "impShare": 20,
-          "budgetLostShare": null
+          "spend": 1336,
+          "conversions": 47,
+          "clicks": 285,
+          "impressions": 4457,
+          "ctr": 6.39,
+          "cpa": 28,
+          "cpc": 4.7,
+          "impShare": 18,
+          "budgetLostShare": 22
         },
         "5d": {
-          "spend": 6979,
-          "conversions": 328.5,
-          "clicks": 2000,
-          "impressions": 34099,
-          "ctr": 5.87,
-          "cpa": 21,
-          "cpc": 3.5,
-          "impShare": 20,
-          "budgetLostShare": 2
+          "spend": 8094,
+          "conversions": 368,
+          "clicks": 2235,
+          "impressions": 37782,
+          "ctr": 5.92,
+          "cpa": 22,
+          "cpc": 3.6,
+          "impShare": 19,
+          "budgetLostShare": 6
         },
         "7d": {
-          "spend": 9604,
-          "conversions": 423.5,
-          "clicks": 2644,
-          "impressions": 45450,
+          "spend": 9752,
+          "conversions": 424,
+          "clicks": 2602,
+          "impressions": 44710,
           "ctr": 5.82,
           "cpa": 23,
-          "cpc": 3.6,
+          "cpc": 3.7,
           "impShare": 18,
-          "budgetLostShare": 10
+          "budgetLostShare": 12
         },
         "14d": {
-          "spend": 18422,
-          "conversions": 803.9,
-          "clicks": 4595,
-          "impressions": 79685,
-          "ctr": 5.77,
+          "spend": 18579,
+          "conversions": 803,
+          "clicks": 4677,
+          "impressions": 80886,
+          "ctr": 5.78,
           "cpa": 23,
           "cpc": 4,
-          "impShare": 15,
-          "budgetLostShare": 21
+          "impShare": 16,
+          "budgetLostShare": 22
         },
         "30d": {
-          "spend": 37960,
-          "conversions": 1840,
-          "clicks": 9051,
-          "impressions": 156945,
-          "ctr": 5.77,
+          "spend": 38073,
+          "conversions": 1816,
+          "clicks": 9023,
+          "impressions": 156672,
+          "ctr": 5.76,
           "cpa": 21,
           "cpc": 4.2,
           "impShare": 15,
@@ -1053,65 +1053,83 @@
           "name": "Maksimum Performans - Aantik",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 5207,
-          "conversions5d": 288.5,
-          "clicks5d": 1853,
-          "impressions5d": 32003,
-          "ctr5d": 5.79,
+          "spend5d": 5864,
+          "conversions5d": 319,
+          "clicks5d": 2048,
+          "impressions5d": 35080,
+          "ctr5d": 5.84,
           "impShare": 10,
-          "budgetLostShare": 64
+          "budgetLostShare": 86
         },
         {
           "name": "Dönüşüm - Ayhan Antik",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1772,
-          "conversions5d": 40,
-          "clicks5d": 147,
-          "impressions5d": 2096,
-          "ctr5d": 7.01,
-          "impShare": 20,
+          "spend5d": 2230,
+          "conversions5d": 49,
+          "clicks5d": 187,
+          "impressions5d": 2702,
+          "ctr5d": 6.92,
+          "impShare": 21,
           "budgetLostShare": null
         }
       ],
       "conversionActions": [
         {
           "action": "Arama",
-          "count5d": 72
+          "count5d": 86
         },
         {
           "action": "Hızlı Teklif Formu",
-          "count5d": 62
+          "count5d": 67
         },
         {
           "action": "WhatsApp Mesajı",
-          "count5d": 194.5
+          "count5d": 215
         }
       ],
       "topSearchTerms": [
         {
-          "term": "antika pazarı",
+          "term": "antikacı dükkanı",
           "clicks": 3,
-          "costTl": 32,
-          "conv": 1
-        },
-        {
-          "term": "horhor antikacılar çarşısı",
-          "clicks": 2,
-          "costTl": 30,
+          "costTl": 56,
           "conv": 2
         },
         {
           "term": "antikacılar çarşısı",
-          "clicks": 4,
-          "costTl": 27,
+          "clicks": 5,
+          "costTl": 38,
           "conv": 0
+        },
+        {
+          "term": "artam antik",
+          "clicks": 2,
+          "costTl": 36,
+          "conv": 3
+        },
+        {
+          "term": "istanbul antika pazarları",
+          "clicks": 2,
+          "costTl": 34,
+          "conv": 0
+        },
+        {
+          "term": "horhor antikacılar çarşısı",
+          "clicks": 2,
+          "costTl": 28,
+          "conv": 2
         },
         {
           "term": "istanbul antika",
           "clicks": 1,
           "costTl": 26,
           "conv": 1
+        },
+        {
+          "term": "tunca antik",
+          "clicks": 1,
+          "costTl": 23,
+          "conv": 0
         },
         {
           "term": "antika halıcı",
@@ -1142,47 +1160,29 @@
           "clicks": 1,
           "costTl": 15,
           "conv": 0
-        },
-        {
-          "term": "antika avize fiyatları",
-          "clicks": 1,
-          "costTl": 14,
-          "conv": 0
-        },
-        {
-          "term": "antika para satış",
-          "clicks": 1,
-          "costTl": 14,
-          "conv": 0
-        },
-        {
-          "term": "istanbul porselen antika",
-          "clicks": 1,
-          "costTl": 14,
-          "conv": 0
         }
       ],
       "findings": [
         {
           "severity": "critical",
-          "category": "Budget Optimization",
-          "title": "PMax Kampanyasında %90 Bütçe Kaynaklı Kayıp",
-          "detail": "Maksimum Performans - Aantik kampanyası 19.39 TL CPA ile 25 TL olan hedefinizin oldukça altında başarılı bir performans sergilemesine rağmen, bütçe yetersizliği nedeniyle potansiyel gösterimlerin %90'ını kaçırıyor.",
-          "action": "PMax kampanyasının bütçesini kademeli olarak en az 2 katına çıkarın veya verimsiz olan Arama kampanyasındaki bütçeyi bu kampanyaya kaydırın."
+          "category": "Bütçe ve Ölçeklendirme",
+          "title": "PMax Kampanyasında %86 Bütçe Kaynaklı Kayıp",
+          "detail": "PMax kampanyası 18.38 TL EBM ile hedef EBM'nin (25 TL) çok altında ve verimli çalışmasına rağmen, bütçe kısıtı nedeniyle potansiyel gösterimlerin %86'sını kaçırmaktadır. Bu, mevcut performansla ciddi bir büyüme fırsatının kaçtığını gösterir.",
+          "action": "PMax kampanyasının günlük bütçesini, hedef EBM korunarak kademeli olarak en az %50 oranında artırın ve bütçe kaynaklı kayıp oranını %20'nin altına düşürün."
         },
         {
           "severity": "warning",
-          "category": "Performance Management",
-          "title": "Arama Ağı Kampanyası Hedef Dışı EBM",
-          "detail": "Dönüşüm - Ayhan Antik kampanyası 60.35 TL EBM ile çalışıyor. Bu rakam, 25 TL'lik hesap hedefinin %141 üzerindedir ve genel hesap verimliliğini aşağı çekmektedir.",
-          "action": "Arama kampanyasında dönüşüm getirmeyen 'pendik antika pazarı' ve 'istanbul antikacılar' gibi genel aramaları negatifleyin; teklif stratejisini gözden geçirin."
+          "category": "Anahtar Kelime Stratejisi",
+          "title": "Alakasız Pazar ve Rakip Trafiği",
+          "detail": "Arama terimlerinde 'Artam', 'Horhor', 'Tunca' gibi rakip markalar ve 'antikacılar çarşısı', 'antika pazarları' gibi genel gezi odaklı terimler bütçe tüketmektedir. Bu terimler doğrudan 'eşya satmak isteyen' kullanıcı yerine 'gezinmek veya bilgi almak isteyen' kullanıcıyı getirebilir.",
+          "action": "Dönüşüm oranı düşük olan veya sadece bilgi amaçlı arama yapan rakip isimlerini ve 'çarşı/pazar' gibi konum terimlerini negatif anahtar kelime listesine ekleyerek 'antika alanlar' veya 'antika ekspertiz' gibi yüksek niyetli kelimelere bütçe ayırın."
         },
         {
-          "severity": "warning",
-          "category": "Keyword Relevance",
-          "title": "Bilgi Amaçlı ve Düşük Niyetli Terimler",
-          "detail": "Arama terimlerinde 'antika pazarı', 'çarşısı', 'sokağı' gibi terimlerin bütçe tükettiği görülüyor. Bu terimler ekspertiz veya satış niyetinden ziyade fiziksel ziyaret/gezi amacı taşıyan düşük niyetli trafik çekmektedir.",
-          "action": "'pazarı', 'çarşısı', 'sokağı', 'beylikdüzü' gibi spesifik konum ve gezi odaklı kelimeleri negatif anahtar kelime listesine ekleyerek bütçeyi 'antika alan yerler' veya 'antika ekspertiz' gibi doğrudan dönüşüm odaklı kelimelere saklayın."
+          "severity": "suggestion",
+          "category": "Dönüşüm Optimizasyonu",
+          "title": "WhatsApp Odaklı Dönüşüm Şişkinliği",
+          "detail": "Toplam dönüşümlerin %58'i (215/368) WhatsApp mesajlarından oluşmaktadır. Bu durum PMax algoritmasını 'kolay dönüşüm' veren ancak düşük kaliteli form veya spam mesaj gönderen kitlelere yönlendirebilir.",
+          "action": "Dönüşüm kalitesini ölçmek adına WhatsApp üzerinden gelen 'gerçekten eşya fotoğrafı gönderen' kişileri Google Ads'e çevrimdışı dönüşüm olarak geri yükleyin veya WhatsApp butonunu 'ikincil' işleme alarak 'Hızlı Teklif Formu' gibi daha yüksek niyetli kanalları ön plana çıkarın."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1197,74 +1197,74 @@
       "activeCampaigns": 1,
       "primaryGoal": "WhatsApp (115) · Telefon (74) · Teklif (12)",
       "targetCpaTl": 18,
-      "currentCpaTl": 13,
-      "spend5dTl": 3028,
-      "conversions5d": 226,
-      "clicks5d": 557,
-      "impressions5d": 11932,
-      "ctrPercent": 4.67,
-      "spend30dTl": 20110,
-      "conversions30d": 1424.9,
-      "impressionSharePercent": 16,
+      "currentCpaTl": 14,
+      "spend5dTl": 2807,
+      "conversions5d": 207,
+      "clicks5d": 528,
+      "impressions5d": 10136,
+      "ctrPercent": 5.21,
+      "spend30dTl": 20303,
+      "conversions30d": 1437.9,
+      "impressionSharePercent": 15,
       "budgetLostSharePercent": 0,
       "customRules": "Anadolu yakası ikinci el eşya alımı.",
       "status": "healthy",
       "healthScore": 90,
       "ranges": {
         "today": {
-          "spend": 423,
-          "conversions": 20,
-          "clicks": 69,
-          "impressions": 1419,
-          "ctr": 4.86,
-          "cpa": 21,
-          "cpc": 6.1,
+          "spend": 482,
+          "conversions": 26,
+          "clicks": 88,
+          "impressions": 1190,
+          "ctr": 7.39,
+          "cpa": 19,
+          "cpc": 5.5,
           "impShare": 14,
           "budgetLostShare": null
         },
         "5d": {
-          "spend": 3028,
-          "conversions": 226,
-          "clicks": 557,
-          "impressions": 11932,
-          "ctr": 4.67,
-          "cpa": 13,
-          "cpc": 5.4,
-          "impShare": 16,
+          "spend": 2807,
+          "conversions": 207,
+          "clicks": 528,
+          "impressions": 10136,
+          "ctr": 5.21,
+          "cpa": 14,
+          "cpc": 5.3,
+          "impShare": 15,
           "budgetLostShare": null
         },
         "7d": {
-          "spend": 4284,
+          "spend": 4253,
           "conversions": 301.5,
-          "clicks": 774,
-          "impressions": 16113,
-          "ctr": 4.8,
+          "clicks": 769,
+          "impressions": 15341,
+          "ctr": 5.01,
           "cpa": 14,
           "cpc": 5.5,
-          "impShare": 17,
+          "impShare": 16,
           "budgetLostShare": null
         },
         "14d": {
-          "spend": 9067,
-          "conversions": 604.4,
-          "clicks": 1563,
-          "impressions": 28930,
-          "ctr": 5.4,
+          "spend": 8818,
+          "conversions": 589,
+          "clicks": 1536,
+          "impressions": 28580,
+          "ctr": 5.37,
           "cpa": 15,
-          "cpc": 5.8,
+          "cpc": 5.7,
           "impShare": 18,
           "budgetLostShare": 0
         },
         "30d": {
-          "spend": 20110,
-          "conversions": 1424.9,
-          "clicks": 3395,
-          "impressions": 59002,
-          "ctr": 5.75,
+          "spend": 20303,
+          "conversions": 1437.9,
+          "clicks": 3446,
+          "impressions": 59659,
+          "ctr": 5.78,
           "cpa": 14,
           "cpc": 5.9,
           "impShare": 20,
-          "budgetLostShare": 3
+          "budgetLostShare": 1
         }
       },
       "campaigns": [
@@ -1272,27 +1272,31 @@
           "name": "Bir Spot Dönüşümler",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 2745,
-          "conversions5d": 222,
-          "clicks5d": 511,
-          "impressions5d": 9051,
-          "ctr5d": 5.65,
-          "impShare": 16,
+          "spend5d": 2522,
+          "conversions5d": 201,
+          "clicks5d": 482,
+          "impressions5d": 7815,
+          "ctr5d": 6.17,
+          "impShare": 15,
           "budgetLostShare": null
         }
       ],
       "conversionActions": [
         {
           "action": "Fiyat teklifi isteyin",
-          "count5d": 14
+          "count5d": 13
+        },
+        {
+          "action": "Local actions - Directions",
+          "count5d": 3
         },
         {
           "action": "Telefon Araması",
-          "count5d": 90
+          "count5d": 83
         },
         {
           "action": "WhatsApp Mesajı",
-          "count5d": 122
+          "count5d": 108
         }
       ],
       "topSearchTerms": [
@@ -1301,18 +1305,6 @@
           "clicks": 3,
           "costTl": 32,
           "conv": 3
-        },
-        {
-          "term": "ümraniye spotçular",
-          "clicks": 3,
-          "costTl": 30,
-          "conv": 2.5
-        },
-        {
-          "term": "spotçu",
-          "clicks": 4,
-          "costTl": 30,
-          "conv": 2
         },
         {
           "term": "üsküdar spot",
@@ -1327,12 +1319,6 @@
           "conv": 0
         },
         {
-          "term": "2 el eşya alan yerler",
-          "clicks": 2,
-          "costTl": 23,
-          "conv": 3
-        },
-        {
           "term": "ikinci el eşya satma",
           "clicks": 2,
           "costTl": 22,
@@ -1345,10 +1331,10 @@
           "conv": 1
         },
         {
-          "term": "eski eşya alan yerler",
-          "clicks": 2,
-          "costTl": 20,
-          "conv": 0
+          "term": "spotçu",
+          "clicks": 3,
+          "costTl": 19,
+          "conv": 2
         },
         {
           "term": "ümraniye spot",
@@ -1357,39 +1343,57 @@
           "conv": 1
         },
         {
-          "term": "maltepe spot ikinci el eşya",
-          "clicks": 2,
-          "costTl": 17,
-          "conv": 1
-        },
-        {
           "term": "kadıköy ikinci el eşya alanlar",
           "clicks": 2,
           "costTl": 17,
           "conv": 0
+        },
+        {
+          "term": "maltepe spotçular çarşısı",
+          "clicks": 2,
+          "costTl": 15,
+          "conv": 1
+        },
+        {
+          "term": "istanbul spot mobilya",
+          "clicks": 1,
+          "costTl": 14,
+          "conv": 2
+        },
+        {
+          "term": "istanbul spot",
+          "clicks": 1,
+          "costTl": 13,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el ev eşyası satanlar",
+          "clicks": 1,
+          "costTl": 12,
+          "conv": 2
         }
       ],
       "findings": [
         {
           "severity": "critical",
-          "category": "Pazar Payı ve Rekabet",
-          "title": "Yüksek Oranlı Sıralama Kaynaklı Gösterim Kaybı (%81)",
-          "detail": "Bütçe kaynaklı kayıp %0 olmasına rağmen, gösterim payı sadece %19 seviyesinde. Bu durum, reklamların düşük Ad Rank (Sıralama) nedeniyle her 10 potansiyel aramadan 8'inde gösterilmediğini kanıtlıyor.",
-          "action": "Reklam alaka düzeyini ve açılış sayfası deneyimini iyileştirerek Kalite Puanını artırın. Mevcut 15 TL EBM, 18 TL olan hedefin altında olduğu için teklif stratejisini agresifleştirerek gösterim payını %40+ seviyelerine çekmeyi hedefleyin."
+          "category": "Growth Opportunity",
+          "title": "Düşük Gösterim Payı ve Ölçeklendirme Potansiyeli",
+          "detail": "Kampanya gösterim payı %15 seviyesinde kalarak pazarın büyük bir kısmını kaçırıyor. Gerçekleşen EBM (14 TL), hedef EBM'den (18 TL) daha düşük olduğu için hesap oldukça kârlı çalışıyor ancak düşük rekabet gücü nedeniyle hacim daralıyor.",
+          "action": "Bütçe kaybı %0 olduğu için kayıp tamamen 'Sıralama' kaynaklıdır. Hedef EBM teklifini kademeli olarak 20-22 TL seviyelerine çekerek veya reklam alaka düzeyini artırarak %15 olan gösterim payını yükseltin."
         },
         {
           "severity": "warning",
-          "category": "Hedefleme ve Lokasyon",
-          "title": "Bölgesel Genişleme ve Negatif Kelime Denetimi",
-          "detail": "Arama terimlerinde 'maltepe spot' görülmektedir, ancak Maltepe ana hedef bölge listenizde yer almamaktadır. Ayrıca 'eski eşya alan yerler' gibi terimlerin dönüşüm oranı (0) düşüktür.",
-          "action": "Eğer Maltepe hizmet alanınızdaysa yer hedeflemesine ekleyin; değilse bütçe israfını önlemek için Maltepe'yi negatif olarak tanımlayın. Dönüşüm getirmeyen 'eski eşya' terimlerini takip ederek 'ikinci el mobilya' gibi yüksek niyetli terimlere bütçe kaydırın."
+          "category": "Targeting Mismatch",
+          "title": "Hedef Lokasyon ve Arama Terimi Uyumsuzluğu",
+          "detail": "Özel kurallarda Ümraniye, Ataşehir, Üsküdar ve Göztepe belirtilmesine rağmen; Kartal, Kadıköy ve Maltepe gibi bölgelerden yoğun trafik ve dönüşüm gelmiş. Bu durum lojistik maliyetlerini artırabilir veya operasyon dışı bölgelerden talep yaratabilir.",
+          "action": "Eğer bu bölgelere hizmet verilmiyorsa Kartal, Kadıköy ve Maltepe'yi negatif yerleşim olarak ekleyin. Eğer hizmet veriliyorsa, kampanya yer hedefleme listesini bu ilçeleri kapsayacak şekilde resmi olarak güncelleyin."
         },
         {
           "severity": "suggestion",
-          "category": "Dönüşüm Kalitesi",
-          "title": "WhatsApp ve Telefon Araması Segmentasyonu",
-          "detail": "Dönüşümlerin %56'sı WhatsApp üzerinden gelirken, telefon aramaları %37'de kalmış. Spot sektöründe anlık telefon aramaları genellikle daha hızlı satın alım (lead) sağlar.",
-          "action": "Mesai saatleri içerisinde 'Yalnızca Telefon Araması' (Call-only) reklamlarını test edin ve reklam metinlerinde 'Şimdi Ara' çağrısını ön plana çıkararak doğrudan telefon trafiğini teşvik edin."
+          "category": "Search Intent Optimization",
+          "title": "Alım vs. Satım Niyeti Ayrıştırması",
+          "detail": "'İkinci el ev eşyası satanlar' ve 'spotçular çarşısı' gibi terimler, kullanıcıların sizden mal satın almak istediğini gösterir (B2C Satış). Sizin iş modeliniz ise 'Alım' (C2B) üzerine kuruludur. Bu terimler yüksek dönüşüm (WhatsApp/Telefon) getirse de düşük kaliteli kurşun (lead) riski taşır.",
+          "action": "'satanlar', 'çarşısı', 'spot mağazası' gibi kelimeleri negatif listeye ekleyerek bütçeyi sadece eşyasını satmak isteyenlere ('eşya alanlar', 'spotçuya satmak') yönlendirin."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1405,71 +1409,71 @@
       "primaryGoal": "WhatsApp (106) · Telefon (29)",
       "targetCpaTl": 22,
       "currentCpaTl": 22,
-      "spend5dTl": 3352,
-      "conversions5d": 152,
-      "clicks5d": 389,
-      "impressions5d": 3683,
-      "ctrPercent": 10.56,
-      "spend30dTl": 12321,
-      "conversions30d": 635.5,
+      "spend5dTl": 3289,
+      "conversions5d": 147.5,
+      "clicks5d": 379,
+      "impressions5d": 3651,
+      "ctrPercent": 10.38,
+      "spend30dTl": 12513,
+      "conversions30d": 643,
       "impressionSharePercent": 10,
-      "budgetLostSharePercent": 31,
+      "budgetLostSharePercent": 29,
       "customRules": "Anadolu yakası odaklı. Avrupa yakası sızıntıları engellenmeli.",
       "status": "warning",
       "healthScore": 75,
       "ranges": {
         "today": {
-          "spend": 517,
-          "conversions": 29.5,
-          "clicks": 54,
-          "impressions": 404,
-          "ctr": 13.37,
-          "cpa": 18,
-          "cpc": 9.6,
-          "impShare": 10,
-          "budgetLostShare": 32
+          "spend": 502,
+          "conversions": 26,
+          "clicks": 59,
+          "impressions": 639,
+          "ctr": 9.23,
+          "cpa": 19,
+          "cpc": 8.5,
+          "impShare": 11,
+          "budgetLostShare": 8
         },
         "5d": {
-          "spend": 3352,
-          "conversions": 152,
-          "clicks": 389,
-          "impressions": 3683,
-          "ctr": 10.56,
-          "cpa": 22,
-          "cpc": 8.6,
-          "impShare": 10,
-          "budgetLostShare": 31
-        },
-        "7d": {
-          "spend": 4509,
-          "conversions": 206,
-          "clicks": 519,
-          "impressions": 4844,
-          "ctr": 10.71,
+          "spend": 3289,
+          "conversions": 147.5,
+          "clicks": 379,
+          "impressions": 3651,
+          "ctr": 10.38,
           "cpa": 22,
           "cpc": 8.7,
           "impShare": 10,
-          "budgetLostShare": 33
+          "budgetLostShare": 29
+        },
+        "7d": {
+          "spend": 4432,
+          "conversions": 208,
+          "clicks": 513,
+          "impressions": 4904,
+          "ctr": 10.46,
+          "cpa": 21,
+          "cpc": 8.6,
+          "impShare": 10,
+          "budgetLostShare": 32
         },
         "14d": {
-          "spend": 7512,
-          "conversions": 361,
-          "clicks": 923,
-          "impressions": 8675,
-          "ctr": 10.64,
+          "spend": 7702,
+          "conversions": 374,
+          "clicks": 939,
+          "impressions": 8772,
+          "ctr": 10.7,
           "cpa": 21,
-          "cpc": 8.1,
+          "cpc": 8.2,
           "impShare": 10,
-          "budgetLostShare": 35
+          "budgetLostShare": 34
         },
         "30d": {
-          "spend": 12321,
-          "conversions": 635.5,
-          "clicks": 1632,
-          "impressions": 16584,
-          "ctr": 9.84,
+          "spend": 12513,
+          "conversions": 643,
+          "clicks": 1641,
+          "impressions": 16712,
+          "ctr": 9.82,
           "cpa": 19,
-          "cpc": 7.5,
+          "cpc": 7.6,
           "impShare": 10,
           "budgetLostShare": 33
         }
@@ -1479,25 +1483,25 @@
           "name": "İkinci El Eşya Alım - Anadolu Yakası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 3076,
-          "conversions5d": 143,
-          "clicks5d": 318,
-          "impressions5d": 2201,
-          "ctr5d": 14.45,
+          "spend5d": 3021,
+          "conversions5d": 139.5,
+          "clicks5d": 311,
+          "impressions5d": 2232,
+          "ctr5d": 13.93,
           "impShare": 13,
-          "budgetLostShare": 47
+          "budgetLostShare": 43
         },
         {
           "name": "Tıklayalım",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 275,
-          "conversions5d": 9,
-          "clicks5d": 71,
-          "impressions5d": 1482,
+          "spend5d": 269,
+          "conversions5d": 8,
+          "clicks5d": 68,
+          "impressions5d": 1419,
           "ctr5d": 4.79,
           "impShare": 10,
-          "budgetLostShare": 18
+          "budgetLostShare": 17
         }
       ],
       "conversionActions": [
@@ -1507,20 +1511,20 @@
         },
         {
           "action": "WhatsApp",
-          "count5d": 130
+          "count5d": 125.5
         }
       ],
       "topSearchTerms": [
         {
           "term": "ikinci el eşya alanlar",
           "clicks": 9,
-          "costTl": 106,
-          "conv": 4
+          "costTl": 108,
+          "conv": 5
         },
         {
           "term": "spotçu",
-          "clicks": 6,
-          "costTl": 74,
+          "clicks": 7,
+          "costTl": 87,
           "conv": 3
         },
         {
@@ -1528,18 +1532,6 @@
           "clicks": 5,
           "costTl": 56,
           "conv": 2.3
-        },
-        {
-          "term": "ümraniye spotçular",
-          "clicks": 4,
-          "costTl": 43,
-          "conv": 4
-        },
-        {
-          "term": "ikinci el eşya satma",
-          "clicks": 4,
-          "costTl": 41,
-          "conv": 1
         },
         {
           "term": "esenyurt spotçu",
@@ -1554,16 +1546,28 @@
           "conv": 2
         },
         {
+          "term": "istanbul spot",
+          "clicks": 3,
+          "costTl": 38,
+          "conv": 2
+        },
+        {
+          "term": "ikinci el eşya satma",
+          "clicks": 3,
+          "costTl": 36,
+          "conv": 1
+        },
+        {
           "term": "ikinci el alan yerler",
           "clicks": 2,
           "costTl": 31,
           "conv": 1
         },
         {
-          "term": "dudullu spot mobilya",
-          "clicks": 4,
-          "costTl": 27,
-          "conv": 1
+          "term": "şişli 2 el eşya alanlar",
+          "clicks": 2,
+          "costTl": 26,
+          "conv": 2
         },
         {
           "term": "spotçular",
@@ -1572,39 +1576,39 @@
           "conv": 0
         },
         {
-          "term": "anadolu yakası ikinci el eşya alanlar",
+          "term": "spotcu",
           "clicks": 2,
-          "costTl": 25,
-          "conv": 1
+          "costTl": 24,
+          "conv": 0.5
         },
         {
-          "term": "ikinci el mobilya",
-          "clicks": 4,
+          "term": "eskici sancaktepe",
+          "clicks": 2,
           "costTl": 24,
-          "conv": 0
+          "conv": 1
         }
       ],
       "findings": [
         {
           "severity": "critical",
-          "category": "Negatif Anahtar Kelime / Lokasyon Yönetimi",
-          "title": "Avrupa Yakası Sızıntısı Tespit Edildi",
-          "detail": "Özel kurallarda Anadolu Yakası odaklı strateji belirtilmesine rağmen, 'şişli ikinci el eşya alanlar' terimi üzerinden maliyet oluştuğu görülmektedir. Bu durum, reklamların Avrupa Yakası hedefleriyle eşleştiğini ve bütçenin verimsiz kullanıldığını gösterir.",
-          "action": "Şişli, Beşiktaş, Başakşehir gibi Avrupa Yakası ilçe isimlerini negatif anahtar kelime listesi olarak ekleyin. Ayrıca yer ayarlarından 'Hedef: Hedeflediğiniz yerlerde bulunan veya düzenli olarak buralara giden kişiler' seçeneğini işaretlediğinizden emin olun."
-        },
-        {
-          "severity": "critical",
-          "category": "Bütçe Yönetimi",
-          "title": "Ana Kampanyada %49 Bütçe Kaynaklı Gösterim Kaybı",
-          "detail": "Dönüşümlerin %93'ünü sağlayan ana kampanyanız, bütçe yetersizliği nedeniyle potansiyel trafiğin yarısını kaçırıyor. EBM (CPA) hedefiniz 22 TL ile tam uyumlu giderken bu kayıp, ölçeklenme fırsatını engellemektedir.",
-          "action": "Tıklayalım isimli düşük performanslı (%4.42 CTR) kampanyanın bütçesini ana kampanyaya kaydırın veya ana kampanya günlük bütçesini mevcut performansın korunması adına en az %50 oranında artırın."
+          "category": "Location Targeting",
+          "title": "Avrupa Yakası Sızıntısı ve Negatif Anahtar Kelime İhlali",
+          "detail": "Hesap özel kuralı 'Anadolu Yakası odaklı' olmasına rağmen, 'esenyurt spotçu' ve 'şişli 2 el eşya alanlar' gibi Avrupa yakası terimleri bütçe tüketmektedir. Bu durum, operasyonel maliyeti artırıp hizmet bölgesi dışından trafik çekmektedir.",
+          "action": "Esenyurt, Şişli, Beylikdüzü, Avcılar gibi tüm Avrupa yakası ilçe isimlerini negatif anahtar kelime listesi olarak ekleyin. Yer hedefleme ayarlarını 'Hedeflenen yerlerde bulunan kişiler' (Varlık) olarak güncelleyin."
         },
         {
           "severity": "warning",
-          "category": "Reklam Alakalılığı / CTR",
-          "title": "Tıklayalım Kampanyası Verimlilik Sorunu",
-          "detail": "'Tıklayalım' kampanyasının TO (CTR) oranı %4.42 ile ana kampanyanın (%15.37) çok altında kalmaktadır. Bu durum reklamların kullanıcı aramalarıyla düşük alakalılıkta olduğunu ve kalite puanını riske attığını gösterir.",
-          "action": "Bu kampanyadaki anahtar kelimeleri 'tam eşleşme' olarak revize edin veya ana kampanya ile benzer dönüşüm maliyeti sağlamıyorsa bu kampanyayı durdurup bütçeyi ana kampanyaya konsolide edin."
+          "category": "Budget Management",
+          "title": "Yüksek Bütçe Kaynaklı Gösterim Kaybı",
+          "detail": "Ana kampanya (İkinci El Eşya Alım) %43 oranında bütçe yetersizliği nedeniyle gösterim kaybediyor. Mevcut 22 TL EBM başarısına rağmen potansiyel müşterilerin neredeyse yarısına bütçe sınırı yüzünden ulaşılamıyor.",
+          "action": "Daha düşük performans gösteren 'Tıklayalım' kampanyasındaki bütçeyi ana kampanyaya aktarın veya ana kampanya günlük bütçesini en az %40 oranında artırarak pazar payını geri kazanın."
+        },
+        {
+          "severity": "suggestion",
+          "category": "Campaign Efficiency",
+          "title": "Düşük Performanslı Kampanya Yapılandırması",
+          "detail": "'Tıklayalım' isimli kampanya %4.79 TO (CTR) ile ana kampanyanın (%13.93) oldukça gerisinde kalmıştır. Ayrıca dönüşüm maliyeti genel ortalamayı negatif etkileme riski taşımaktadır.",
+          "action": "Bu kampanyadaki reklam metinlerini ana kampanya ile eşleştirin veya bu kampanyayı durdurup tüm trafiği dönüşüm oranı daha yüksek olan ana arama ağı kampanyasında konsolide edin."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1619,74 +1623,74 @@
       "activeCampaigns": 3,
       "primaryGoal": "WhatsApp (66.4) · Yol Tarifi (55) · Telefon (15)",
       "targetCpaTl": 20,
-      "currentCpaTl": 13,
-      "spend5dTl": 2894,
-      "conversions5d": 217,
-      "clicks5d": 485,
-      "impressions5d": 3877,
-      "ctrPercent": 12.51,
-      "spend30dTl": 14469,
-      "conversions30d": 1109.9,
-      "impressionSharePercent": 16,
+      "currentCpaTl": 18,
+      "spend5dTl": 3991,
+      "conversions5d": 224.4,
+      "clicks5d": 578,
+      "impressions5d": 4625,
+      "ctrPercent": 12.5,
+      "spend30dTl": 15876,
+      "conversions30d": 1156.9,
+      "impressionSharePercent": 19,
       "budgetLostSharePercent": 0,
       "customRules": "1 Arama ('Dönüşüm Kampanyası') + 1 PMax ('Mağazaya Gidiş Reklamı') aktif.",
       "status": "warning",
       "healthScore": 78,
       "ranges": {
         "today": {
-          "spend": 1598,
-          "conversions": 47,
-          "clicks": 168,
-          "impressions": 1174,
-          "ctr": 14.31,
-          "cpa": 34,
-          "cpc": 9.5,
-          "impShare": 33,
+          "spend": 1407,
+          "conversions": 29.3,
+          "clicks": 162,
+          "impressions": 1334,
+          "ctr": 12.14,
+          "cpa": 48,
+          "cpc": 8.7,
+          "impShare": 31,
           "budgetLostShare": null
         },
         "5d": {
-          "spend": 2894,
-          "conversions": 217,
-          "clicks": 485,
-          "impressions": 3877,
-          "ctr": 12.51,
-          "cpa": 13,
-          "cpc": 6,
-          "impShare": 16,
+          "spend": 3991,
+          "conversions": 224.4,
+          "clicks": 578,
+          "impressions": 4625,
+          "ctr": 12.5,
+          "cpa": 18,
+          "cpc": 6.9,
+          "impShare": 19,
           "budgetLostShare": 0
         },
         "7d": {
-          "spend": 4185,
-          "conversions": 298.9,
-          "clicks": 682,
-          "impressions": 5349,
-          "ctr": 12.75,
-          "cpa": 14,
-          "cpc": 6.1,
-          "impShare": 18,
-          "budgetLostShare": 5
+          "spend": 4951,
+          "conversions": 314,
+          "clicks": 758,
+          "impressions": 6113,
+          "ctr": 12.4,
+          "cpa": 16,
+          "cpc": 6.5,
+          "impShare": 20,
+          "budgetLostShare": 2
         },
         "14d": {
-          "spend": 8409,
-          "conversions": 632.4,
-          "clicks": 1362,
-          "impressions": 11012,
-          "ctr": 12.37,
-          "cpa": 13,
-          "cpc": 6.2,
-          "impShare": 20,
-          "budgetLostShare": 12
+          "spend": 9247,
+          "conversions": 642.9,
+          "clicks": 1446,
+          "impressions": 11675,
+          "ctr": 12.39,
+          "cpa": 14,
+          "cpc": 6.4,
+          "impShare": 21,
+          "budgetLostShare": 10
         },
         "30d": {
-          "spend": 14469,
-          "conversions": 1109.9,
-          "clicks": 2397,
-          "impressions": 21135,
-          "ctr": 11.34,
-          "cpa": 13,
-          "cpc": 6,
+          "spend": 15876,
+          "conversions": 1156.9,
+          "clicks": 2558,
+          "impressions": 22472,
+          "ctr": 11.38,
+          "cpa": 14,
+          "cpc": 6.2,
           "impShare": 19,
-          "budgetLostShare": 14
+          "budgetLostShare": 13
         }
       },
       "campaigns": [
@@ -1694,23 +1698,23 @@
           "name": "Dönüşüm Kampanyası #2",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1413,
-          "conversions5d": 41,
-          "clicks5d": 129,
-          "impressions5d": 844,
-          "ctr5d": 15.28,
-          "impShare": 40,
-          "budgetLostShare": null
+          "spend5d": 2635,
+          "conversions5d": 69,
+          "clicks5d": 239,
+          "impressions5d": 1690,
+          "ctr5d": 14.14,
+          "impShare": 39,
+          "budgetLostShare": 2
         },
         {
           "name": "Dönüşüm Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1044,
-          "conversions5d": 71,
-          "clicks5d": 187,
-          "impressions5d": 1657,
-          "ctr5d": 11.29,
+          "spend5d": 850,
+          "conversions5d": 50.5,
+          "clicks5d": 149,
+          "impressions5d": 1437,
+          "ctr5d": 10.37,
           "impShare": 13,
           "budgetLostShare": null
         },
@@ -1718,23 +1722,23 @@
           "name": "Mağazaya Gidiş Reklamı",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 436,
+          "spend5d": 506,
           "conversions5d": 105,
-          "clicks5d": 169,
-          "impressions5d": 1376,
-          "ctr5d": 12.28,
+          "clicks5d": 190,
+          "impressions5d": 1498,
+          "ctr5d": 12.68,
           "impShare": 10,
-          "budgetLostShare": 27
+          "budgetLostShare": 29
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon",
-          "count5d": 17
+          "count5d": 22
         },
         {
           "action": "WhatsApp",
-          "count5d": 95
+          "count5d": 97.4
         },
         {
           "action": "Yerel işlemler - Yol tarifi",
@@ -1744,15 +1748,57 @@
       "topSearchTerms": [
         {
           "term": "2 el eşya alan yerler",
+          "clicks": 5,
+          "costTl": 86,
+          "conv": 1
+        },
+        {
+          "term": "spotçu",
+          "clicks": 6,
+          "costTl": 72,
+          "conv": 3
+        },
+        {
+          "term": "2 el eşya satmak istiyorum",
           "clicks": 3,
-          "costTl": 54,
-          "conv": 0
+          "costTl": 55,
+          "conv": 1
+        },
+        {
+          "term": "kadıköy spotçu",
+          "clicks": 4,
+          "costTl": 47,
+          "conv": 4
         },
         {
           "term": "spotcu",
-          "clicks": 3,
-          "costTl": 36,
+          "clicks": 4,
+          "costTl": 45,
           "conv": 2
+        },
+        {
+          "term": "ümraniye 2 el eşya alım satım",
+          "clicks": 3,
+          "costTl": 44,
+          "conv": 1
+        },
+        {
+          "term": "maltepe spot",
+          "clicks": 2,
+          "costTl": 37,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el eşya alanlar kadıköy",
+          "clicks": 2,
+          "costTl": 32,
+          "conv": 2
+        },
+        {
+          "term": "içerenköy spotçular",
+          "clicks": 2,
+          "costTl": 32,
+          "conv": 1
         },
         {
           "term": "ikinci el eşya satma",
@@ -1771,71 +1817,29 @@
           "clicks": 4,
           "costTl": 30,
           "conv": 1
-        },
-        {
-          "term": "2 el satanlar",
-          "clicks": 2,
-          "costTl": 26,
-          "conv": 0
-        },
-        {
-          "term": "ikinci el eşya alanlar mecidiyeköy",
-          "clicks": 3,
-          "costTl": 25,
-          "conv": 2
-        },
-        {
-          "term": "maltepe spot",
-          "clicks": 1,
-          "costTl": 25,
-          "conv": 1
-        },
-        {
-          "term": "kadıköy spotçu",
-          "clicks": 2,
-          "costTl": 24,
-          "conv": 2
-        },
-        {
-          "term": "spot eşya alanlar",
-          "clicks": 1,
-          "costTl": 22,
-          "conv": 0
-        },
-        {
-          "term": "ikinci eşya alım satım",
-          "clicks": 1,
-          "costTl": 22,
-          "conv": 0
-        },
-        {
-          "term": "2 el eşya satmak istiyorum",
-          "clicks": 1,
-          "costTl": 21,
-          "conv": 0
         }
       ],
       "findings": [
         {
-          "severity": "warning",
-          "category": "Bütçe ve Ölçeklendirme",
-          "title": "Hedef EBM Altı Performans ve Bütçe Kaybı",
-          "detail": "Gerçekleşen EBM (16 TL), hedef EBM'den (20 TL) %20 daha verimli seyrediyor. Ancak bütçe kısıtı nedeniyle %10'luk bir gösterim kaybı mevcut. Bu durum, potansiyel dönüşümlerin kaçırıldığını gösteriyor.",
-          "action": "Günlük bütçeyi en az %15 oranında artırarak 'Dönüşüm Kampanyası'ndaki bütçe kaynaklı kayıpları minimize edin ve ölçeklenin."
+          "severity": "critical",
+          "category": "Bütçe ve Performans",
+          "title": "PMax Bütçe Darboğazı ve Kaçırılan Fırsat",
+          "detail": "Mağazaya Gidiş (PMax) kampanyası 4.8 TL gibi mükemmel bir EBM ile çalışıyor ancak %29 oranında bütçe kaynaklı gösterim kaybı yaşıyor. Bu, en verimli kampanyanın potansiyelinin kısıtlandığını gösterir.",
+          "action": "Dönüşüm Kampanyası #2'deki (EBM: 38 TL) bütçenin bir kısmını, çok daha düşük maliyetle dönüşüm getiren PMax kampanyasına aktarın ve PMax günlük bütçesini en az %40 oranında artırın."
         },
         {
-          "severity": "critical",
-          "category": "Kampanya Performansı",
-          "title": "Arama Ağı Düşük Gösterim Payı",
-          "detail": "Dönüşüm Kampanyası'nın gösterim payı %19 gibi oldukça düşük bir seviyededir. %12.84'lük yüksek TO'ya rağmen gösterim payının düşük olması, rakiplerin açık artırmada daha baskın olduğunu veya bütçe/teklif yetersizliğini işaret eder.",
-          "action": "Teklif stratejisini gözden geçirin; Hedef EBM'yi koruyarak bütçeyi artırın veya reklam alaka düzeyini yükseltmek için reklam metinlerini optimize edin."
+          "severity": "warning",
+          "category": "EBM Verimliliği",
+          "title": "Arama Kampanyaları Arasındaki EBM Dengesi",
+          "detail": "Dönüşüm Kampanyası #2, toplam harcamanın %66'sını yapmasına rağmen 38 TL EBM ile hesap hedefinin (20 TL) çok üzerindedir. Diğer arama kampanyası ise 16.8 TL EBM ile çok daha verimlidir.",
+          "action": "EBM'si yüksek olan 2 numaralı kampanyadaki '2 el eşya alan yerler' gibi pahalı anahtar kelimelerin teklif stratejisini gözden geçirin ve bütçeyi 16.8 TL EBM ile çalışan verimli arama kampanyasına kaydırın."
         },
         {
           "severity": "suggestion",
-          "category": "Negatif Anahtar Kelime Yönetimi",
-          "title": "Marka ve Düşük Dönüşümlü Terim İsrafı",
-          "detail": "'bahar spot' (marka) terimi ve 'ümraniye spotçular' gibi genel/çoğul terimler harcama yapmasına rağmen son 5 günde 0 dönüşüm getirmiştir. Ayrıca hedef lokasyon dışı (Çağlayan) terimlerde harcama gözlemlenmiştir.",
-          "action": "'bahar spot' terimini negatif anahtar kelime olarak ekleyip trafiği organik aramaya yönlendirin; 'çağlayan' gibi hedef dışı lokasyon terimlerini negatif listesine dahil edin."
+          "category": "Yerel Optimizasyon",
+          "title": "Lokasyon Bazlı Dönüşüm Gücü",
+          "detail": "'Kadıköy spotçu' ve 'İkinci el eşya alanlar kadıköy' terimleri %100'e yakın dönüşüm oranı sergiliyor. Yerel işlemler (Yol tarifi) toplam dönüşümlerin %47'sini oluşturuyor.",
+          "action": "Arama kampanyalarında Kadıköy, Ümraniye gibi yüksek performanslı bölgeler için özel reklam grubu veya yerel teklif ayarlaması yapın. Reklam metinlerinde bu bölgelere özel 'Hızlı alım' vurgusunu artırın."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1850,74 +1854,74 @@
       "activeCampaigns": 1,
       "primaryGoal": "Telefon Çağrısı (53) · WhatsApp (16)",
       "targetCpaTl": 25,
-      "currentCpaTl": 19,
-      "spend5dTl": 1888,
-      "conversions5d": 100,
-      "clicks5d": 177,
-      "impressions5d": 1111,
-      "ctrPercent": 15.93,
-      "spend30dTl": 8703,
-      "conversions30d": 450,
+      "currentCpaTl": 20,
+      "spend5dTl": 1875,
+      "conversions5d": 92,
+      "clicks5d": 171,
+      "impressions5d": 1097,
+      "ctrPercent": 15.59,
+      "spend30dTl": 8918,
+      "conversions30d": 452.5,
       "impressionSharePercent": 12,
-      "budgetLostSharePercent": 20,
+      "budgetLostSharePercent": 17,
       "customRules": "Anadolu yakası spot eşya alımı.",
       "status": "healthy",
       "healthScore": 93,
       "ranges": {
         "today": {
-          "spend": 182,
-          "conversions": 9,
-          "clicks": 17,
-          "impressions": 134,
-          "ctr": 12.69,
-          "cpa": 20,
-          "cpc": 10.7,
-          "impShare": 10,
-          "budgetLostShare": 39
+          "spend": 330,
+          "conversions": 8,
+          "clicks": 26,
+          "impressions": 158,
+          "ctr": 16.46,
+          "cpa": 41,
+          "cpc": 12.7,
+          "impShare": 12,
+          "budgetLostShare": 4
         },
         "5d": {
-          "spend": 1888,
-          "conversions": 100,
-          "clicks": 177,
-          "impressions": 1111,
-          "ctr": 15.93,
-          "cpa": 19,
-          "cpc": 10.7,
+          "spend": 1875,
+          "conversions": 92,
+          "clicks": 171,
+          "impressions": 1097,
+          "ctr": 15.59,
+          "cpa": 20,
+          "cpc": 11,
+          "impShare": 12,
+          "budgetLostShare": 17
+        },
+        "7d": {
+          "spend": 2458,
+          "conversions": 122,
+          "clicks": 227,
+          "impressions": 1419,
+          "ctr": 16,
+          "cpa": 20,
+          "cpc": 10.8,
           "impShare": 12,
           "budgetLostShare": 20
         },
-        "7d": {
-          "spend": 2488,
-          "conversions": 126,
-          "clicks": 229,
-          "impressions": 1466,
-          "ctr": 15.62,
-          "cpa": 20,
-          "cpc": 10.9,
-          "impShare": 13,
-          "budgetLostShare": 22
-        },
         "14d": {
-          "spend": 4638,
-          "conversions": 227,
-          "clicks": 428,
-          "impressions": 2783,
-          "ctr": 15.38,
-          "cpa": 20,
-          "cpc": 10.8,
+          "spend": 4666,
+          "conversions": 225,
+          "clicks": 426,
+          "impressions": 2774,
+          "ctr": 15.36,
+          "cpa": 21,
+          "cpc": 11,
           "impShare": 13,
-          "budgetLostShare": 21
+          "budgetLostShare": 20
         },
         "30d": {
-          "spend": 8703,
-          "conversions": 450,
-          "clicks": 834,
-          "impressions": 5826,
-          "ctr": 14.32,
-          "cpa": 19,
-          "cpc": 10.4,
+          "spend": 8918,
+          "conversions": 452.5,
+          "clicks": 845,
+          "impressions": 5878,
+          "ctr": 14.38,
+          "cpa": 20,
+          "cpc": 10.6,
           "impShare": 13,
-          "budgetLostShare": 17
+          "budgetLostShare": 18
         }
       },
       "campaigns": [
@@ -1925,19 +1929,19 @@
           "name": "Yeni Şirin Campaign",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 1888,
-          "conversions5d": 100,
-          "clicks5d": 177,
-          "impressions5d": 1111,
-          "ctr5d": 15.93,
+          "spend5d": 1875,
+          "conversions5d": 92,
+          "clicks5d": 171,
+          "impressions5d": 1097,
+          "ctr5d": 15.59,
           "impShare": 12,
-          "budgetLostShare": 20
+          "budgetLostShare": 17
         }
       ],
       "conversionActions": [
         {
           "action": "Telefon Çağrısı",
-          "count5d": 77
+          "count5d": 69
         },
         {
           "action": "WhatsApp",
@@ -1946,40 +1950,40 @@
       ],
       "topSearchTerms": [
         {
-          "term": "ikinci el eşya alanlar",
+          "term": "ikinci el mobilya alan yerler",
           "clicks": 5,
-          "costTl": 64,
+          "costTl": 55,
+          "conv": 1.7
+        },
+        {
+          "term": "ikinci el eşya alanlar",
+          "clicks": 4,
+          "costTl": 51,
           "conv": 4
         },
         {
           "term": "spotçu",
-          "clicks": 5,
-          "costTl": 57,
-          "conv": 4
-        },
-        {
-          "term": "ikinci el mobilya alan yerler",
-          "clicks": 5,
-          "costTl": 55,
-          "conv": 1
-        },
-        {
-          "term": "2 el eşya alan yerler",
           "clicks": 3,
-          "costTl": 30,
-          "conv": 1
-        },
-        {
-          "term": "maltepe ikinci el eşya alanlar",
-          "clicks": 2,
-          "costTl": 26,
-          "conv": 1
+          "costTl": 32,
+          "conv": 2
         },
         {
           "term": "ümraniye spot",
           "clicks": 2,
-          "costTl": 26,
+          "costTl": 29,
           "conv": 0.5
+        },
+        {
+          "term": "fındıklı ikinci el eşya alanlar",
+          "clicks": 2,
+          "costTl": 28,
+          "conv": 1
+        },
+        {
+          "term": "ikinci el eşya alanlar ümraniye",
+          "clicks": 2,
+          "costTl": 27,
+          "conv": 2
         },
         {
           "term": "eski koltuk alan yerler",
@@ -1988,9 +1992,9 @@
           "conv": 1
         },
         {
-          "term": "evdeki fazla eşyaları nereye verebilirim",
+          "term": "kadıköy 2 el eşya alanlar",
           "clicks": 2,
-          "costTl": 24,
+          "costTl": 23,
           "conv": 1
         },
         {
@@ -2006,15 +2010,15 @@
           "conv": 0
         },
         {
+          "term": "ikinci el alım satım",
+          "clicks": 2,
+          "costTl": 21,
+          "conv": 2
+        },
+        {
           "term": "kadıköy spotçu",
           "clicks": 2,
           "costTl": 21,
-          "conv": 1
-        },
-        {
-          "term": "ikinci el koltuk alan yerler",
-          "clicks": 2,
-          "costTl": 20,
           "conv": 1
         }
       ],
@@ -2054,69 +2058,69 @@
       "primaryGoal": "WhatsApp (40) · Çağrı (19)",
       "targetCpaTl": 22,
       "currentCpaTl": 18,
-      "spend5dTl": 1218,
+      "spend5dTl": 1196,
       "conversions5d": 68,
-      "clicks5d": 607,
-      "impressions5d": 8892,
-      "ctrPercent": 6.83,
-      "spend30dTl": 11035,
-      "conversions30d": 663,
+      "clicks5d": 574,
+      "impressions5d": 8146,
+      "ctrPercent": 7.05,
+      "spend30dTl": 10764,
+      "conversions30d": 640.7,
       "impressionSharePercent": 10,
-      "budgetLostSharePercent": 52,
+      "budgetLostSharePercent": 45,
       "customRules": "1 Arama ('Arama Ağı Kampanyası') + 1 PMax ('UcuzİkinciElEsya - pMax Ediz') aktif.",
       "status": "healthy",
       "healthScore": 86,
       "ranges": {
         "today": {
-          "spend": 142,
-          "conversions": 8,
-          "clicks": 69,
-          "impressions": 1079,
-          "ctr": 6.39,
+          "spend": 196,
+          "conversions": 11,
+          "clicks": 70,
+          "impressions": 994,
+          "ctr": 7.04,
+          "cpa": 18,
+          "cpc": 2.8,
+          "impShare": 10,
+          "budgetLostShare": null
+        },
+        "5d": {
+          "spend": 1196,
+          "conversions": 68,
+          "clicks": 574,
+          "impressions": 8146,
+          "ctr": 7.05,
           "cpa": 18,
           "cpc": 2.1,
           "impShare": 10,
-          "budgetLostShare": 21
-        },
-        "5d": {
-          "spend": 1218,
-          "conversions": 68,
-          "clicks": 607,
-          "impressions": 8892,
-          "ctr": 6.83,
-          "cpa": 18,
-          "cpc": 2,
-          "impShare": 10,
-          "budgetLostShare": 52
+          "budgetLostShare": 45
         },
         "7d": {
-          "spend": 1711,
-          "conversions": 90,
-          "clicks": 759,
-          "impressions": 11449,
-          "ctr": 6.63,
-          "cpa": 19,
-          "cpc": 2.3,
+          "spend": 1705,
+          "conversions": 98,
+          "clicks": 779,
+          "impressions": 11532,
+          "ctr": 6.76,
+          "cpa": 17,
+          "cpc": 2.2,
           "impShare": 10,
           "budgetLostShare": 52
         },
         "14d": {
-          "spend": 4103,
-          "conversions": 234,
-          "clicks": 1993,
-          "impressions": 35817,
-          "ctr": 5.56,
+          "spend": 3853,
+          "conversions": 216,
+          "clicks": 1866,
+          "impressions": 32653,
+          "ctr": 5.71,
           "cpa": 18,
           "cpc": 2.1,
           "impShare": 10,
-          "budgetLostShare": 48
+          "budgetLostShare": 49
         },
         "30d": {
-          "spend": 11035,
-          "conversions": 663,
-          "clicks": 5185,
-          "impressions": 108909,
-          "ctr": 4.76,
+          "spend": 10764,
+          "conversions": 640.7,
+          "clicks": 5063,
+          "impressions": 106051,
+          "ctr": 4.77,
           "cpa": 17,
           "cpc": 2.1,
           "impShare": 10,
@@ -2128,11 +2132,11 @@
           "name": "UcuzİkinciElEsya - pMax Ediz",
           "status": "ENABLED",
           "type": "PERFORMANCE_MAX",
-          "spend5d": 631,
+          "spend5d": 629,
           "conversions5d": 30,
-          "clicks5d": 538,
-          "impressions5d": 8152,
-          "ctr5d": 6.6,
+          "clicks5d": 507,
+          "impressions5d": 7407,
+          "ctr5d": 6.84,
           "impShare": 10,
           "budgetLostShare": 90
         },
@@ -2140,36 +2144,30 @@
           "name": "Arama Ağı Kampanyası",
           "status": "ENABLED",
           "type": "SEARCH",
-          "spend5d": 585,
+          "spend5d": 567,
           "conversions5d": 38,
-          "clicks5d": 68,
-          "impressions5d": 733,
-          "ctr5d": 9.28,
+          "clicks5d": 67,
+          "impressions5d": 739,
+          "ctr5d": 9.07,
           "impShare": 10,
-          "budgetLostShare": 19
+          "budgetLostShare": 11
         }
       ],
       "conversionActions": [
         {
           "action": "WhatsApp",
-          "count5d": 46
+          "count5d": 43
         },
         {
           "action": "Çağrı",
-          "count5d": 22
+          "count5d": 25
         }
       ],
       "topSearchTerms": [
         {
-          "term": "sancaktepe eskici",
+          "term": "istanbul spot",
           "clicks": 2,
-          "costTl": 24,
-          "conv": 1
-        },
-        {
-          "term": "maltepe ikinci el eşya alanlar",
-          "clicks": 2,
-          "costTl": 22,
+          "costTl": 29,
           "conv": 1
         },
         {
@@ -2185,6 +2183,12 @@
           "conv": 1
         },
         {
+          "term": "ümraniye spot",
+          "clicks": 2,
+          "costTl": 15,
+          "conv": 1.5
+        },
+        {
           "term": "pendik ikinci el",
           "clicks": 2,
           "costTl": 15,
@@ -2197,10 +2201,16 @@
           "conv": 1
         },
         {
-          "term": "spotçu",
-          "clicks": 4,
+          "term": "maltepe spotçu",
+          "clicks": 1,
           "costTl": 14,
-          "conv": 0.5
+          "conv": 0
+        },
+        {
+          "term": "ataşehir spot",
+          "clicks": 1,
+          "costTl": 13,
+          "conv": 1
         },
         {
           "term": "ikinci el ev eşyası satanlar",
@@ -2209,21 +2219,15 @@
           "conv": 1
         },
         {
-          "term": "ikinci el alan yerler",
-          "clicks": 1,
+          "term": "spotçu",
+          "clicks": 4,
           "costTl": 13,
           "conv": 1
         },
         {
-          "term": "ikinci el koltuk alan yerler",
+          "term": "ikinci el alan yerler",
           "clicks": 1,
-          "costTl": 12,
-          "conv": 1.5
-        },
-        {
-          "term": "ikinci el eşya maltepe",
-          "clicks": 1,
-          "costTl": 12,
+          "costTl": 13,
           "conv": 1
         },
         {
@@ -2236,30 +2240,43 @@
       "findings": [
         {
           "severity": "critical",
-          "category": "Bütçe ve Ölçekleme",
-          "title": "PMax Kampanyasında %90 Bütçe Kaynaklı Kayıp",
-          "detail": "UcuzİkinciElEsya - pMax Ediz kampanyası 20 TL EBM ile hedef altında (22 TL) çok verimli çalışmasına rağmen, bütçe yetersizliği nedeniyle gösterimlerin %90'ını kaçırmaktadır. Bu durum, mevcut karlı yapıda büyük bir büyüme fırsatının tepildiğini gösterir.",
-          "action": "PMax kampanyasının günlük bütçesini kademeli olarak en az 2-3 katına çıkarın. Mevcut verimlilik (CPA 20 TL) bütçe artışını finansal olarak desteklemektedir."
+          "category": "Budget Optimization",
+          "title": "PMax Kampanyasında %90 Bütçe Kaybı",
+          "detail": "UcuzİkinciElEsya - pMax Ediz kampanyası bütçe yetersizliği nedeniyle potansiyel gösterimlerinin %90'ını kaçırıyor. Mevcut EBM (20.96 TL), hedef EBM'nin (22 TL) altındayken bu denli yüksek bir kayıp ciddi bir fırsat maliyetidir.",
+          "action": "PMax kampanyasının günlük bütçesini kademeli olarak en az 2-3 katına çıkarın veya Arama Ağı'na kıyasla daha verimsiz olan sinyalleri optimize ederek bütçeyi daha verimli kullanın."
         },
         {
           "severity": "warning",
-          "category": "Hedefleme ve Negatif Anahtar Kelimeler",
-          "title": "Hizmet Bölgesi Dışı Trafik Sızıntısı",
-          "detail": "Hesap Ataşehir, Maltepe ve Sancaktepe odaklı olmasına rağmen; Kadıköy, Pendik, Üsküdar ve Çekmeköy gibi bölgelerden gelen arama terimleri maliyet oluşturmaktadır. Bu durum bütçenin odak dışı bölgelere dağılmasına neden olmaktadır.",
-          "action": "Hizmet verilmeyen veya odak dışı kalan ilçeleri (Kadıköy, Pendik, Üsküdar, Çekmeköy) kampanya seviyesinde negatif yer olarak ekleyin ve yer seçeneklerini 'Varlık: Hedeflenen yerlerde bulunan veya düzenli olarak buralarda olan kişiler' şeklinde güncelleyin."
+          "category": "Geographic Relevance",
+          "title": "Hizmet Bölgesi Dışı Arama Terimleri",
+          "detail": "Hedef lokasyonlar Ataşehir, Maltepe ve Sancaktepe olarak belirtilmesine rağmen; 'pendik ikinci el' ve 'ümraniye spot' gibi bölge dışı terimlerden tıklama ve maliyet oluşmuş. Pendik terimi 0 dönüşüm ile bütçe tüketmiştir.",
+          "action": "Yer ayarlarından 'Yer: Hedeflediğiniz yerlerde bulunan veya düzenli olarak bu yerlere giden kişiler' seçeneğini işaretleyin ve hizmet vermediğiniz Pendik, Ümraniye gibi çevre ilçeleri negatif yerleşim olarak ekleyin."
         },
         {
-          "severity": "warning",
-          "category": "Kampanya Yapısı ve Verimlilik",
-          "title": "Düşük Arama Ağı Gösterim Payı (%10)",
-          "detail": "Arama Ağı kampanyasında gösterim payı sadece %10'dur ve kaybın %31'i doğrudan bütçe kaynaklıdır. Tıklama oranı %13 gibi yüksek bir seviyede olmasına rağmen pazarın çok küçük bir kısmına hitap edilmektedir.",
-          "action": "Arama Ağı kampanyasında dönüşüm getirmeyen '2. el eşya satmak istiyorum' ve 'pendik ikinci el' gibi genel veya bölge dışı terimleri negatifleyerek bütçeyi doğrudan dönüşüm getiren 'Ataşehir' ve 'Sancaktepe' odaklı terimlere kanalize edin."
+          "severity": "suggestion",
+          "category": "Campaign Strategy",
+          "title": "Arama Ağı Verimliliği ve Ölçekleme",
+          "detail": "Arama Ağı kampanyası 14.92 TL EBM ile PMax'e (20.96 TL) göre %28 daha verimli çalışıyor. Ancak toplam bütçenin yarısından azını alıyor ve %11 bütçe kaybı yaşıyor.",
+          "action": "Daha düşük maliyetle daha fazla dönüşüm getiren Arama Ağı kampanyasının bütçesini artırarak, 'ikinci el eşya alan yerler' gibi yüksek performanslı anahtar kelimelerin kapsama alanını genişletin."
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
     }
   ],
   "reportsArchive": [
+    {
+      "id": "rep-2026-10-23-71",
+      "title": "5 Günlük Genel Denetim Raporu — #3",
+      "date": "23 Ekim 2026",
+      "period": "18 Ekim – 23 Ekim 2026",
+      "accountsAudited": 10,
+      "criticalCount": 9,
+      "warningCount": 12,
+      "suggestionCount": 9,
+      "totalSpendTl": 80439,
+      "totalConversions": 4006,
+      "summary": "10 onaylı hesap canlı MCC verileriyle denetlendi (AI: 9/10 hesap güncellendi - Hata: HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n). 9 kritik müdahale, 12 uyarı ve 9 büyüme önerisi oluşturuldu."
+    },
     {
       "id": "rep-test-2026-10-19-70",
       "title": "[TEST RAPORU] Gemini 2.5 Flash Canlı Denetim Denemesi",
