@@ -73,8 +73,67 @@ Lütfen şu adımları izle:
   ]
 }`;
 
+const GITHUB_REPO = 'zideofturkey/busineds';
+const GITHUB_DATA_FILE = 'data/accounts.json';
+
+function isLocalhost() {
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+}
+
+function getStoredToken() {
+  return localStorage.getItem('busineds_gh_token') || '';
+}
+
+async function saveDbToGitHub(updatedDb, commitMessage) {
+  const token = getStoredToken();
+  if (!token) {
+    alert('Bulut panel üzerinden değişiklik kaydetmek için sağ üstteki "Ayarlar & Script" menüsünden GitHub Token (ghp_...) bilginizi bir kez girin.');
+    return false;
+  }
+  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${GITHUB_DATA_FILE}`;
+  const headers = {
+    'Authorization': `Bearer ${token}`,
+    'Accept': 'application/vnd.github+json',
+    'Content-Type': 'application/json'
+  };
+  const getRes = await fetch(`${apiUrl}?ref=main&t=${Date.now()}`, { headers });
+  if (!getRes.ok) {
+    alert('GitHub erişim hatası. Token bilginizi kontrol edin.');
+    return false;
+  }
+  const fileInfo = await getRes.json();
+  const jsonStr = JSON.stringify(updatedDb, null, 2);
+  const base64Content = btoa(unescape(encodeURIComponent(jsonStr)));
+
+  const putRes = await fetch(apiUrl, {
+    method: 'PUT',
+    headers,
+    body: JSON.stringify({
+      message: commitMessage || 'chore: update via Busineds web panel',
+      content: base64Content,
+      sha: fileInfo.sha,
+      branch: 'main'
+    })
+  });
+  return putRes.ok;
+}
+
 async function loadData() {
-  const res = await fetch('/api/data');
+  if (isLocalhost()) {
+    try {
+      const res = await fetch('/api/data');
+      if (res.ok) {
+        state.db = await res.json();
+        populateFilterDropdowns();
+        renderAll();
+        return;
+      }
+    } catch (e) {}
+  }
+
+  // GitHub Pages veya bulut modunda doğrudan en güncel veriyi çek (önbelleksiz)
+  const rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${GITHUB_DATA_FILE}?t=${Date.now()}`;
+  const res = await fetch(rawUrl);
   state.db = await res.json();
   populateFilterDropdowns();
   renderAll();
@@ -494,14 +553,27 @@ async function toggleApproval(id, name, currentlyApproved) {
 
   if (!confirm(actionText)) return;
 
-  const res = await fetch('/api/accounts/toggle-approval', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ id })
-  });
-  const data = await res.json();
-  if (data.db) {
-    state.db = data.db;
+  if (isLocalhost()) {
+    const res = await fetch('/api/accounts/toggle-approval', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id })
+    });
+    const data = await res.json();
+    if (data.db) {
+      state.db = data.db;
+      populateFilterDropdowns();
+      renderAll();
+    }
+    return;
+  }
+
+  const acc = state.db.accounts.find(a => a.id === id);
+  if (!acc) return;
+  acc.approved = !acc.approved;
+  acc.status = acc.approved ? 'healthy' : 'pending';
+  const ok = await saveDbToGitHub(state.db, `chore: toggle approval for ${acc.name}`);
+  if (ok) {
     populateFilterDropdowns();
     renderAll();
   }
@@ -509,14 +581,35 @@ async function toggleApproval(id, name, currentlyApproved) {
 
 async function ignoreAccount(id, name) {
   if (!confirm(`"${name}" hesabını Yıldız Spot gibi yoksayılanlar listesine taşımak istiyor musun?`)) return;
-  const res = await fetch('/api/accounts/ignore', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ id, reason: 'Panel üzerinden takip dışı bırakıldı.' })
+
+  if (isLocalhost()) {
+    const res = await fetch('/api/accounts/ignore', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, reason: 'Panel üzerinden takip dışı bırakıldı.' })
+    });
+    const data = await res.json();
+    if (data.db) {
+      state.db = data.db;
+      populateFilterDropdowns();
+      renderAll();
+    }
+    return;
+  }
+
+  const idx = state.db.accounts.findIndex(a => a.id === id);
+  if (idx === -1) return;
+  const removed = state.db.accounts.splice(idx, 1)[0];
+  state.db.ignoredAccounts.push({
+    customerId: removed.customerId,
+    name: removed.name,
+    reason: 'Panel üzerinden takip dışı bırakıldı.'
   });
-  const data = await res.json();
-  if (data.db) {
-    state.db = data.db;
+  if (!state.db.settings.ignoredCustomerIds.includes(removed.customerId)) {
+    state.db.settings.ignoredCustomerIds.push(removed.customerId);
+  }
+  const ok = await saveDbToGitHub(state.db, `chore: ignore account ${removed.name}`);
+  if (ok) {
     populateFilterDropdowns();
     renderAll();
   }
@@ -656,14 +749,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!raw) return alert('Lütfen Claude tarafından üretilen JSON çıktısını yapıştırın.');
     try {
       const parsed = JSON.parse(raw);
-      const res = await fetch('/api/accounts/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(parsed)
-      });
-      const data = await res.json();
-      if (data.db) {
-        state.db = data.db;
+      if (isLocalhost()) {
+        const res = await fetch('/api/accounts/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(parsed)
+        });
+        const data = await res.json();
+        if (data.db) {
+          state.db = data.db;
+          populateFilterDropdowns();
+          renderAll();
+          document.getElementById('claudeJsonInput').value = '';
+          document.getElementById('claudeModal').classList.add('hidden');
+        }
+        return;
+      }
+      const newAcc = {
+        id: 'acc-' + Date.now(),
+        approved: true,
+        status: 'healthy',
+        healthScore: 88,
+        ...parsed
+      };
+      state.db.accounts.unshift(newAcc);
+      const ok = await saveDbToGitHub(state.db, `feat: import account ${newAcc.name}`);
+      if (ok) {
         populateFilterDropdowns();
         renderAll();
         document.getElementById('claudeJsonInput').value = '';
@@ -703,14 +814,42 @@ document.addEventListener('DOMContentLoaded', () => {
       currentCpaTl: Number(document.getElementById('accCurrentCpa').value || 200),
       customRules: document.getElementById('accRules').value
     };
-    const res = await fetch('/api/accounts/save', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-    const data = await res.json();
-    if (data.db) {
-      state.db = data.db;
+
+    if (isLocalhost()) {
+      const res = await fetch('/api/accounts/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+      if (data.db) {
+        state.db = data.db;
+        populateFilterDropdowns();
+        renderAll();
+        document.getElementById('accountModal').classList.add('hidden');
+      }
+      return;
+    }
+
+    if (payload.id) {
+      const idx = state.db.accounts.findIndex(a => a.id === payload.id);
+      if (idx !== -1) state.db.accounts[idx] = { ...state.db.accounts[idx], ...payload };
+    } else {
+      state.db.accounts.unshift({
+        ...payload,
+        id: 'acc-' + Date.now(),
+        approved: true,
+        spend5dTl: 0,
+        conversions5d: 0,
+        ctrPercent: 5,
+        impressionSharePercent: 60,
+        status: 'healthy',
+        healthScore: 88,
+        findings: []
+      });
+    }
+    const ok = await saveDbToGitHub(state.db, `chore: save account ${payload.name}`);
+    if (ok) {
       populateFilterDropdowns();
       renderAll();
       document.getElementById('accountModal').classList.add('hidden');
@@ -720,9 +859,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ayarlar
   document.getElementById('btnOpenSettings').addEventListener('click', () => {
     const { settings } = state.db;
-    document.getElementById('setAiModel').value = settings.aiModel || 'gemini-2.5-flash';
+    document.getElementById('setAiModel').value = settings.aiModel || 'gemini-3-flash-preview';
     document.getElementById('setEmail').value = settings.emailRecipient || '';
     document.getElementById('setIgnoredIds').value = (settings.ignoredCustomerIds || []).join(', ');
+    const ghInput = document.getElementById('setGithubToken');
+    if (ghInput) ghInput.value = getStoredToken();
     document.getElementById('mccScriptPreview').textContent = MCC_SCRIPT_SNIPPET;
     document.getElementById('settingsModal').classList.remove('hidden');
   });
@@ -733,6 +874,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('settingsForm').addEventListener('submit', async e => {
     e.preventDefault();
+    const ghInput = document.getElementById('setGithubToken');
+    if (ghInput && ghInput.value.trim()) {
+      localStorage.setItem('busineds_gh_token', ghInput.value.trim());
+    }
     const ignoredCustomerIds = document.getElementById('setIgnoredIds').value
       .split(',')
       .map(s => s.trim())
@@ -742,14 +887,25 @@ document.addEventListener('DOMContentLoaded', () => {
       emailRecipient: document.getElementById('setEmail').value,
       ignoredCustomerIds
     };
-    const res = await fetch('/api/settings', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-    const data = await res.json();
-    if (data.db) {
-      state.db = data.db;
+
+    if (isLocalhost()) {
+      const res = await fetch('/api/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+      if (data.db) {
+        state.db = data.db;
+        renderAll();
+        document.getElementById('settingsModal').classList.add('hidden');
+      }
+      return;
+    }
+
+    state.db.settings = { ...state.db.settings, ...payload };
+    const ok = await saveDbToGitHub(state.db, 'chore: update settings via web panel');
+    if (ok) {
       renderAll();
       document.getElementById('settingsModal').classList.add('hidden');
     }
@@ -761,12 +917,34 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.textContent = 'DENETLENİYOR...';
     btn.disabled = true;
     try {
-      const res = await fetch('/api/audit/run', { method: 'POST' });
-      const data = await res.json();
-      if (data.db) {
-        state.db = data.db;
-        populateFilterDropdowns();
-        renderAll();
+      if (isLocalhost()) {
+        const res = await fetch('/api/audit/run', { method: 'POST' });
+        const data = await res.json();
+        if (data.db) {
+          state.db = data.db;
+          populateFilterDropdowns();
+          renderAll();
+        }
+        return;
+      }
+
+      const token = getStoredToken();
+      if (!token) {
+        alert('Bulut denetimini tetiklemek için "Ayarlar & Script" menüsünden GitHub Token bilginizi girin.');
+        return;
+      }
+      const dispRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/dispatches`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/vnd.github+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ event_type: 'cronjob_audit', client_payload: { force_full: 'true' } })
+      });
+      if (dispRes.ok) {
+        alert('Bulut denetimi başlatıldı! Yaklaşık 45 saniye içinde yeni rapor verileri otomatik yüklenecek.');
+        setTimeout(() => loadData(), 45000);
       }
     } finally {
       btn.textContent = orig;

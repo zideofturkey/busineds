@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Busined's</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <!-- Üst Başlık -->
@@ -325,9 +325,9 @@
             <div class="form-group">
               <label>Yapay Zeka Modeli</label>
               <select id="setAiModel">
-                <option value="gemini-2.5-flash">gemini-2.5-flash (Ücretsiz Katman)</option>
-                <option value="gemini-2.5-pro">gemini-2.5-pro</option>
-                <option value="gemini-2.0-flash">gemini-2.0-flash</option>
+                <option value="gemini-3-flash-preview">gemini-3-flash-preview (Ücretsiz Katman)</option>
+                <option value="gemini-3.7-flash">gemini-3.7-flash (Ücretsiz Katman)</option>
+                <option value="gemini-2.5-flash">gemini-2.5-flash</option>
               </select>
             </div>
             <div class="form-group">
@@ -335,9 +335,15 @@
               <input type="email" id="setEmail" placeholder="ediz@..." />
             </div>
           </div>
-          <div class="form-group">
-            <label>Yoksayılan Müşteri ID Listesi (Virgülle Ayır)</label>
-            <input type="text" id="setIgnoredIds" placeholder="999-888-7710" />
+          <div class="form-row">
+            <div class="form-group">
+              <label>Yoksayılan Müşteri ID Listesi (Virgülle Ayır)</label>
+              <input type="text" id="setIgnoredIds" placeholder="999-888-7710" />
+            </div>
+            <div class="form-group">
+              <label>GitHub Token (Bulut Panelden Kayıt &amp; Tetikleme İçin)</label>
+              <input type="password" id="setGithubToken" placeholder="ghp_... (Tarayıcında güvenle saklanır)" />
+            </div>
           </div>
           <div class="modal-footer" style="padding-top:0.5rem;">
             <button type="submit" class="btn btn-crimson">Kaydet</button>
@@ -357,6 +363,6 @@
 
   <div id="printableReportContainer" class="printable-report"></div>
 
-  <script src="/app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
