@@ -178,6 +178,56 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
+  // API: Bulgu Durumunu Değiştir (Tamamlandı / Yoksay / Geri Al)
+  if (req.method === 'POST' && url.pathname === '/api/findings/status') {
+    try {
+      const { accountId, findingIndex, findingId, newStatus } = await parseBody(req);
+      const db = readDb();
+      db.findingsHistory = db.findingsHistory || [];
+
+      if (newStatus === 'active' && findingId) {
+        // Arşivden (Tamamlanan/Yoksayılan) geri aktif listeye al
+        const hIdx = db.findingsHistory.findIndex(h => h.id === findingId);
+        if (hIdx !== -1) {
+          const restored = db.findingsHistory.splice(hIdx, 1)[0];
+          const acc = db.accounts.find(a => a.id === restored.accountId);
+          if (acc) {
+            delete restored.resolvedStatus;
+            delete restored.resolvedAt;
+            acc.findings = acc.findings || [];
+            acc.findings.unshift(restored);
+          }
+        }
+      } else {
+        const acc = db.accounts.find(a => a.id === accountId);
+        if (acc && Array.isArray(acc.findings)) {
+          const idx = findingId
+            ? acc.findings.findIndex(f => f.id === findingId)
+            : findingIndex;
+          if (idx !== -1 && acc.findings[idx]) {
+            const removed = acc.findings.splice(idx, 1)[0];
+            db.findingsHistory.unshift({
+              ...removed,
+              id: removed.id || `f-${acc.id}-${Date.now()}`,
+              accountId: acc.id,
+              accountName: acc.name,
+              accountSector: acc.sector,
+              customerId: acc.customerId,
+              createdAt: removed.createdAt || db.settings.lastSyncDate || db.settings.lastAuditDate,
+              resolvedStatus: newStatus, // 'completed' veya 'dismissed'
+              resolvedAt: new Date().toISOString()
+            });
+          }
+        }
+      }
+
+      writeDb(db);
+      return sendJson(res, 200, { ok: true, db });
+    } catch (e) {
+      return sendJson(res, 400, { error: e.message });
+    }
+  }
+
   // API: 5 Günlük Denetimi Şimdi Tetikle & Yeni Rapor Üret
   if (req.method === 'POST' && url.pathname === '/api/audit/run') {
     try {

@@ -248,21 +248,30 @@
           "category": "Bütçe & Performans Kaybı",
           "title": "Ankara & İzmir PMax Kampanyasında Verimlilik ve Görünürlük Krizi",
           "detail": "Ankara&İzmir Max.Performans kampanyası %29 bütçe kaynaklı gösterim kaybı yaşıyor ve %0.57 gibi çok düşük bir TO (CTR) değerine sahip. Bu durum, bütçenin yüksek oranda dönüşüm ihtimali düşük Display veya Video envanterinde tükendiğini kanıtlıyor.",
-          "action": "Bu kampanyadaki yerleşim raporlarını inceleyerek düşük kaliteli uygulamaları ve web sitelerini hariç tutun. Bütçe kısıtını aşmak için 'Classic PMax' kampanyasından bu kampanyaya bütçe kaydırın veya günlük bütçeyi %30 oranında artırarak algoritmanın daralmasını engelleyin."
+          "action": "Bu kampanyadaki yerleşim raporlarını inceleyerek düşük kaliteli uygulamaları ve web sitelerini hariç tutun. Bütçe kısıtını aşmak için 'Classic PMax' kampanyasından bu kampanyaya bütçe kaydırın veya günlük bütçeyi %30 oranında artırarak algoritmanın daralmasını engelleyin.",
+          "id": "f-acc-ototikla-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Arama Terimi Stratejisi",
           "title": "Rakip Marka Trafiğine Aşırı Bağımlılık ve Marka Kanibalizasyonu",
           "detail": "En çok harcayan anahtar kelimelerin başında 'arabam com', 'trink sat' ve 'otobid' gibi rakipler geliyor. Bu terimler dönüşüm getirse de, hesap genelinde jenerik (araç değerleme, araba sat vb.) kelime hacmi rakip markaların gerisinde kalmış durumda.",
-          "action": "Rakip marka terimlerini PMax'lerden hariç tutup sadece 'Arama' kampanyasında özel bir 'Competitor' grubu altında toplayın. PMax kampanyalarını daha çok 'jenerik' ve 'kendi marka' sinyallerinizle (Oto Tıkla) besleyerek CPC maliyetlerini dengeleyin."
+          "action": "Rakip marka terimlerini PMax'lerden hariç tutup sadece 'Arama' kampanyasında özel bir 'Competitor' grubu altında toplayın. PMax kampanyalarını daha çok 'jenerik' ve 'kendi marka' sinyallerinizle (Oto Tıkla) besleyerek CPC maliyetlerini dengeleyin.",
+          "id": "f-acc-ototikla-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Dönüşüm Kalitesi",
           "title": "Yumuşak Dönüşüm Odaklılığı (Soft-Conversion Bias)",
           "detail": "Dönüşümlerin %86'sı 'Kişisel Bilgiler Ekranı Yeni' adımından geliyor. Ancak nihai hedef olan 'Randevu Al' dönüşümü toplamın sadece %13'ünü oluşturuyor. Algoritma, randevu alacak kaliteli kullanıcı yerine sadece formun ilk adımını dolduran kullanıcıları bulmaya odaklanıyor olabilir.",
-          "action": "Google Ads dönüşüm ayarlarından 'Randevu Al' işlemini 'Birincil', 'Kişisel Bilgiler Ekranı' işlemini ise 'İkincil' (veya sadece gözlem amaçlı) olarak güncelleyerek algoritmanın doğrudan randevu odaklı optimize olmasını sağlayın."
+          "action": "Google Ads dönüşüm ayarlarından 'Randevu Al' işlemini 'Birincil', 'Kişisel Bilgiler Ekranı' işlemini ise 'İkincil' (veya sadece gözlem amaçlı) olarak güncelleyerek algoritmanın doğrudan randevu odaklı optimize olmasını sağlayın.",
+          "id": "f-acc-ototikla-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -499,21 +508,30 @@
           "category": "Bütçe ve Ölçeklendirme",
           "title": "Düşük EBM Verimliliği ve Ciddi Bütçe Kaybı",
           "detail": "Hesap 22 TL hedef EBM (CPA) belirlemesine rağmen 17 TL ile hedefinin altında çok verimli çalışıyor. Ancak, 'Max - Oto Hemen Nakit' kampanyasında %40 ve 'Kayıp Firmalar' kampanyasında %90 oranında bütçe kaynaklı gösterim kaybı mevcut. Toplam hesap bazlı kayıp ise %31.",
-          "action": "EBM hedefin altında kaldığı için kısıtlı bütçeli tüm kampanyalarda bütçe artırımına gidilmeli; özellikle PMax ve rakip odaklı arama kampanyalarında günlük bütçe en az %50 oranında kademeli olarak artırılarak potansiyel dönüşüm hacmi yakalanmalıdır."
+          "action": "EBM hedefin altında kaldığı için kısıtlı bütçeli tüm kampanyalarda bütçe artırımına gidilmeli; özellikle PMax ve rakip odaklı arama kampanyalarında günlük bütçe en az %50 oranında kademeli olarak artırılarak potansiyel dönüşüm hacmi yakalanmalıdır.",
+          "id": "f-acc-otohemennakit-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Dönüşüm Kalitesi",
           "title": "Yumuşak Dönüşüm (Soft Conversion) Baskınlığı",
           "detail": "Toplam 816.6 dönüşümün %97'si (794.6) 'Yeni Fiyat Ekranı' aksiyonundan geliyor. WhatsApp gibi yüksek niyetli (high-intent) dönüşümler toplamın sadece %2.7'sini oluşturuyor. Algoritma, gerçek araç satma potansiyeli olanlardan ziyade sadece fiyat gören kitleye optimize oluyor olabilir.",
-          "action": "Dönüşüm sayımı stratejisinde 'Yeni Fiyat Ekranı' ikincil (secondary) işleme çekilmeli veya WhatsApp/Form dönüşümlerine daha yüksek değer atanarak teklif stratejisinin gerçek 'lead' odaklı çalışması sağlanmalıdır."
+          "action": "Dönüşüm sayımı stratejisinde 'Yeni Fiyat Ekranı' ikincil (secondary) işleme çekilmeli veya WhatsApp/Form dönüşümlerine daha yüksek değer atanarak teklif stratejisinin gerçek 'lead' odaklı çalışması sağlanmalıdır.",
+          "id": "f-acc-otohemennakit-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Strateji / Rekabet",
           "title": "Rakip Terimlerine Aşırı Bağımlılık",
           "detail": "En çok harcayan anahtar kelimelerin neredeyse tamamı (vavacars, otokoç, carvak, otobid) rakip markalardan oluşuyor. 'Vavacars' tek başına ciddi bir maliyet odağı. Bu durum, rakip CPC artışlarında hesabın kırılganlığını artırıyor ve kalite puanı düşük olduğu için maliyetleri yukarı çekiyor.",
-          "action": "Genel 'araç sat' veya 'araba nakit sat' gibi jenerik kelimelere odaklanan 'Tıklama Havuzu' kampanyasının bütçesi, rakip kampanyalarından aktarılarak daha sürdürülebilir bir trafik kaynağı oluşturulmalıdır."
+          "action": "Genel 'araç sat' veya 'araba nakit sat' gibi jenerik kelimelere odaklanan 'Tıklama Havuzu' kampanyasının bütçesi, rakip kampanyalarından aktarılarak daha sürdürülebilir bir trafik kaynağı oluşturulmalıdır.",
+          "id": "f-acc-otohemennakit-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -714,21 +732,30 @@
           "category": "Bütçe ve Kampanya Dağılımı",
           "title": "PMax Kampanyasında %31 Bütçe Kaybı ve Arama Kampanyası Verimliliği",
           "detail": "PMax kampanyası %31 bütçe kaynaklı gösterim payı kaybı (Budget Lost IS) yaşarken 17.6 TL EBM üretmektedir. Buna karşın 'Tıklatma' adlı Arama kampanyası %9.60 TO ve 14.16 TL EBM ile hedef EBM'nin (16 TL) belirgin şekilde altında, daha yüksek verimle çalışmaktadır.",
-          "action": "Arama kampanyasının teklif ve bütçe sınırlarını genişleterek yüksek niyetli trafiğe öncelik verin; PMax kampanyasındaki bütçe kaybını telafi etmek için bütçe artırımı planlanıyorsa önceliği Arama kampanyasına kaydırarak marjinal dönüşüm maliyetini düşürün."
+          "action": "Arama kampanyasının teklif ve bütçe sınırlarını genişleterek yüksek niyetli trafiğe öncelik verin; PMax kampanyasındaki bütçe kaybını telafi etmek için bütçe artırımı planlanıyorsa önceliği Arama kampanyasına kaydırarak marjinal dönüşüm maliyetini düşürün.",
+          "id": "f-acc-ikincielbahcelievler-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Arama Terimleri ve Niyet Ayrımı",
           "title": "Alıcı/Satıcı Niyeti Ayrımı ve Negatif Eşleme Optimizasyonu",
           "detail": "'spotçu' (8.5 TL EBM) ve 'satmak istiyorum' (7.1 TL EBM) gibi doğrudan eşyasını elden çıkarmak isteyen satıcı niyetli terimler olağanüstü performans gösterirken, genel 'ikinci el eşya' terimi 4 tıklamada 0 dönüşüm üretmiştir. Eşya satın almak isteyen son kullanıcı aramaları gereksiz bütçe tüketme riski taşımaktadır.",
-          "action": "'ikinci el eşya' gibi salt jenerik ve 'fiyatları', 'ucuz', 'sahibinden' gibi alıcı (tüketici) niyetli sorguları negatif listelere ekleyin; 'alan yerler', 'satmak istiyorum', 'spotçu' odaklı niyet kelimelerini Arama kampanyasında öne çıkarın."
+          "action": "'ikinci el eşya' gibi salt jenerik ve 'fiyatları', 'ucuz', 'sahibinden' gibi alıcı (tüketici) niyetli sorguları negatif listelere ekleyin; 'alan yerler', 'satmak istiyorum', 'spotçu' odaklı niyet kelimelerini Arama kampanyasında öne çıkarın.",
+          "id": "f-acc-ikincielbahcelievler-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Dönüşüm Optimizasyonu",
           "title": "WhatsApp Ağırlıklı Dönüşüm Yapısı ve Reklam Metni Uyumu",
           "detail": "5 günlük dönüşümlerin %74.1'i (404.9 adet) WhatsApp, %25.9'u (141.1 adet) Telefon üzerinden gelmektedir. Spot eşya alımında kullanıcıların fotoğraf göndererek anlık fiyat teklifi alma davranışı çok baskındır.",
-          "action": "Reklam başlıklarında ve site bağlantılarında 'Fotoğraf Atın, 5 Dk'da Fiyat Verelim' veya 'WhatsApp'tan Eşya Görseli Gönderin' gibi doğrudan eyleme yönelik CTA'ları öne çıkararak WhatsApp dönüşüm oranını ve form kalitesini maksimize edin."
+          "action": "Reklam başlıklarında ve site bağlantılarında 'Fotoğraf Atın, 5 Dk'da Fiyat Verelim' veya 'WhatsApp'tan Eşya Görseli Gönderin' gibi doğrudan eyleme yönelik CTA'ları öne çıkararak WhatsApp dönüşüm oranını ve form kalitesini maksimize edin.",
+          "id": "f-acc-ikincielbahcelievler-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3.7-flash"
@@ -949,21 +976,30 @@
           "category": "Budget & Performance",
           "title": "PMax ve Arama Kampanyası Verimlilik Dengesi",
           "detail": "Lokal Spot - Haritalar PMax kampanyası 8.21 TL CPA ile hesap ortalamasının (19 TL) çok altında bir maliyetle dönüşüm getiriyor. Ancak toplam harcamanın sadece %5.6'sı bu kampanyaya ayrılmış durumda.",
-          "action": "Arama kampanyalarından bütçe kaydırarak veya ek bütçe ile PMax kampanyasının günlük limitini en az 2 katına çıkarın."
+          "action": "Arama kampanyalarından bütçe kaydırarak veya ek bütçe ile PMax kampanyasının günlük limitini en az 2 katına çıkarın.",
+          "id": "f-acc-dogruspot-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Inventory Management",
           "title": "Bütçe Kaynaklı Gösterim Payı Kaybı",
           "detail": "Arama kampanyalarında ortalama %14 oranında bütçe kaynaklı gösterim kaybı mevcut. Bu durum, mevcut hedef EBM (20 TL) dahilinde yaklaşık 70-80 potansiyel dönüşümün kaçırıldığı anlamına geliyor.",
-          "action": "Dönüşüm başı maliyet hedef dahilinde olduğu için 'Doğru Spot Conversation Goals' kampanyalarının günlük bütçelerini %20 oranında artırarak kaçan trafiği yakalayın."
+          "action": "Dönüşüm başı maliyet hedef dahilinde olduğu için 'Doğru Spot Conversation Goals' kampanyalarının günlük bütçelerini %20 oranında artırarak kaçan trafiği yakalayın.",
+          "id": "f-acc-dogruspot-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Keyword Optimization",
           "title": "Lokasyon Bazlı Terim Alakasızlığı",
           "detail": "İşletme Bağcılar merkezli olmasına rağmen, Avcılar ve Esenyurt odaklı arama terimlerinden (örn. 'esenyurt spot') yoğun trafik ve dönüşüm geliyor. Bu durum lojistik maliyetlerini artırıyor olabilir.",
-          "action": "Eğer bu bölgelere servis verilmiyorsa bu ilçeleri negatif yer olarak ekleyin; eğer veriliyorsa lojistik maliyet analizi yaparak bu terimlerin gerçek ROI (Yatırım Getirisi) değerini kontrol edin."
+          "action": "Eğer bu bölgelere servis verilmiyorsa bu ilçeleri negatif yer olarak ekleyin; eğer veriliyorsa lojistik maliyet analizi yaparak bu terimlerin gerçek ROI (Yatırım Getirisi) değerini kontrol edin.",
+          "id": "f-acc-dogruspot-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1168,21 +1204,30 @@
           "category": "Bütçe ve Ölçeklendirme",
           "title": "PMax Kampanyasında %86 Bütçe Kaynaklı Kayıp",
           "detail": "PMax kampanyası 18.38 TL EBM ile hedef EBM'nin (25 TL) çok altında ve verimli çalışmasına rağmen, bütçe kısıtı nedeniyle potansiyel gösterimlerin %86'sını kaçırmaktadır. Bu, mevcut performansla ciddi bir büyüme fırsatının kaçtığını gösterir.",
-          "action": "PMax kampanyasının günlük bütçesini, hedef EBM korunarak kademeli olarak en az %50 oranında artırın ve bütçe kaynaklı kayıp oranını %20'nin altına düşürün."
+          "action": "PMax kampanyasının günlük bütçesini, hedef EBM korunarak kademeli olarak en az %50 oranında artırın ve bütçe kaynaklı kayıp oranını %20'nin altına düşürün.",
+          "id": "f-acc-ayhanantik-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Anahtar Kelime Stratejisi",
           "title": "Alakasız Pazar ve Rakip Trafiği",
           "detail": "Arama terimlerinde 'Artam', 'Horhor', 'Tunca' gibi rakip markalar ve 'antikacılar çarşısı', 'antika pazarları' gibi genel gezi odaklı terimler bütçe tüketmektedir. Bu terimler doğrudan 'eşya satmak isteyen' kullanıcı yerine 'gezinmek veya bilgi almak isteyen' kullanıcıyı getirebilir.",
-          "action": "Dönüşüm oranı düşük olan veya sadece bilgi amaçlı arama yapan rakip isimlerini ve 'çarşı/pazar' gibi konum terimlerini negatif anahtar kelime listesine ekleyerek 'antika alanlar' veya 'antika ekspertiz' gibi yüksek niyetli kelimelere bütçe ayırın."
+          "action": "Dönüşüm oranı düşük olan veya sadece bilgi amaçlı arama yapan rakip isimlerini ve 'çarşı/pazar' gibi konum terimlerini negatif anahtar kelime listesine ekleyerek 'antika alanlar' veya 'antika ekspertiz' gibi yüksek niyetli kelimelere bütçe ayırın.",
+          "id": "f-acc-ayhanantik-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Dönüşüm Optimizasyonu",
           "title": "WhatsApp Odaklı Dönüşüm Şişkinliği",
           "detail": "Toplam dönüşümlerin %58'i (215/368) WhatsApp mesajlarından oluşmaktadır. Bu durum PMax algoritmasını 'kolay dönüşüm' veren ancak düşük kaliteli form veya spam mesaj gönderen kitlelere yönlendirebilir.",
-          "action": "Dönüşüm kalitesini ölçmek adına WhatsApp üzerinden gelen 'gerçekten eşya fotoğrafı gönderen' kişileri Google Ads'e çevrimdışı dönüşüm olarak geri yükleyin veya WhatsApp butonunu 'ikincil' işleme alarak 'Hızlı Teklif Formu' gibi daha yüksek niyetli kanalları ön plana çıkarın."
+          "action": "Dönüşüm kalitesini ölçmek adına WhatsApp üzerinden gelen 'gerçekten eşya fotoğrafı gönderen' kişileri Google Ads'e çevrimdışı dönüşüm olarak geri yükleyin veya WhatsApp butonunu 'ikincil' işleme alarak 'Hızlı Teklif Formu' gibi daha yüksek niyetli kanalları ön plana çıkarın.",
+          "id": "f-acc-ayhanantik-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1379,21 +1424,30 @@
           "category": "Growth Opportunity",
           "title": "Düşük Gösterim Payı ve Ölçeklendirme Potansiyeli",
           "detail": "Kampanya gösterim payı %15 seviyesinde kalarak pazarın büyük bir kısmını kaçırıyor. Gerçekleşen EBM (14 TL), hedef EBM'den (18 TL) daha düşük olduğu için hesap oldukça kârlı çalışıyor ancak düşük rekabet gücü nedeniyle hacim daralıyor.",
-          "action": "Bütçe kaybı %0 olduğu için kayıp tamamen 'Sıralama' kaynaklıdır. Hedef EBM teklifini kademeli olarak 20-22 TL seviyelerine çekerek veya reklam alaka düzeyini artırarak %15 olan gösterim payını yükseltin."
+          "action": "Bütçe kaybı %0 olduğu için kayıp tamamen 'Sıralama' kaynaklıdır. Hedef EBM teklifini kademeli olarak 20-22 TL seviyelerine çekerek veya reklam alaka düzeyini artırarak %15 olan gösterim payını yükseltin.",
+          "id": "f-acc-birspot-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Targeting Mismatch",
           "title": "Hedef Lokasyon ve Arama Terimi Uyumsuzluğu",
           "detail": "Özel kurallarda Ümraniye, Ataşehir, Üsküdar ve Göztepe belirtilmesine rağmen; Kartal, Kadıköy ve Maltepe gibi bölgelerden yoğun trafik ve dönüşüm gelmiş. Bu durum lojistik maliyetlerini artırabilir veya operasyon dışı bölgelerden talep yaratabilir.",
-          "action": "Eğer bu bölgelere hizmet verilmiyorsa Kartal, Kadıköy ve Maltepe'yi negatif yerleşim olarak ekleyin. Eğer hizmet veriliyorsa, kampanya yer hedefleme listesini bu ilçeleri kapsayacak şekilde resmi olarak güncelleyin."
+          "action": "Eğer bu bölgelere hizmet verilmiyorsa Kartal, Kadıköy ve Maltepe'yi negatif yerleşim olarak ekleyin. Eğer hizmet veriliyorsa, kampanya yer hedefleme listesini bu ilçeleri kapsayacak şekilde resmi olarak güncelleyin.",
+          "id": "f-acc-birspot-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Search Intent Optimization",
           "title": "Alım vs. Satım Niyeti Ayrıştırması",
           "detail": "'İkinci el ev eşyası satanlar' ve 'spotçular çarşısı' gibi terimler, kullanıcıların sizden mal satın almak istediğini gösterir (B2C Satış). Sizin iş modeliniz ise 'Alım' (C2B) üzerine kuruludur. Bu terimler yüksek dönüşüm (WhatsApp/Telefon) getirse de düşük kaliteli kurşun (lead) riski taşır.",
-          "action": "'satanlar', 'çarşısı', 'spot mağazası' gibi kelimeleri negatif listeye ekleyerek bütçeyi sadece eşyasını satmak isteyenlere ('eşya alanlar', 'spotçuya satmak') yönlendirin."
+          "action": "'satanlar', 'çarşısı', 'spot mağazası' gibi kelimeleri negatif listeye ekleyerek bütçeyi sadece eşyasını satmak isteyenlere ('eşya alanlar', 'spotçuya satmak') yönlendirin.",
+          "id": "f-acc-birspot-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1594,21 +1648,30 @@
           "category": "Location Targeting",
           "title": "Avrupa Yakası Sızıntısı ve Negatif Anahtar Kelime İhlali",
           "detail": "Hesap özel kuralı 'Anadolu Yakası odaklı' olmasına rağmen, 'esenyurt spotçu' ve 'şişli 2 el eşya alanlar' gibi Avrupa yakası terimleri bütçe tüketmektedir. Bu durum, operasyonel maliyeti artırıp hizmet bölgesi dışından trafik çekmektedir.",
-          "action": "Esenyurt, Şişli, Beylikdüzü, Avcılar gibi tüm Avrupa yakası ilçe isimlerini negatif anahtar kelime listesi olarak ekleyin. Yer hedefleme ayarlarını 'Hedeflenen yerlerde bulunan kişiler' (Varlık) olarak güncelleyin."
+          "action": "Esenyurt, Şişli, Beylikdüzü, Avcılar gibi tüm Avrupa yakası ilçe isimlerini negatif anahtar kelime listesi olarak ekleyin. Yer hedefleme ayarlarını 'Hedeflenen yerlerde bulunan kişiler' (Varlık) olarak güncelleyin.",
+          "id": "f-acc-ikincielesyasatal-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Budget Management",
           "title": "Yüksek Bütçe Kaynaklı Gösterim Kaybı",
           "detail": "Ana kampanya (İkinci El Eşya Alım) %43 oranında bütçe yetersizliği nedeniyle gösterim kaybediyor. Mevcut 22 TL EBM başarısına rağmen potansiyel müşterilerin neredeyse yarısına bütçe sınırı yüzünden ulaşılamıyor.",
-          "action": "Daha düşük performans gösteren 'Tıklayalım' kampanyasındaki bütçeyi ana kampanyaya aktarın veya ana kampanya günlük bütçesini en az %40 oranında artırarak pazar payını geri kazanın."
+          "action": "Daha düşük performans gösteren 'Tıklayalım' kampanyasındaki bütçeyi ana kampanyaya aktarın veya ana kampanya günlük bütçesini en az %40 oranında artırarak pazar payını geri kazanın.",
+          "id": "f-acc-ikincielesyasatal-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Campaign Efficiency",
           "title": "Düşük Performanslı Kampanya Yapılandırması",
           "detail": "'Tıklayalım' isimli kampanya %4.79 TO (CTR) ile ana kampanyanın (%13.93) oldukça gerisinde kalmıştır. Ayrıca dönüşüm maliyeti genel ortalamayı negatif etkileme riski taşımaktadır.",
-          "action": "Bu kampanyadaki reklam metinlerini ana kampanya ile eşleştirin veya bu kampanyayı durdurup tüm trafiği dönüşüm oranı daha yüksek olan ana arama ağı kampanyasında konsolide edin."
+          "action": "Bu kampanyadaki reklam metinlerini ana kampanya ile eşleştirin veya bu kampanyayı durdurup tüm trafiği dönüşüm oranı daha yüksek olan ana arama ağı kampanyasında konsolide edin.",
+          "id": "f-acc-ikincielesyasatal-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -1825,21 +1888,30 @@
           "category": "Bütçe ve Performans",
           "title": "PMax Bütçe Darboğazı ve Kaçırılan Fırsat",
           "detail": "Mağazaya Gidiş (PMax) kampanyası 4.8 TL gibi mükemmel bir EBM ile çalışıyor ancak %29 oranında bütçe kaynaklı gösterim kaybı yaşıyor. Bu, en verimli kampanyanın potansiyelinin kısıtlandığını gösterir.",
-          "action": "Dönüşüm Kampanyası #2'deki (EBM: 38 TL) bütçenin bir kısmını, çok daha düşük maliyetle dönüşüm getiren PMax kampanyasına aktarın ve PMax günlük bütçesini en az %40 oranında artırın."
+          "action": "Dönüşüm Kampanyası #2'deki (EBM: 38 TL) bütçenin bir kısmını, çok daha düşük maliyetle dönüşüm getiren PMax kampanyasına aktarın ve PMax günlük bütçesini en az %40 oranında artırın.",
+          "id": "f-acc-baharspot-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "EBM Verimliliği",
           "title": "Arama Kampanyaları Arasındaki EBM Dengesi",
           "detail": "Dönüşüm Kampanyası #2, toplam harcamanın %66'sını yapmasına rağmen 38 TL EBM ile hesap hedefinin (20 TL) çok üzerindedir. Diğer arama kampanyası ise 16.8 TL EBM ile çok daha verimlidir.",
-          "action": "EBM'si yüksek olan 2 numaralı kampanyadaki '2 el eşya alan yerler' gibi pahalı anahtar kelimelerin teklif stratejisini gözden geçirin ve bütçeyi 16.8 TL EBM ile çalışan verimli arama kampanyasına kaydırın."
+          "action": "EBM'si yüksek olan 2 numaralı kampanyadaki '2 el eşya alan yerler' gibi pahalı anahtar kelimelerin teklif stratejisini gözden geçirin ve bütçeyi 16.8 TL EBM ile çalışan verimli arama kampanyasına kaydırın.",
+          "id": "f-acc-baharspot-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Yerel Optimizasyon",
           "title": "Lokasyon Bazlı Dönüşüm Gücü",
           "detail": "'Kadıköy spotçu' ve 'İkinci el eşya alanlar kadıköy' terimleri %100'e yakın dönüşüm oranı sergiliyor. Yerel işlemler (Yol tarifi) toplam dönüşümlerin %47'sini oluşturuyor.",
-          "action": "Arama kampanyalarında Kadıköy, Ümraniye gibi yüksek performanslı bölgeler için özel reklam grubu veya yerel teklif ayarlaması yapın. Reklam metinlerinde bu bölgelere özel 'Hızlı alım' vurgusunu artırın."
+          "action": "Arama kampanyalarında Kadıköy, Ümraniye gibi yüksek performanslı bölgeler için özel reklam grubu veya yerel teklif ayarlaması yapın. Reklam metinlerinde bu bölgelere özel 'Hızlı alım' vurgusunu artırın.",
+          "id": "f-acc-baharspot-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -2028,21 +2100,30 @@
           "category": "Budget Optimization",
           "title": "Bütçe Kısıtı ve Ölçekleme Fırsatı",
           "detail": "Gerçekleşen EBM (21 TL), hedef EBM'den (25 TL) daha iyi performans gösteriyor. Ancak %19 bütçe kaynaklı gösterim kaybı yaşanıyor; bu da her 5 potansiyel müşteriden 1'inin bütçe yetersizliği nedeniyle kaçırıldığını gösteriyor.",
-          "action": "Kampanya günlük bütçesini en az %25-30 oranında artırarak, düşük maliyetli dönüşüm hacmini maksimize edin."
+          "action": "Kampanya günlük bütçesini en az %25-30 oranında artırarak, düşük maliyetli dönüşüm hacmini maksimize edin.",
+          "id": "f-acc-sirinspot-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Keyword Targeting",
           "title": "Konum Bazlı Negatif Anahtar Kelime Denetimi",
           "detail": "Arama terimlerinde 'Pendik' ve 'Üsküdar' gibi hedeflenen öncelikli bölgelerin (Kadıköy, Dudullu vb.) dışındaki konumlar yüksek harcama yapıyor. Özellikle 'Üsküdar' teriminden 0 dönüşüm alınmış.",
-          "action": "Eğer bu bölgelere hizmet verilmiyorsa 'Pendik' ve 'Üsküdar' terimlerini negatif listeye ekleyin; hizmet veriliyorsa bu bölgeler için dönüşüm odaklı ayrı yerel kampanyalar kurgulayın."
+          "action": "Eğer bu bölgelere hizmet verilmiyorsa 'Pendik' ve 'Üsküdar' terimlerini negatif listeye ekleyin; hizmet veriliyorsa bu bölgeler için dönüşüm odaklı ayrı yerel kampanyalar kurgulayın.",
+          "id": "f-acc-sirinspot-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Market Presence",
           "title": "Düşük Gösterim Payı ve Rekabet Kaybı",
           "detail": "Toplam gösterim payının %13 olması, pazarın %87'sinde reklamın görünmediğini kanıtlıyor. TO (%16.84) çok başarılı olsa da, düşük pay rekabet gücünü zayıflatıyor.",
-          "action": "Reklam uzantılarını (özellikle yer ve telefon uzantıları) optimize edin ve kalite puanını artırmak için 'Anadolu Yakası Nakit Ödeme' gibi yerel anahtar kelimeleri reklam metinlerinde daha baskın kullanın."
+          "action": "Reklam uzantılarını (özellikle yer ve telefon uzantıları) optimize edin ve kalite puanını artırmak için 'Anadolu Yakası Nakit Ödeme' gibi yerel anahtar kelimeleri reklam metinlerinde daha baskın kullanın.",
+          "id": "f-acc-sirinspot-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -2243,21 +2324,30 @@
           "category": "Budget Optimization",
           "title": "PMax Kampanyasında %90 Bütçe Kaybı",
           "detail": "UcuzİkinciElEsya - pMax Ediz kampanyası bütçe yetersizliği nedeniyle potansiyel gösterimlerinin %90'ını kaçırıyor. Mevcut EBM (20.96 TL), hedef EBM'nin (22 TL) altındayken bu denli yüksek bir kayıp ciddi bir fırsat maliyetidir.",
-          "action": "PMax kampanyasının günlük bütçesini kademeli olarak en az 2-3 katına çıkarın veya Arama Ağı'na kıyasla daha verimsiz olan sinyalleri optimize ederek bütçeyi daha verimli kullanın."
+          "action": "PMax kampanyasının günlük bütçesini kademeli olarak en az 2-3 katına çıkarın veya Arama Ağı'na kıyasla daha verimsiz olan sinyalleri optimize ederek bütçeyi daha verimli kullanın.",
+          "id": "f-acc-ucuzikinciel-init-0",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "warning",
           "category": "Geographic Relevance",
           "title": "Hizmet Bölgesi Dışı Arama Terimleri",
           "detail": "Hedef lokasyonlar Ataşehir, Maltepe ve Sancaktepe olarak belirtilmesine rağmen; 'pendik ikinci el' ve 'ümraniye spot' gibi bölge dışı terimlerden tıklama ve maliyet oluşmuş. Pendik terimi 0 dönüşüm ile bütçe tüketmiştir.",
-          "action": "Yer ayarlarından 'Yer: Hedeflediğiniz yerlerde bulunan veya düzenli olarak bu yerlere giden kişiler' seçeneğini işaretleyin ve hizmet vermediğiniz Pendik, Ümraniye gibi çevre ilçeleri negatif yerleşim olarak ekleyin."
+          "action": "Yer ayarlarından 'Yer: Hedeflediğiniz yerlerde bulunan veya düzenli olarak bu yerlere giden kişiler' seçeneğini işaretleyin ve hizmet vermediğiniz Pendik, Ümraniye gibi çevre ilçeleri negatif yerleşim olarak ekleyin.",
+          "id": "f-acc-ucuzikinciel-init-1",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         },
         {
           "severity": "suggestion",
           "category": "Campaign Strategy",
           "title": "Arama Ağı Verimliliği ve Ölçekleme",
           "detail": "Arama Ağı kampanyası 14.92 TL EBM ile PMax'e (20.96 TL) göre %28 daha verimli çalışıyor. Ancak toplam bütçenin yarısından azını alıyor ve %11 bütçe kaybı yaşıyor.",
-          "action": "Daha düşük maliyetle daha fazla dönüşüm getiren Arama Ağı kampanyasının bütçesini artırarak, 'ikinci el eşya alan yerler' gibi yüksek performanslı anahtar kelimelerin kapsama alanını genişletin."
+          "action": "Daha düşük maliyetle daha fazla dönüşüm getiren Arama Ağı kampanyasının bütçesini artırarak, 'ikinci el eşya alan yerler' gibi yüksek performanslı anahtar kelimelerin kapsama alanını genişletin.",
+          "id": "f-acc-ucuzikinciel-init-2",
+          "createdAt": "2026-10-23T20:30:50.248Z",
+          "status": "active"
         }
       ],
       "_aiModelUsed": "gemini-3-flash-preview"
@@ -2303,5 +2393,6 @@
       "totalConversions": 3231,
       "summary": "Tüm PMax ve Arama kampanyaları, gerçek 5 zaman aralığı (Bugün, 5G, 7G, 14G, 30G) ve dönüşüm türleriyle senkronize edildi. Oto Tıkla'da 3 PMax + 1 Arama kampanyası arasındaki EBM farkı (17.7 TL vs 43.5 TL) ve Ayhan Antik'te PMax (16.9 TL EBM) ile Arama (55.9 TL EBM) arasındaki uçurum raporlandı."
     }
-  ]
+  ],
+  "findingsHistory": []
 }

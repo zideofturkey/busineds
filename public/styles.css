@@ -389,6 +389,66 @@ body {
   background: var(--bg-inset);
   border: 1px solid var(--border-hairline);
   padding: 0.75rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.55rem;
+}
+
+.finding-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.finding-timestamp {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+.finding-quick-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.finding-act-btn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  padding: 0.2rem 0.45rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.finding-act-btn:hover {
+  border-color: var(--text-main);
+  color: var(--text-main);
+}
+
+.finding-act-btn.complete:hover {
+  border-color: var(--emerald);
+  color: var(--emerald);
+  background: var(--emerald-soft);
+}
+
+.finding-act-btn.dismiss:hover {
+  border-color: var(--crimson);
+  color: var(--crimson);
+  background: var(--crimson-soft);
+}
+
+.finding-row.is-resolved {
+  opacity: 0.85;
+  border-style: dashed;
 }
 
 .action-label {

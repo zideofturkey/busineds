@@ -219,35 +219,140 @@ function renderHeaderAndKpis() {
   document.getElementById('kpiTotalConv').textContent = `${totalConv} Dönüşüm`;
 }
 
+function formatFindingDate(isoStr) {
+  const stamp = isoStr || (state.db && state.db.settings && (state.db.settings.lastAuditDate || state.db.settings.lastSyncDate));
+  if (!stamp) return '—';
+  const d = new Date(stamp);
+  if (isNaN(d.getTime())) return '—';
+  return d.toLocaleString('tr-TR', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+}
+
+function getRecentFindingsHistory() {
+  const history = Array.isArray(state.db?.findingsHistory) ? state.db.findingsHistory : [];
+  const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000;
+  return history.filter(item => {
+    const ts = new Date(item.resolvedAt || item.createdAt || Date.now()).getTime();
+    return (Date.now() - ts) < thirtyDaysMs;
+  });
+}
+
+async function markFindingStatus(accountId, findingIndex, findingId, newStatus) {
+  if (isLocalhost()) {
+    const res = await fetch('/api/findings/status', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ accountId, findingIndex, findingId, newStatus })
+    });
+    const data = await res.json();
+    if (data.db) {
+      state.db = data.db;
+      renderAll();
+    }
+    return;
+  }
+
+  state.db.findingsHistory = getRecentFindingsHistory();
+
+  if (newStatus === 'active') {
+    const histIdx = state.db.findingsHistory.findIndex(f => f.id === findingId);
+    if (histIdx === -1) return;
+    const restored = state.db.findingsHistory.splice(histIdx, 1)[0];
+    const acc = state.db.accounts.find(a => a.id === restored.accountId);
+    if (acc) {
+      acc.findings = acc.findings || [];
+      acc.findings.unshift({
+        id: restored.id,
+        severity: restored.severity,
+        category: restored.category,
+        title: restored.title,
+        detail: restored.detail,
+        action: restored.action,
+        createdAt: restored.createdAt,
+        status: 'active'
+      });
+    }
+  } else {
+    const acc = state.db.accounts.find(a => a.id === accountId);
+    if (!acc || !Array.isArray(acc.findings)) return;
+    const idx = findingId
+      ? acc.findings.findIndex(f => f.id === findingId)
+      : Number(findingIndex);
+    const targetIdx = idx !== -1 ? idx : Number(findingIndex);
+    if (isNaN(targetIdx) || !acc.findings[targetIdx]) return;
+
+    const removed = acc.findings.splice(targetIdx, 1)[0];
+    state.db.findingsHistory.unshift({
+      ...removed,
+      id: removed.id || `f-${acc.id}-${Date.now()}`,
+      accountId: acc.id,
+      accountName: acc.name,
+      accountSector: acc.sector,
+      customerId: acc.customerId,
+      createdAt: removed.createdAt || state.db.settings?.lastAuditDate || new Date().toISOString(),
+      resolvedAt: new Date().toISOString(),
+      resolvedStatus: newStatus
+    });
+  }
+
+  renderAll();
+  await saveDbToGitHub(state.db, `chore: update finding status (${newStatus})`);
+}
+
 function renderFindings() {
   const container = document.getElementById('findingsLedger');
   const approved = state.db.accounts.filter(a => a.approved);
+  const historyList = getRecentFindingsHistory();
 
-  const allFindings = [];
-  approved.forEach(acc => {
-    (acc.findings || []).forEach(f => {
-      allFindings.push({
-        ...f,
-        accountId: acc.id,
-        accountName: acc.name,
-        accountSector: acc.sector,
-        customerId: acc.customerId
+  const completedItems = historyList.filter(f => f.resolvedStatus === 'completed');
+  const dismissedItems = historyList.filter(f => f.resolvedStatus === 'dismissed');
+
+  const tabCompleted = document.getElementById('tabCompletedFindings');
+  const tabDismissed = document.getElementById('tabDismissedFindings');
+  if (tabCompleted) tabCompleted.textContent = `Tamamlanan (${completedItems.length})`;
+  if (tabDismissed) tabDismissed.textContent = `Yoksayılan (${dismissedItems.length})`;
+
+  const isHistoryView = state.findingFilter === 'completed' || state.findingFilter === 'dismissed';
+
+  let sourceList = [];
+  if (isHistoryView) {
+    sourceList = state.findingFilter === 'completed' ? completedItems : dismissedItems;
+  } else {
+    approved.forEach(acc => {
+      (acc.findings || []).forEach((f, idx) => {
+        sourceList.push({
+          ...f,
+          findingIndex: idx,
+          accountId: acc.id,
+          accountName: acc.name,
+          accountSector: acc.sector,
+          customerId: acc.customerId
+        });
       });
     });
-  });
+    const order = { critical: 1, warning: 2, suggestion: 3 };
+    sourceList.sort((a, b) => (order[a.severity] || 9) - (order[b.severity] || 9));
+  }
 
-  const order = { critical: 1, warning: 2, suggestion: 3 };
-  allFindings.sort((a, b) => (order[a.severity] || 9) - (order[b.severity] || 9));
-
-  const filtered = allFindings.filter(f => {
-    if (state.findingFilter !== 'all' && f.severity !== state.findingFilter) return false;
+  const filtered = sourceList.filter(f => {
+    if (!isHistoryView && state.findingFilter !== 'all' && f.severity !== state.findingFilter) return false;
     if (state.findingAccountFilter !== 'all' && f.accountId !== state.findingAccountFilter) return false;
     if (state.findingCategoryFilter !== 'all' && f.category !== state.findingCategoryFilter) return false;
     return true;
   });
 
   if (filtered.length === 0) {
-    container.innerHTML = `<div class="finding-row"><div class="finding-detail">Seçili filtrelere uygun bulgu yok.</div></div>`;
+    const emptyMsg = isHistoryView
+      ? (state.findingFilter === 'completed'
+          ? 'Son 30 gün içinde tamamlandı olarak işaretlenen öneri kartı bulunmuyor.'
+          : 'Son 30 gün içinde yoksayılan öneri kartı bulunmuyor.')
+      : 'Seçili filtrelere uygun aktif bulgu yok.';
+    container.innerHTML = `<div class="finding-row"><div class="finding-detail">${emptyMsg}</div></div>`;
     return;
   }
 
@@ -257,24 +362,48 @@ function renderFindings() {
     suggestion: 'ÖNERİ'
   };
 
-  container.innerHTML = filtered.map(f => `
-    <article class="finding-row sev-${f.severity}">
-      <div class="finding-meta-col">
-        <span class="sev-badge ${f.severity}">${badgeLabels[f.severity] || 'BULGU'}</span>
-        <span class="finding-acc-name" onclick="openAccountDetail('${f.accountId}')" title="Hesap detayını aç">${f.accountName}</span>
-        <span class="finding-acc-sector">${f.accountSector}</span>
-      </div>
-      <div class="finding-body-col">
-        <span class="finding-cat">${f.category}</span>
-        <h3 class="finding-title">${f.title}</h3>
-        <p class="finding-detail">${f.detail}</p>
-      </div>
-      <div class="finding-action-col">
-        <span class="action-label">AKSİYON</span>
-        <p class="action-text">${f.action}</p>
-      </div>
-    </article>
-  `).join('');
+  container.innerHTML = filtered.map(f => {
+    const createdStr = formatFindingDate(f.createdAt);
+    const resolvedStr = f.resolvedAt ? formatFindingDate(f.resolvedAt) : '';
+    const safeId = (f.id || '').replace(/'/g, "\\'");
+
+    const topBarRight = isHistoryView
+      ? `<div class="finding-quick-actions">
+           <span class="finding-timestamp" style="color:var(--emerald);">
+             ${f.resolvedStatus === 'completed' ? '✓ TAMAMLANDI:' : '✕ YOKSAYILDI:'} ${resolvedStr} (30G Saklanır)
+           </span>
+           <button class="finding-act-btn" onclick="markFindingStatus('${f.accountId}', -1, '${safeId}', 'active')" title="Tekrar aktif önerilere geri taşı">↺ Geri Al</button>
+         </div>`
+      : `<div class="finding-quick-actions">
+           <button class="finding-act-btn complete" onclick="markFindingStatus('${f.accountId}', ${f.findingIndex}, '${safeId}', 'completed')" title="Tamamlandı olarak işaretle (30 gün Tamamlanan sekmesinde saklanır)">✓ Tamamlandı</button>
+           <button class="finding-act-btn dismiss" onclick="markFindingStatus('${f.accountId}', ${f.findingIndex}, '${safeId}', 'dismissed')" title="Yoksay (30 gün Yoksayılan sekmesinde saklanır)">✕ Yoksay</button>
+         </div>`;
+
+    return `
+      <article class="finding-row sev-${f.severity} ${isHistoryView ? 'is-resolved' : ''}">
+        <div class="finding-meta-col">
+          <span class="sev-badge ${f.severity}">${badgeLabels[f.severity] || 'BULGU'}</span>
+          <span class="finding-acc-name" onclick="openAccountDetail('${f.accountId}')" title="Hesap detayını aç">${f.accountName}</span>
+          <span class="finding-acc-sector">${f.accountSector}</span>
+        </div>
+        <div class="finding-body-col">
+          <span class="finding-cat">${f.category}</span>
+          <h3 class="finding-title">${f.title}</h3>
+          <p class="finding-detail">${f.detail}</p>
+        </div>
+        <div class="finding-action-col">
+          <div class="finding-top-bar">
+            <span class="finding-timestamp" title="Öneri kartının oluşturulma tarihi ve saati">🕒 ${createdStr}</span>
+            ${topBarRight}
+          </div>
+          <div>
+            <span class="action-label">AKSİYON</span>
+            <p class="action-text">${f.action}</p>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
 }
 
 function renderAccounts() {
@@ -488,22 +617,35 @@ function renderAccountDetailModal(id) {
 
   const badgeLabels = { critical: 'KRİTİK', warning: 'UYARI', suggestion: 'ÖNERİ' };
   const fList = acc.findings || [];
-  document.getElementById('detailFindingsList').innerHTML = fList.map(f => `
-    <article class="finding-row sev-${f.severity}" style="grid-template-columns: 140px 1fr 260px;">
-      <div class="finding-meta-col">
-        <span class="sev-badge ${f.severity}">${badgeLabels[f.severity] || 'BULGU'}</span>
-        <span class="finding-acc-sector">${f.category}</span>
-      </div>
-      <div class="finding-body-col">
-        <h3 class="finding-title" style="margin-top:0;">${f.title}</h3>
-        <p class="finding-detail">${f.detail}</p>
-      </div>
-      <div class="finding-action-col">
-        <span class="action-label">AKSİYON</span>
-        <p class="action-text">${f.action}</p>
-      </div>
-    </article>
-  `).join('');
+  document.getElementById('detailFindingsList').innerHTML = fList.map((f, idx) => {
+    const createdStr = formatFindingDate(f.createdAt);
+    const safeId = (f.id || '').replace(/'/g, "\\'");
+    return `
+      <article class="finding-row sev-${f.severity}" style="grid-template-columns: 140px 1fr 290px;">
+        <div class="finding-meta-col">
+          <span class="sev-badge ${f.severity}">${badgeLabels[f.severity] || 'BULGU'}</span>
+          <span class="finding-acc-sector">${f.category}</span>
+        </div>
+        <div class="finding-body-col">
+          <h3 class="finding-title" style="margin-top:0;">${f.title}</h3>
+          <p class="finding-detail">${f.detail}</p>
+        </div>
+        <div class="finding-action-col">
+          <div class="finding-top-bar">
+            <span class="finding-timestamp">🕒 ${createdStr}</span>
+            <div class="finding-quick-actions">
+              <button class="finding-act-btn complete" onclick="markFindingStatus('${acc.id}', ${idx}, '${safeId}', 'completed')" title="Tamamlandı olarak işaretle">✓ Tamamlandı</button>
+              <button class="finding-act-btn dismiss" onclick="markFindingStatus('${acc.id}', ${idx}, '${safeId}', 'dismissed')" title="Yoksay">✕ Yoksay</button>
+            </div>
+          </div>
+          <div>
+            <span class="action-label">AKSİYON</span>
+            <p class="action-text">${f.action}</p>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
 }
 
 function renderArchive() {

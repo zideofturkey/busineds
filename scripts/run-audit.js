@@ -295,14 +295,27 @@ async function runAuditCycle(options = {}) {
   let totalSpendTl = 0;
   let totalConversions = 0;
 
+  // 30 günden eski tamamlanan/yoksayılan geçmiş kartları otomatik temizle
+  const retentionMs = 30 * 24 * 60 * 60 * 1000;
+  db.findingsHistory = (db.findingsHistory || []).filter(item => {
+    const t = item.resolvedAt ? new Date(item.resolvedAt).getTime() : now.getTime();
+    return (now.getTime() - t) <= retentionMs;
+  });
+
   for (const acc of approvedAccounts) {
-    const findings = await analyzeAccountWithGemini(acc, apiKey, modelName);
-    acc.findings = findings;
+    const rawFindings = await analyzeAccountWithGemini(acc, apiKey, modelName);
+    const createdAtIso = now.toISOString();
+    acc.findings = rawFindings.map((f, idx) => ({
+      id: f.id || `f-${acc.id}-${now.getTime()}-${idx}`,
+      createdAt: f.createdAt || createdAtIso,
+      status: f.status || 'active',
+      ...f
+    }));
     if (apiKey) await new Promise(r => setTimeout(r, 4000));
     totalSpendTl += Number(acc.spend5dTl || 0);
     totalConversions += Number(acc.conversions5d || 0);
 
-    for (const f of findings) {
+    for (const f of acc.findings) {
       if (f.severity === 'critical') criticalCount++;
       else if (f.severity === 'warning') warningCount++;
       else suggestionCount++;
