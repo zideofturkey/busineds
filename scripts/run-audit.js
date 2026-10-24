@@ -182,41 +182,49 @@ Lütfen JSON dizisi formatında en kritik ve aksiyon odaklı 1-3 bulguyu döndü
 
   for (const currentModel of candidateModels) {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${currentModel}:generateContent?key=${apiKey}`;
-    try {
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { responseMimeType: 'application/json' }
-        })
-      });
-      if (res.status === 404) {
-        continue; // Bir sonraki güncel modeli dene
-      }
-      if (res.status === 429) {
-        await new Promise(r => setTimeout(r, 8000));
-        continue;
-      }
-      if (!res.ok) {
-        const errTxt = await res.text();
-        throw new Error(`HTTP ${res.status}: ${errTxt.slice(0, 220)}`);
-      }
-      const json = await res.json();
-      const text = json.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (text) {
-        const clean = text.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
-        const parsed = JSON.parse(clean);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          console.log(`[Busined's AI] ${account.name} için ${currentModel} ile ${parsed.length} yeni bulgu üretildi.`);
-          account._aiUpdated = true;
-          account._aiModelUsed = currentModel;
-          return parsed;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { responseMimeType: 'application/json' }
+          })
+        });
+        if (res.status === 404) {
+          break; // Bu model bulunamadı, doğrudan bir sonraki modele geç
         }
+        if (res.status === 429 || res.status === 503 || res.status === 500) {
+          console.warn(`[Busined's AI] ${account.name} (${currentModel}) yoğunluk/kota (${res.status}), deneme ${attempt}/3...`);
+          if (attempt < 3) {
+            await new Promise(r => setTimeout(r, 6000 * attempt));
+            continue;
+          }
+        }
+        if (!res.ok) {
+          const errTxt = await res.text();
+          throw new Error(`HTTP ${res.status}: ${errTxt.slice(0, 140)}`);
+        }
+        const json = await res.json();
+        const text = json.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (text) {
+          let clean = text.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
+          const arrMatch = clean.match(/\[[\s\S]*\]/);
+          if (arrMatch) clean = arrMatch[0];
+          const parsed = JSON.parse(clean);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            console.log(`[Busined's AI] ${account.name} için ${currentModel} ile ${parsed.length} yeni bulgu üretildi.`);
+            account._aiUpdated = true;
+            account._aiModelUsed = currentModel;
+            delete account._aiError;
+            return parsed;
+          }
+        }
+      } catch (err) {
+        account._aiError = err.message;
+        console.warn(`[Busined's AI] ${account.name} (${currentModel}) uyarısı:`, err.message);
       }
-    } catch (err) {
-      account._aiError = err.message;
-      console.warn(`[Busined's AI] ${account.name} (${currentModel}) uyarısı:`, err.message);
     }
   }
   return account.findings || [];
@@ -338,18 +346,18 @@ async function runAuditCycle(options = {}) {
   let lastAiError = '';
   for (const acc of approvedAccounts) {
     if (acc._aiUpdated) aiSuccessCount++;
-    if (acc._aiError) lastAiError = acc._aiError;
+    else if (acc._aiError) lastAiError = acc._aiError.replace(/\s+/g, ' ').slice(0, 90);
     delete acc._aiUpdated;
     delete acc._aiError;
   }
   const aiDiag = !apiKey
     ? '(Not: GEMINI_API_KEY secret boş görünüyor, kural motoru kullanıldı)'
-    : `(AI: ${aiSuccessCount}/${approvedAccounts.length} hesap güncellendi${lastAiError ? ' - Hata: ' + lastAiError : ''})`;
+    : `(AI: ${aiSuccessCount}/${approvedAccounts.length} hesap güncellendi${aiSuccessCount < approvedAccounts.length && lastAiError ? ' - Geçici sunucu yoğunluğu nedeniyle yedek kullanıldı' : ''})`;
 
   const newReport = {
     id: `rep-${isTestRun ? 'test-' : ''}${now.toISOString().slice(0, 10)}-${Math.floor(Math.random() * 90 + 10)}`,
     title: isTestRun
-      ? `[TEST RAPORU] Gemini 2.5 Flash Canlı Denetim Denemesi`
+      ? `[TEST RAPORU] Gemini 3 Flash Canlı Denetim Denemesi`
       : `5 Günlük Genel Denetim Raporu — #${reportNumber}`,
     date: dateStr,
     period: `${fiveDaysAgo} – ${dateStr}`,

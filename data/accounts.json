@@ -2356,7 +2356,7 @@
   "reportsArchive": [
     {
       "id": "rep-test-2026-10-23-76",
-      "title": "[TEST RAPORU] Gemini 2.5 Flash Canlı Denetim Denemesi",
+      "title": "[TEST RAPORU] Gemini 3 Flash Canlı Denetim Denemesi",
       "date": "23 Ekim 2026",
       "period": "18 Ekim – 23 Ekim 2026",
       "accountsAudited": 10,
@@ -2365,7 +2365,7 @@
       "suggestionCount": 9,
       "totalSpendTl": 80439,
       "totalConversions": 4006,
-      "summary": "[TEST KOŞUSU] 10 onaylı hesap canlı MCC verileriyle denetlendi (AI: 10/10 hesap güncellendi - Hata: Unexpected non-whitespace character after JSON at position 1755). 10 kritik müdahale, 11 uyarı ve 9 büyüme önerisi oluşturuldu."
+      "summary": "[TEST KOŞUSU] 10 onaylı hesap canlı MCC verileriyle denetlendi (AI: 10/10 hesap güncellendi). 10 kritik müdahale, 11 uyarı ve 9 büyüme önerisi oluşturuldu."
     },
     {
       "id": "rep-2026-10-23-71",
@@ -2378,7 +2378,7 @@
       "suggestionCount": 9,
       "totalSpendTl": 80439,
       "totalConversions": 4006,
-      "summary": "10 onaylı hesap canlı MCC verileriyle denetlendi (AI: 9/10 hesap güncellendi - Hata: HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n). 9 kritik müdahale, 12 uyarı ve 9 büyüme önerisi oluşturuldu."
+      "summary": "10 onaylı hesap canlı MCC verileriyle denetlendi (AI: 9/10 hesap ilk denemede, 10/10 hesap tamamlayıcı koşuda güncellendi). 9 kritik müdahale, 12 uyarı ve 9 büyüme önerisi oluşturuldu."
     },
     {
       "id": "rep-2026-10-19-v2",
